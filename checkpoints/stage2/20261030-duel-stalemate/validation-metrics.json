@@ -1,0 +1,664 @@
+{
+  "saved_at": "2026-10-30T17:55:40.232056+08:00",
+  "accepted": true,
+  "release_gates": {
+    "resource_preserved_both_environments": true,
+    "actual_score_preserved_both_environments": true,
+    "conditional_score_preserved_both_environments": true,
+    "reach_preserved": true,
+    "combined_conditional_gain95_positive": true,
+    "saved_production_parameter_score_preserved": true
+  },
+  "profile": "duel11",
+  "parameters": {
+    "acquisition_curve_enabled": true,
+    "acquisition_resource_weight": 4.01284,
+    "acquisition_explore_peak": 4.94843,
+    "acquisition_explore_floor": 0.0,
+    "acquisition_explore_half_ticks": 57.23053,
+    "acquisition_explore_shape": 1.50886,
+    "acquisition_silence_half_ticks": 26.80416,
+    "acquisition_silence_grace_ticks": 2,
+    "contested_resource_factor": 0.23107,
+    "competition_softness": 0.91659,
+    "route_information_weight": 0.0,
+    "information_softness": 0.0,
+    "resource_lookahead_weight": 0.0,
+    "temporal_policy_enabled": true,
+    "resource_age_ticks": 37.90788,
+    "temporal_resource_age_end": 8.98741,
+    "visible_resource_weight": 1.2,
+    "competition_weight": 1.0,
+    "temporal_competition_end": 1.0,
+    "temporal_route_information_end": 0.0,
+    "temporal_lookahead_end": 0.0,
+    "temporal_transition_ticks": 94,
+    "temporal_shape": 1.03189,
+    "opening_reach_weight": 0.65443,
+    "reach_ramp_ticks": 123,
+    "opening_combat_weight": 0.54519,
+    "combat_weight_end": 1.14219,
+    "combat_ramp_ticks": 223,
+    "frontier_resource_half_life": 48.33912,
+    "information_cap": 1.8093,
+    "joint_future_weight": 0.0,
+    "temporal_third_party_attack_end": 0.27091,
+    "temporal_third_party_risk_end": 0.10998,
+    "reach_finish_ticks": 200,
+    "reach_attack_pause_ticks": 3,
+    "reach_move_priority": 0.3,
+    "reach_stalemate_ticks": 12,
+    "event_fortress_value": 4.0,
+    "event_fortress_contest_enabled": true,
+    "event_fortress_race_margin": 1,
+    "event_fortress_min_enemy_stay": 3,
+    "event_fortress_preempt_ticks": 3,
+    "event_fortress_withdraw_priority": 1.5,
+    "event_unrivaled_risk_multiplier": 4.0,
+    "reach_collision_retry_ticks": 2,
+    "battle_curve_enabled": true,
+    "battle_curve_protect_resources": true,
+    "battle_curve_start_tick": 142,
+    "battle_curve_ramp_ticks": 87,
+    "battle_curve_shape": 1.39985,
+    "battle_curve_damage_need_power": 0.65948,
+    "battle_curve_combat_end": 1.98778,
+    "battle_curve_search_end": 1.49225,
+    "battle_curve_hp_risk_end": 0.98093,
+    "battle_curve_future_risk_end": 0.68252,
+    "battle_curve_route_risk_end": 0.49755,
+    "purpose_enabled": true,
+    "purpose_start_tick": 146,
+    "purpose_protect_resources": true,
+    "purpose_resource_floor": 1.0,
+    "purpose_battle_floor": 0.56244,
+    "purpose_intercept_weight": 0.79781,
+    "purpose_intercept_horizon": 2,
+    "purpose_heading_weight": 2.34223,
+    "purpose_escape_weight": 1.18581,
+    "purpose_patrol_visible_scale": 0.6664,
+    "purpose_chase_progress_ticks": 28,
+    "opening_collection_ticks": 40,
+    "chase_cooldown_ticks": 13,
+    "battle_curve_third_party_end": 1.01427,
+    "duel_stalemate_enabled": true,
+    "duel_stalemate_ticks": 16,
+    "duel_stalemate_start_tick": 80,
+    "duel_stalemate_maximum_hp": 60.0,
+    "duel_stalemate_death_risk_factor": 0.15
+  },
+  "frozen_before_holdout": {
+    "frozen_at": "2026-10-30T15:41:25.857248+08:00",
+    "profile": "duel11",
+    "parameters": {
+      "acquisition_curve_enabled": true,
+      "acquisition_resource_weight": 4.01284,
+      "acquisition_explore_peak": 4.94843,
+      "acquisition_explore_floor": 0.0,
+      "acquisition_explore_half_ticks": 57.23053,
+      "acquisition_explore_shape": 1.50886,
+      "acquisition_silence_half_ticks": 26.80416,
+      "acquisition_silence_grace_ticks": 2,
+      "contested_resource_factor": 0.23107,
+      "competition_softness": 0.91659,
+      "route_information_weight": 0.0,
+      "information_softness": 0.0,
+      "resource_lookahead_weight": 0.0,
+      "temporal_policy_enabled": true,
+      "resource_age_ticks": 37.90788,
+      "temporal_resource_age_end": 8.98741,
+      "visible_resource_weight": 1.2,
+      "competition_weight": 1.0,
+      "temporal_competition_end": 1.0,
+      "temporal_route_information_end": 0.0,
+      "temporal_lookahead_end": 0.0,
+      "temporal_transition_ticks": 94,
+      "temporal_shape": 1.03189,
+      "opening_reach_weight": 0.65443,
+      "reach_ramp_ticks": 123,
+      "opening_combat_weight": 0.54519,
+      "combat_weight_end": 1.14219,
+      "combat_ramp_ticks": 223,
+      "frontier_resource_half_life": 48.33912,
+      "information_cap": 1.8093,
+      "joint_future_weight": 0.0,
+      "temporal_third_party_attack_end": 0.27091,
+      "temporal_third_party_risk_end": 0.10998,
+      "reach_finish_ticks": 200,
+      "reach_attack_pause_ticks": 3,
+      "reach_move_priority": 0.3,
+      "reach_stalemate_ticks": 12,
+      "event_fortress_value": 4.0,
+      "event_fortress_contest_enabled": true,
+      "event_fortress_race_margin": 1,
+      "event_fortress_min_enemy_stay": 3,
+      "event_fortress_preempt_ticks": 3,
+      "event_fortress_withdraw_priority": 1.5,
+      "event_unrivaled_risk_multiplier": 4.0,
+      "reach_collision_retry_ticks": 2,
+      "battle_curve_enabled": true,
+      "battle_curve_protect_resources": true,
+      "battle_curve_start_tick": 142,
+      "battle_curve_ramp_ticks": 87,
+      "battle_curve_shape": 1.39985,
+      "battle_curve_damage_need_power": 0.65948,
+      "battle_curve_combat_end": 1.98778,
+      "battle_curve_search_end": 1.49225,
+      "battle_curve_hp_risk_end": 0.98093,
+      "battle_curve_future_risk_end": 0.68252,
+      "battle_curve_route_risk_end": 0.49755,
+      "purpose_enabled": true,
+      "purpose_start_tick": 146,
+      "purpose_protect_resources": true,
+      "purpose_resource_floor": 1.0,
+      "purpose_battle_floor": 0.56244,
+      "purpose_intercept_weight": 0.79781,
+      "purpose_intercept_horizon": 2,
+      "purpose_heading_weight": 2.34223,
+      "purpose_escape_weight": 1.18581,
+      "purpose_patrol_visible_scale": 0.6664,
+      "purpose_chase_progress_ticks": 28,
+      "opening_collection_ticks": 40,
+      "chase_cooldown_ticks": 13,
+      "battle_curve_third_party_end": 1.01427,
+      "duel_stalemate_enabled": true,
+      "duel_stalemate_ticks": 16,
+      "duel_stalemate_start_tick": 80,
+      "duel_stalemate_maximum_hp": 60.0,
+      "duel_stalemate_death_risk_factor": 0.15
+    },
+    "binary": "/home/jon/robot/competition/runtime/stage2-total-joint-20261030-1503/duel-node",
+    "binary_sha256": "a66b075d46277d5e611dcaefbc923417fe63e4a9f5c3b4582a9f5c31433343a6",
+    "selection_basis": "our observed defensive deadlock diagnosis, pure-C++ state tracker, own predeclared parameter grid, and same-map development comparisons",
+    "model_advice_used_for_final_selection": false,
+    "excluded_profiles": "all model* proposals excluded after user correction",
+    "holdout_seeds": [
+      1131000,
+      1131255
+    ],
+    "holdout_maps": 256,
+    "comparisons": [
+      "baseline",
+      "production",
+      "duel11"
+    ]
+  },
+  "holdout_comparisons": {
+    "baseline": {
+      "before": {
+        "n": 256,
+        "reach_completed": 256,
+        "reach_rate": 1,
+        "conditional_score60": 42.3556640625,
+        "actual_score45": 28.8791015625,
+        "conditional_at_least50_rate": 0.24609375,
+        "resource_raw": 61.796875,
+        "component_means": {
+          "resource": 15.439453125,
+          "combat": 13.4396484375,
+          "normal_task": 4.7265625,
+          "high_task": 3.75,
+          "reach_task": 5.0
+        },
+        "reach_late_matches": 1,
+        "decision_mean_ms": 4.5874514375,
+        "decision_max_ms": 166.207,
+        "invalid_actions": 0,
+        "incomplete_matches": 0
+      },
+      "after": {
+        "n": 256,
+        "reach_completed": 256,
+        "reach_rate": 1,
+        "conditional_score60": 43.1296875,
+        "actual_score45": 29.653125,
+        "conditional_at_least50_rate": 0.25,
+        "resource_raw": 61.796875,
+        "component_means": {
+          "resource": 15.439453125,
+          "combat": 14.213671875,
+          "normal_task": 4.7265625,
+          "high_task": 3.75,
+          "reach_task": 5.0
+        },
+        "reach_late_matches": 0,
+        "decision_mean_ms": 4.3021261796875,
+        "decision_max_ms": 167.937,
+        "invalid_actions": 0,
+        "incomplete_matches": 0
+      },
+      "conditional_mean_delta": 0.7740234375,
+      "conditional_gain_bootstrap95": [
+        0.47050781250000007,
+        1.121484375
+      ],
+      "per_environment": {
+        "official": {
+          "before": {
+            "n": 128,
+            "reach_completed": 128,
+            "reach_rate": 1,
+            "conditional_score60": 45.210546875,
+            "actual_score45": 31.733984375,
+            "conditional_at_least50_rate": 0.34375,
+            "resource_raw": 67.890625,
+            "component_means": {
+              "resource": 16.953125,
+              "combat": 14.780859375,
+              "normal_task": 4.765625,
+              "high_task": 3.7109375,
+              "reach_task": 5.0
+            },
+            "reach_late_matches": 0,
+            "decision_mean_ms": 3.4729198125000003,
+            "decision_max_ms": 166.207,
+            "invalid_actions": 0,
+            "incomplete_matches": 0
+          },
+          "after": {
+            "n": 128,
+            "reach_completed": 128,
+            "reach_rate": 1,
+            "conditional_score60": 45.210546875,
+            "actual_score45": 31.733984375,
+            "conditional_at_least50_rate": 0.34375,
+            "resource_raw": 67.890625,
+            "component_means": {
+              "resource": 16.953125,
+              "combat": 14.780859375,
+              "normal_task": 4.765625,
+              "high_task": 3.7109375,
+              "reach_task": 5.0
+            },
+            "reach_late_matches": 0,
+            "decision_mean_ms": 3.457953015625,
+            "decision_max_ms": 167.937,
+            "invalid_actions": 0,
+            "incomplete_matches": 0
+          },
+          "mean_delta": 0.0,
+          "conditional_gain_bootstrap95": [
+            0.0,
+            0.0
+          ],
+          "improved_matches": 0,
+          "regressed_matches": 0
+        },
+        "mixed": {
+          "before": {
+            "n": 128,
+            "reach_completed": 128,
+            "reach_rate": 1,
+            "conditional_score60": 39.50078125,
+            "actual_score45": 26.02421875,
+            "conditional_at_least50_rate": 0.1484375,
+            "resource_raw": 55.703125,
+            "component_means": {
+              "resource": 13.92578125,
+              "combat": 12.0984375,
+              "normal_task": 4.6875,
+              "high_task": 3.7890625,
+              "reach_task": 5.0
+            },
+            "reach_late_matches": 1,
+            "decision_mean_ms": 5.7019830625,
+            "decision_max_ms": 121.245,
+            "invalid_actions": 0,
+            "incomplete_matches": 0
+          },
+          "after": {
+            "n": 128,
+            "reach_completed": 128,
+            "reach_rate": 1,
+            "conditional_score60": 41.048828125,
+            "actual_score45": 27.572265625,
+            "conditional_at_least50_rate": 0.15625,
+            "resource_raw": 55.703125,
+            "component_means": {
+              "resource": 13.92578125,
+              "combat": 13.646484375,
+              "normal_task": 4.6875,
+              "high_task": 3.7890625,
+              "reach_task": 5.0
+            },
+            "reach_late_matches": 0,
+            "decision_mean_ms": 5.14629934375,
+            "decision_max_ms": 145.454,
+            "invalid_actions": 0,
+            "incomplete_matches": 0
+          },
+          "mean_delta": 1.548046875,
+          "conditional_gain_bootstrap95": [
+            0.950390625,
+            2.21953125
+          ],
+          "improved_matches": 31,
+          "regressed_matches": 7
+        }
+      },
+      "improved": 31,
+      "unchanged": 218,
+      "regressed": 7
+    },
+    "production": {
+      "before": {
+        "n": 256,
+        "reach_completed": 256,
+        "reach_rate": 1,
+        "conditional_score60": 42.16900111607143,
+        "actual_score45": 28.692438616071428,
+        "conditional_at_least50_rate": 0.25,
+        "resource_raw": 61.6796875,
+        "component_means": {
+          "resource": 15.41015625,
+          "combat": 13.282282366071428,
+          "normal_task": 4.7265625,
+          "high_task": 3.75,
+          "reach_task": 5.0
+        },
+        "reach_late_matches": 1,
+        "decision_mean_ms": 4.36283684375,
+        "decision_max_ms": 171.625,
+        "invalid_actions": 0,
+        "incomplete_matches": 0
+      },
+      "after": {
+        "n": 256,
+        "reach_completed": 256,
+        "reach_rate": 1,
+        "conditional_score60": 43.1296875,
+        "actual_score45": 29.653125,
+        "conditional_at_least50_rate": 0.25,
+        "resource_raw": 61.796875,
+        "component_means": {
+          "resource": 15.439453125,
+          "combat": 14.213671875,
+          "normal_task": 4.7265625,
+          "high_task": 3.75,
+          "reach_task": 5.0
+        },
+        "reach_late_matches": 0,
+        "decision_mean_ms": 4.3021261796875,
+        "decision_max_ms": 167.937,
+        "invalid_actions": 0,
+        "incomplete_matches": 0
+      },
+      "conditional_mean_delta": 0.9606863839285715,
+      "conditional_gain_bootstrap95": [
+        0.5493582589285716,
+        1.404296875
+      ],
+      "per_environment": {
+        "official": {
+          "before": {
+            "n": 128,
+            "reach_completed": 128,
+            "reach_rate": 1,
+            "conditional_score60": 45.06015625,
+            "actual_score45": 31.58359375,
+            "conditional_at_least50_rate": 0.359375,
+            "resource_raw": 67.734375,
+            "component_means": {
+              "resource": 16.9140625,
+              "combat": 14.66953125,
+              "normal_task": 4.765625,
+              "high_task": 3.7109375,
+              "reach_task": 5.0
+            },
+            "reach_late_matches": 0,
+            "decision_mean_ms": 3.2456849375,
+            "decision_max_ms": 171.625,
+            "invalid_actions": 0,
+            "incomplete_matches": 0
+          },
+          "after": {
+            "n": 128,
+            "reach_completed": 128,
+            "reach_rate": 1,
+            "conditional_score60": 45.210546875,
+            "actual_score45": 31.733984375,
+            "conditional_at_least50_rate": 0.34375,
+            "resource_raw": 67.890625,
+            "component_means": {
+              "resource": 16.953125,
+              "combat": 14.780859375,
+              "normal_task": 4.765625,
+              "high_task": 3.7109375,
+              "reach_task": 5.0
+            },
+            "reach_late_matches": 0,
+            "decision_mean_ms": 3.457953015625,
+            "decision_max_ms": 167.937,
+            "invalid_actions": 0,
+            "incomplete_matches": 0
+          },
+          "mean_delta": 0.15039062500000006,
+          "conditional_gain_bootstrap95": [
+            -0.12421874999999999,
+            0.487890625
+          ],
+          "improved_matches": 11,
+          "regressed_matches": 12
+        },
+        "mixed": {
+          "before": {
+            "n": 128,
+            "reach_completed": 128,
+            "reach_rate": 1,
+            "conditional_score60": 39.27784598214286,
+            "actual_score45": 25.801283482142857,
+            "conditional_at_least50_rate": 0.140625,
+            "resource_raw": 55.625,
+            "component_means": {
+              "resource": 13.90625,
+              "combat": 11.895033482142857,
+              "normal_task": 4.6875,
+              "high_task": 3.7890625,
+              "reach_task": 5.0
+            },
+            "reach_late_matches": 1,
+            "decision_mean_ms": 5.47998875,
+            "decision_max_ms": 139.107,
+            "invalid_actions": 0,
+            "incomplete_matches": 0
+          },
+          "after": {
+            "n": 128,
+            "reach_completed": 128,
+            "reach_rate": 1,
+            "conditional_score60": 41.048828125,
+            "actual_score45": 27.572265625,
+            "conditional_at_least50_rate": 0.15625,
+            "resource_raw": 55.703125,
+            "component_means": {
+              "resource": 13.92578125,
+              "combat": 13.646484375,
+              "normal_task": 4.6875,
+              "high_task": 3.7890625,
+              "reach_task": 5.0
+            },
+            "reach_late_matches": 0,
+            "decision_mean_ms": 5.14629934375,
+            "decision_max_ms": 145.454,
+            "invalid_actions": 0,
+            "incomplete_matches": 0
+          },
+          "mean_delta": 1.770982142857143,
+          "conditional_gain_bootstrap95": [
+            1.0091517857142858,
+            2.5501674107142858
+          ],
+          "improved_matches": 55,
+          "regressed_matches": 26
+        }
+      },
+      "improved": 66,
+      "unchanged": 152,
+      "regressed": 38
+    }
+  },
+  "resource_changed_maps_vs_baseline": 0,
+  "damage_full_matches": {
+    "duel11": 195,
+    "baseline": 184,
+    "production": 179
+  },
+  "real_500ms_program_verification": {
+    "baseline": {
+      "n": 10,
+      "actual_score60_mean": 41.27,
+      "actual_at_least50_rate": 0.1,
+      "resource_raw_mean": 57.0,
+      "combat_mean": 13.02,
+      "mission_mean": 14.0,
+      "ai_qualified": 10,
+      "decision_mean_ms": 4.8204236,
+      "decision_p95_worst_ms": 17.856,
+      "decision_max_ms": 116.745,
+      "new_map_actual_score_mean": 40.6125
+    },
+    "production": {
+      "n": 8,
+      "actual_score60_mean": 41.0875,
+      "actual_at_least50_rate": 0.25,
+      "resource_raw_mean": 57.5,
+      "combat_mean": 12.3375,
+      "mission_mean": 14.375,
+      "ai_qualified": 8,
+      "decision_mean_ms": 4.267421,
+      "decision_p95_worst_ms": 21.538,
+      "decision_max_ms": 116.03,
+      "new_map_actual_score_mean": 41.0875
+    },
+    "duel11": {
+      "n": 10,
+      "actual_score60_mean": 42.705,
+      "actual_at_least50_rate": 0.2,
+      "resource_raw_mean": 61.0,
+      "combat_mean": 13.455,
+      "mission_mean": 14.0,
+      "ai_qualified": 10,
+      "decision_mean_ms": 4.8265634,
+      "decision_p95_worst_ms": 19.34,
+      "decision_max_ms": 114.11,
+      "new_map_actual_score_mean": 41.50625
+    }
+  },
+  "real_sample_note": "28 valid games: 10 same-map baseline/candidate pairs (8 fresh maps and 2 regression maps), plus 8 saved-production controls. Runtime model latency and interpretation are nondeterministic; this is a limited end-to-end check, not proof of stable 50.",
+  "offline_score_note": "With cached event interpretations, actual AI qualification is absent. The 60-point diagnostic total adds raw task completions; actual resource+combat subtotal has a 45-point cap. Real runtime samples use actual AI-qualified scores.",
+  "completed_games_by_phase": {
+    "screen": 488,
+    "duel-equivalence": 8,
+    "confirm": 256,
+    "duel-screen": 208,
+    "refine": 204,
+    "finalist-confirm": 320,
+    "holdout": 768,
+    "runtime-real-wave1": 4,
+    "runtime-real-wave2": 12,
+    "runtime-real-wave3": 12
+  },
+  "completed_games_total": 2280,
+  "distinct_map_seeds": 400,
+  "parameter_profiles_tested": 89,
+  "source_changes": [
+    {
+      "file": "rmtc_connection/CMakeLists.txt",
+      "change": "changed"
+    },
+    {
+      "file": "rmtc_connection/launch/contestant.launch.py",
+      "change": "changed"
+    },
+    {
+      "file": "rmtc_connection/src/stage2/stage2_strategy.cpp",
+      "change": "changed"
+    },
+    {
+      "file": "rmtc_connection/src/core/connection_node.cpp",
+      "change": "changed"
+    },
+    {
+      "file": "rmtc_connection/include/rmtc_connection/stage2_config.hpp",
+      "change": "changed"
+    },
+    {
+      "file": "rmtc_connection/include/rmtc_connection/stage2_strategy.hpp",
+      "change": "changed"
+    },
+    {
+      "file": "rmtc_connection/config/stage2.yaml",
+      "change": "added"
+    },
+    {
+      "file": "rmtc_connection/include/rmtc_connection/stage2_duel_stalemate.hpp",
+      "change": "added"
+    },
+    {
+      "file": "rmtc_connection/tests/stage2_duel_stalemate_test.cpp",
+      "change": "added"
+    }
+  ],
+  "ctest_passed": 32,
+  "full_action_feature_off_equivalence": {
+    "passed": true,
+    "maps": 4,
+    "actions_per_map": 500,
+    "complete_action_sequence_identical": true
+  },
+  "default_launch_verified": {
+    "stage2_default": {
+      "passed": true,
+      "parameters_verified": 75,
+      "real_AI_calls": 0,
+      "frames": 0
+    },
+    "stage2_legacy": {
+      "passed": true,
+      "parameters_verified": 70,
+      "real_AI_calls": 0,
+      "frames": 0
+    },
+    "stage1_default": {
+      "passed": true,
+      "parameters_verified": 0,
+      "real_AI_calls": 0,
+      "frames": 0
+    },
+    "binary_install": {
+      "passed": true,
+      "only_changed_executable": [
+        "/home/jon/robot/competition/install/rmtc_connection/lib/rmtc_connection/connection_node"
+      ],
+      "matching_sections": {
+        ".text": "2b7fd98c80f99827cf1c5795904513da429c9f65d77740556a7d3d5c96e66cad",
+        ".rodata": "d2226b8cf8d816ed403b66307b10109e83f23a294f30902609c84410b21f5aba",
+        ".data": "c86b66d29e14432621a27c0f65af71c36761a8d44272411998b455dc28dbb2bd",
+        ".data.rel.ro": "c65d938347f6a1e6b059cea8323f66a32de54df09bd1f099e756bcca8a2adad5"
+      }
+    }
+  },
+  "budget": {
+    "actual_account_balance_difference_cny": 4.6,
+    "analysis_cny_by_returned_usage": 3.1506696,
+    "runtime_cny_by_returned_usage": 1.4521275200000028,
+    "unknown_request_reserved_upper_cny": 0.068368,
+    "combined_conservative_upper_cny": 4.671165120000003,
+    "authorized_total_ceiling_cny": 5.0,
+    "all_paid_call_processes_stopped": true,
+    "note": "User corrected the purpose: earlier analysis calls were stopped. They are included in the same total budget. Subsequent DeepSeek calls came only from running AI nodes. Balance difference and published-price usage estimates differ; both are reported rather than conflated.",
+    "balance_difference_at_analysis_stop_cny": 2.61,
+    "balance_difference_after_analysis_stop_cny": 1.99,
+    "known_usage_total_cny": 4.602797120000003,
+    "billing_period_note": "Intermediate balance queries can settle late; the before/after-stop balance intervals cannot reliably attribute costs by purpose. Purpose breakdown uses returned token usage and published prices. Final account delta matches the known total within cent rounding."
+  },
+  "stable_at_least50_demonstrated": false,
+  "runtime_deepseek_purpose": "Only event interpretation by running independent ai_node after the user correction; no further offline advice calls.",
+  "final_selection_independent_of_model_advice": true,
+  "earlier_model_proposal_trials_excluded_after_user_correction": true,
+  "infrastructure_notes": [
+    "One completed real game had only the final stop HTTP502; recovered its agreeing official score/frame, verified all 500 matched receipts, and did not replay it.",
+    "One real production control missed initial Tick0 during parallel startup; excluded the incomplete attempt and reran that same frozen case. All fees remain included.",
+    "All holdout seeds were completed. Failed startup/transport attempts were retained and rerun with the same frozen parameters and map; scores were not a retry criterion."
+  ]
+}

@@ -1,0 +1,11 @@
+# 文件：.clang-format
+# 用途：统一本队 C++ 排版；不重排头文件、不自动改写控制流程或注释内容。
+BasedOnStyle: Google
+IndentWidth: 2
+ColumnLimit: 100
+SortIncludes: Never
+ReflowComments: false
+AllowShortFunctionsOnASingleLine: Empty
+AllowShortIfStatementsOnASingleLine: Never
+AllowShortLoopsOnASingleLine: false
+AllowShortBlocksOnASingleLine: Never

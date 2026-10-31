@@ -1,0 +1,16 @@
+{
+  "development_maps": [
+    5511031,
+    5511032,
+    5511033,
+    5511034,
+    5511035,
+    5511036,
+    5511037,
+    5511038
+  ],
+  "full_games": 256,
+  "preferred_core": "persistent escape; other features selected by complete-game resource/conditional scores, task/reach and lower-tail checks, not by search estimates",
+  "neural": "collect only after core frozen; select in separate development cohort; do not retune on final holdout",
+  "paid_api_calls": 0
+}

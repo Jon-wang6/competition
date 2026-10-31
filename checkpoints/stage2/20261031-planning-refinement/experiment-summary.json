@@ -1,0 +1,42 @@
+{
+  "status": "complete",
+  "runtime_root": "/home/jon/robot/competition/runtime/stage2-planning-refinement-20261031",
+  "paid_api_calls": 0,
+  "referee_modified_this_round": false,
+  "previous_default_preserved_sha256": "f6a1ace7740befaba2350be87191496f50b633c6677507221789587c9bc4c377",
+  "experiments": {
+    "ablation": {
+      "games": 160,
+      "maps": 8
+    },
+    "joint_parameter_search": {
+      "games": 320,
+      "maps": 8
+    },
+    "teacher_collection": {
+      "games": 32,
+      "maps": 8,
+      "training_action_rows": 3200,
+      "training_states": 584,
+      "validation_action_rows": 820,
+      "validation_states": 154
+    },
+    "neural_closed_loop_selection": {
+      "games": 192,
+      "maps": 8,
+      "models": 2
+    },
+    "untouched_final_holdout": {
+      "planned_games": 256,
+      "maps": 32,
+      "completed_games": 256
+    }
+  },
+  "calibration": "Use presence-calibration-verified.json; the earlier presence-calibration.json used an incorrect fixed late-age legacy comparator and is retained only as historical provenance.",
+  "neural_default_enabled": false,
+  "neural_scope": "64 public features; scalar residual for each feasible combat root action; collection planner keeps authority while active. Teacher public-state rollout is a heuristic, not optimal-action ground truth.",
+  "total_complete_games": 960,
+  "unit_tests_passed": 35,
+  "full_match_failed_attempts": 0,
+  "final_evaluation": "/home/jon/robot/competition/checkpoints/stage2/20261031-planning-refinement/evaluation.json"
+}

@@ -1,0 +1,17 @@
+{
+  "selected": "purpose_46",
+  "criterion": "highest yesterday equal-weight official/mixed resource mean",
+  "official_maps": 128,
+  "mixed_maps": 128,
+  "official_resource_raw": 69.21875,
+  "mixed_resource_raw": 54.453125,
+  "balanced_resource_raw": 61.8359375,
+  "historical_checkpoint": "/home/jon/robot/competition/checkpoints/stage2/20261029-purpose-purpose_46",
+  "retested_control_maps": 16,
+  "retested_baseline_resource_raw": 61.875,
+  "retested_original_donor_resource_raw": 60.0,
+  "current_candidate_profile": "joint17",
+  "current_candidate_status": "experimental_not_promoted",
+  "current_combat_parameters_unchanged": true,
+  "production_replaced": false
+}

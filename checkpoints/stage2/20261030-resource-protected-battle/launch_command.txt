@@ -1,0 +1,3 @@
+cd /home/jon/robot/competition
+source install/setup.bash
+ros2 launch rmtc_connection stage2.launch.py strategy_params_file:=/home/jon/robot/competition/checkpoints/stage2/20261030-resource-protected-battle/parameters.yaml

@@ -1,0 +1,422 @@
+{
+  "holdout": {
+    "official": {
+      "reach_vs_before": {
+        "before": {
+          "n": 48,
+          "reach_completed": 48,
+          "reach_rate": 1,
+          "conditional_score60": 44.229166666666664,
+          "actual_score45": 30.479166666666668,
+          "conditional_at_least50_rate": 0.25,
+          "resource_raw": 64.375,
+          "component_means": {
+            "resource": 16.041666666666668,
+            "combat": 14.4375,
+            "normal_task": 4.895833333333333,
+            "high_task": 3.8541666666666665,
+            "reach_task": 5.0
+          },
+          "reach_late_matches": 0,
+          "decision_mean_ms": 4.668517083333334,
+          "decision_max_ms": 178.49,
+          "invalid_actions": 0,
+          "incomplete_matches": 0
+        },
+        "after": {
+          "n": 48,
+          "reach_completed": 48,
+          "reach_rate": 1,
+          "conditional_score60": 44.229166666666664,
+          "actual_score45": 30.479166666666668,
+          "conditional_at_least50_rate": 0.25,
+          "resource_raw": 64.375,
+          "component_means": {
+            "resource": 16.041666666666668,
+            "combat": 14.4375,
+            "normal_task": 4.895833333333333,
+            "high_task": 3.8541666666666665,
+            "reach_task": 5.0
+          },
+          "reach_late_matches": 0,
+          "decision_mean_ms": 4.643504,
+          "decision_max_ms": 149.282,
+          "invalid_actions": 0,
+          "incomplete_matches": 0
+        },
+        "mean_delta": 0.0,
+        "conditional_gain_bootstrap95": [
+          0.0,
+          0.0
+        ],
+        "improved_matches": 0,
+        "regressed_matches": 0
+      },
+      "fortress_vs_reach": {
+        "before": {
+          "n": 48,
+          "reach_completed": 48,
+          "reach_rate": 1,
+          "conditional_score60": 44.229166666666664,
+          "actual_score45": 30.479166666666668,
+          "conditional_at_least50_rate": 0.25,
+          "resource_raw": 64.375,
+          "component_means": {
+            "resource": 16.041666666666668,
+            "combat": 14.4375,
+            "normal_task": 4.895833333333333,
+            "high_task": 3.8541666666666665,
+            "reach_task": 5.0
+          },
+          "reach_late_matches": 0,
+          "decision_mean_ms": 4.643504,
+          "decision_max_ms": 149.282,
+          "invalid_actions": 0,
+          "incomplete_matches": 0
+        },
+        "after": {
+          "n": 48,
+          "reach_completed": 48,
+          "reach_rate": 1,
+          "conditional_score60": 44.213541666666664,
+          "actual_score45": 30.463541666666668,
+          "conditional_at_least50_rate": 0.25,
+          "resource_raw": 64.375,
+          "component_means": {
+            "resource": 16.041666666666668,
+            "combat": 14.421875,
+            "normal_task": 4.895833333333333,
+            "high_task": 3.8541666666666665,
+            "reach_task": 5.0
+          },
+          "reach_late_matches": 0,
+          "decision_mean_ms": 4.697444541666667,
+          "decision_max_ms": 155.599,
+          "invalid_actions": 0,
+          "incomplete_matches": 0
+        },
+        "mean_delta": -0.015625,
+        "conditional_gain_bootstrap95": [
+          -0.046875,
+          0.0
+        ],
+        "improved_matches": 0,
+        "regressed_matches": 1
+      }
+    },
+    "mixed": {
+      "reach_vs_before": {
+        "before": {
+          "n": 48,
+          "reach_completed": 47,
+          "reach_rate": 0.9791666666666666,
+          "conditional_score60": 38.53541666666667,
+          "actual_score45": 25.30625,
+          "conditional_at_least50_rate": 0.125,
+          "resource_raw": 51.25,
+          "component_means": {
+            "resource": 12.8125,
+            "combat": 12.49375,
+            "normal_task": 4.479166666666667,
+            "high_task": 3.8541666666666665,
+            "reach_task": 4.895833333333333
+          },
+          "reach_late_matches": 1,
+          "decision_mean_ms": 6.878095708333333,
+          "decision_max_ms": 123.071,
+          "invalid_actions": 0,
+          "incomplete_matches": 0
+        },
+        "after": {
+          "n": 48,
+          "reach_completed": 48,
+          "reach_rate": 1,
+          "conditional_score60": 38.639583333333334,
+          "actual_score45": 25.30625,
+          "conditional_at_least50_rate": 0.125,
+          "resource_raw": 51.25,
+          "component_means": {
+            "resource": 12.8125,
+            "combat": 12.49375,
+            "normal_task": 4.479166666666667,
+            "high_task": 3.8541666666666665,
+            "reach_task": 5.0
+          },
+          "reach_late_matches": 1,
+          "decision_mean_ms": 6.841458916666666,
+          "decision_max_ms": 97.075,
+          "invalid_actions": 0,
+          "incomplete_matches": 0
+        },
+        "mean_delta": 0.10416666666666667,
+        "conditional_gain_bootstrap95": [
+          0.0,
+          0.3125
+        ],
+        "improved_matches": 1,
+        "regressed_matches": 0
+      },
+      "fortress_vs_reach": {
+        "before": {
+          "n": 48,
+          "reach_completed": 48,
+          "reach_rate": 1,
+          "conditional_score60": 38.639583333333334,
+          "actual_score45": 25.30625,
+          "conditional_at_least50_rate": 0.125,
+          "resource_raw": 51.25,
+          "component_means": {
+            "resource": 12.8125,
+            "combat": 12.49375,
+            "normal_task": 4.479166666666667,
+            "high_task": 3.8541666666666665,
+            "reach_task": 5.0
+          },
+          "reach_late_matches": 1,
+          "decision_mean_ms": 6.841458916666666,
+          "decision_max_ms": 97.075,
+          "invalid_actions": 0,
+          "incomplete_matches": 0
+        },
+        "after": {
+          "n": 48,
+          "reach_completed": 48,
+          "reach_rate": 1,
+          "conditional_score60": 38.83958333333333,
+          "actual_score45": 25.50625,
+          "conditional_at_least50_rate": 0.10416666666666667,
+          "resource_raw": 51.25,
+          "component_means": {
+            "resource": 12.8125,
+            "combat": 12.69375,
+            "normal_task": 4.479166666666667,
+            "high_task": 3.8541666666666665,
+            "reach_task": 5.0
+          },
+          "reach_late_matches": 1,
+          "decision_mean_ms": 6.709499083333333,
+          "decision_max_ms": 100.997,
+          "invalid_actions": 0,
+          "incomplete_matches": 0
+        },
+        "mean_delta": 0.20000000000000004,
+        "conditional_gain_bootstrap95": [
+          -0.625,
+          1.0562500000000001
+        ],
+        "improved_matches": 5,
+        "regressed_matches": 3
+      }
+    }
+  },
+  "default-holdout": {
+    "official": {
+      "reach_vs_before": {
+        "before": {
+          "n": 16,
+          "reach_completed": 16,
+          "reach_rate": 1,
+          "conditional_score60": 45.85,
+          "actual_score45": 31.7875,
+          "conditional_at_least50_rate": 0.4375,
+          "resource_raw": 70.0,
+          "component_means": {
+            "resource": 17.5,
+            "combat": 14.2875,
+            "normal_task": 5.0,
+            "high_task": 4.0625,
+            "reach_task": 5.0
+          },
+          "reach_late_matches": 0,
+          "decision_mean_ms": 4.172261375,
+          "decision_max_ms": 84.322,
+          "invalid_actions": 0,
+          "incomplete_matches": 0
+        },
+        "after": {
+          "n": 16,
+          "reach_completed": 16,
+          "reach_rate": 1,
+          "conditional_score60": 45.85,
+          "actual_score45": 31.7875,
+          "conditional_at_least50_rate": 0.4375,
+          "resource_raw": 70.0,
+          "component_means": {
+            "resource": 17.5,
+            "combat": 14.2875,
+            "normal_task": 5.0,
+            "high_task": 4.0625,
+            "reach_task": 5.0
+          },
+          "reach_late_matches": 0,
+          "decision_mean_ms": 4.13730225,
+          "decision_max_ms": 74.373,
+          "invalid_actions": 0,
+          "incomplete_matches": 0
+        },
+        "mean_delta": 0.0,
+        "conditional_gain_bootstrap95": [
+          0.0,
+          0.0
+        ],
+        "improved_matches": 0,
+        "regressed_matches": 0
+      },
+      "fortress_vs_reach": {
+        "before": {
+          "n": 16,
+          "reach_completed": 16,
+          "reach_rate": 1,
+          "conditional_score60": 45.85,
+          "actual_score45": 31.7875,
+          "conditional_at_least50_rate": 0.4375,
+          "resource_raw": 70.0,
+          "component_means": {
+            "resource": 17.5,
+            "combat": 14.2875,
+            "normal_task": 5.0,
+            "high_task": 4.0625,
+            "reach_task": 5.0
+          },
+          "reach_late_matches": 0,
+          "decision_mean_ms": 4.13730225,
+          "decision_max_ms": 74.373,
+          "invalid_actions": 0,
+          "incomplete_matches": 0
+        },
+        "after": {
+          "n": 16,
+          "reach_completed": 16,
+          "reach_rate": 1,
+          "conditional_score60": 46.15,
+          "actual_score45": 32.0875,
+          "conditional_at_least50_rate": 0.4375,
+          "resource_raw": 70.0,
+          "component_means": {
+            "resource": 17.5,
+            "combat": 14.5875,
+            "normal_task": 5.0,
+            "high_task": 4.0625,
+            "reach_task": 5.0
+          },
+          "reach_late_matches": 0,
+          "decision_mean_ms": 4.132041625,
+          "decision_max_ms": 80.809,
+          "invalid_actions": 0,
+          "incomplete_matches": 0
+        },
+        "mean_delta": 0.30000000000000004,
+        "conditional_gain_bootstrap95": [
+          -0.7125000000000004,
+          1.575
+        ],
+        "improved_matches": 3,
+        "regressed_matches": 2
+      }
+    },
+    "mixed": {
+      "reach_vs_before": {
+        "before": {
+          "n": 16,
+          "reach_completed": 16,
+          "reach_rate": 1,
+          "conditional_score60": 35.453125,
+          "actual_score45": 23.890625,
+          "conditional_at_least50_rate": 0,
+          "resource_raw": 44.375,
+          "component_means": {
+            "resource": 11.09375,
+            "combat": 12.796875,
+            "normal_task": 4.0625,
+            "high_task": 2.5,
+            "reach_task": 5.0
+          },
+          "reach_late_matches": 0,
+          "decision_mean_ms": 6.527114,
+          "decision_max_ms": 112.673,
+          "invalid_actions": 0,
+          "incomplete_matches": 0
+        },
+        "after": {
+          "n": 16,
+          "reach_completed": 16,
+          "reach_rate": 1,
+          "conditional_score60": 35.453125,
+          "actual_score45": 23.890625,
+          "conditional_at_least50_rate": 0,
+          "resource_raw": 44.375,
+          "component_means": {
+            "resource": 11.09375,
+            "combat": 12.796875,
+            "normal_task": 4.0625,
+            "high_task": 2.5,
+            "reach_task": 5.0
+          },
+          "reach_late_matches": 0,
+          "decision_mean_ms": 6.5373845,
+          "decision_max_ms": 100.356,
+          "invalid_actions": 0,
+          "incomplete_matches": 0
+        },
+        "mean_delta": 0.0,
+        "conditional_gain_bootstrap95": [
+          0.0,
+          0.0
+        ],
+        "improved_matches": 0,
+        "regressed_matches": 0
+      },
+      "fortress_vs_reach": {
+        "before": {
+          "n": 16,
+          "reach_completed": 16,
+          "reach_rate": 1,
+          "conditional_score60": 35.453125,
+          "actual_score45": 23.890625,
+          "conditional_at_least50_rate": 0,
+          "resource_raw": 44.375,
+          "component_means": {
+            "resource": 11.09375,
+            "combat": 12.796875,
+            "normal_task": 4.0625,
+            "high_task": 2.5,
+            "reach_task": 5.0
+          },
+          "reach_late_matches": 0,
+          "decision_mean_ms": 6.5373845,
+          "decision_max_ms": 100.356,
+          "invalid_actions": 0,
+          "incomplete_matches": 0
+        },
+        "after": {
+          "n": 16,
+          "reach_completed": 16,
+          "reach_rate": 1,
+          "conditional_score60": 35.340625,
+          "actual_score45": 23.778125,
+          "conditional_at_least50_rate": 0,
+          "resource_raw": 44.375,
+          "component_means": {
+            "resource": 11.09375,
+            "combat": 12.684375,
+            "normal_task": 4.0625,
+            "high_task": 2.5,
+            "reach_task": 5.0
+          },
+          "reach_late_matches": 0,
+          "decision_mean_ms": 6.235705625,
+          "decision_max_ms": 91.751,
+          "invalid_actions": 0,
+          "incomplete_matches": 0
+        },
+        "mean_delta": -0.1124999999999996,
+        "conditional_gain_bootstrap95": [
+          -1.9406249999999998,
+          1.6031250000000004
+        ],
+        "improved_matches": 4,
+        "regressed_matches": 2
+      }
+    }
+  }
+}

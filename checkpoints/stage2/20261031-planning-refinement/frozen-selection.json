@@ -1,0 +1,261 @@
+{
+  "frozen_at_utc": "2026-10-31T06:56:22.800552+00:00",
+  "selection_maps": [
+    2411031,
+    2411032,
+    2411033,
+    2411034,
+    2411035,
+    2411036,
+    2411037,
+    2411038
+  ],
+  "neural_enabled": false,
+  "reason": "No neural candidate has a positive lower 95% map-cluster bootstrap bound on paired full-game improvement over planning. Preserve collection/combat planner and save both networks as experiments. Do not tune on holdout.",
+  "closed_loop_development": {
+    "baseline": {
+      "conditional_score60": 42.121875,
+      "score45": 29.309375,
+      "resource_final": 61.875,
+      "resource_score": 15.3125,
+      "combat_score": 13.996875,
+      "raw_tasks": 2.5625,
+      "neural_changed": 0,
+      "n": 32,
+      "reach_rate": 1,
+      "all_tasks_rate": 0.625,
+      "paired_vs_planning": {
+        "mean": -0.21875,
+        "map_cluster_bootstrap95": [
+          -2.1718749999999996,
+          1.9484375000000005
+        ],
+        "maps": 8
+      }
+    },
+    "neural_125": {
+      "conditional_score60": 42.65625,
+      "score45": 29.84375,
+      "resource_final": 63.125,
+      "resource_score": 15.78125,
+      "combat_score": 14.0625,
+      "raw_tasks": 2.5625,
+      "neural_changed": 3.96875,
+      "n": 32,
+      "reach_rate": 1,
+      "all_tasks_rate": 0.625,
+      "paired_vs_planning": {
+        "mean": 0.3156249999999996,
+        "map_cluster_bootstrap95": [
+          -0.3562500000000004,
+          0.8687500000000004
+        ],
+        "maps": 8
+      }
+    },
+    "neural_250": {
+      "conditional_score60": 42.00714285714286,
+      "score45": 29.350892857142856,
+      "resource_final": 60.3125,
+      "resource_score": 15.078125,
+      "combat_score": 14.272767857142856,
+      "raw_tasks": 2.53125,
+      "neural_changed": 9.25,
+      "n": 32,
+      "reach_rate": 1,
+      "all_tasks_rate": 0.59375,
+      "paired_vs_planning": {
+        "mean": -0.3334821428571434,
+        "map_cluster_bootstrap95": [
+          -2.037500000000001,
+          1.527678571428571
+        ],
+        "maps": 8
+      }
+    },
+    "planning": {
+      "conditional_score60": 42.340625,
+      "score45": 29.528125,
+      "resource_final": 62.5,
+      "resource_score": 15.625,
+      "combat_score": 13.903125,
+      "raw_tasks": 2.5625,
+      "neural_changed": 0,
+      "n": 32,
+      "reach_rate": 1,
+      "all_tasks_rate": 0.625,
+      "paired_vs_planning": {
+        "mean": 0.0,
+        "map_cluster_bootstrap95": [
+          0.0,
+          0.0
+        ],
+        "maps": 8
+      }
+    },
+    "small_125": {
+      "conditional_score60": 42.1265625,
+      "score45": 29.3140625,
+      "resource_final": 62.1875,
+      "resource_score": 15.546875,
+      "combat_score": 13.7671875,
+      "raw_tasks": 2.5625,
+      "neural_changed": 3.28125,
+      "n": 32,
+      "reach_rate": 1,
+      "all_tasks_rate": 0.625,
+      "paired_vs_planning": {
+        "mean": -0.2140625000000005,
+        "map_cluster_bootstrap95": [
+          -0.8375000000000008,
+          0.33749999999999925
+        ],
+        "maps": 8
+      }
+    },
+    "small_250": {
+      "conditional_score60": 42.903571428571425,
+      "score45": 29.93482142857143,
+      "resource_final": 63.125,
+      "resource_score": 15.78125,
+      "combat_score": 14.153571428571428,
+      "raw_tasks": 2.59375,
+      "neural_changed": 13.8125,
+      "n": 32,
+      "reach_rate": 1,
+      "all_tasks_rate": 0.65625,
+      "paired_vs_planning": {
+        "mean": 0.5629464285714281,
+        "map_cluster_bootstrap95": [
+          -0.23035714285714326,
+          1.4609375
+        ],
+        "maps": 8
+      }
+    }
+  },
+  "selected": {
+    "binary": "/home/jon/robot/competition/runtime/stage2-planning-refinement-20261031/search-node",
+    "parameters": {
+      "acquisition_curve_enabled": true,
+      "acquisition_resource_weight": 6.0,
+      "acquisition_explore_peak": 4.94843,
+      "acquisition_explore_floor": 0.0,
+      "acquisition_explore_half_ticks": 57.23053,
+      "acquisition_explore_shape": 1.50886,
+      "acquisition_silence_half_ticks": 26.80416,
+      "acquisition_silence_grace_ticks": 2,
+      "contested_resource_factor": 0.23107,
+      "competition_softness": 0.91659,
+      "route_information_weight": 0.0,
+      "information_softness": 0.0,
+      "resource_lookahead_weight": 0.0,
+      "temporal_policy_enabled": true,
+      "resource_age_ticks": 37.90788,
+      "temporal_resource_age_end": 8.98741,
+      "visible_resource_weight": 1.2,
+      "competition_weight": 1.0,
+      "temporal_competition_end": 1.0,
+      "temporal_route_information_end": 0.0,
+      "temporal_lookahead_end": 0.0,
+      "temporal_transition_ticks": 94,
+      "temporal_shape": 1.03189,
+      "opening_reach_weight": 0.65443,
+      "reach_ramp_ticks": 123,
+      "opening_combat_weight": 0.54519,
+      "combat_weight_end": 1.14219,
+      "combat_ramp_ticks": 223,
+      "frontier_resource_half_life": 48.33912,
+      "information_cap": 1.8093,
+      "joint_future_weight": 0.0,
+      "temporal_third_party_attack_end": 0.27091,
+      "temporal_third_party_risk_end": 0.10998,
+      "reach_finish_ticks": 200,
+      "reach_attack_pause_ticks": 3,
+      "reach_move_priority": 0.3,
+      "reach_stalemate_ticks": 12,
+      "event_fortress_value": 4.0,
+      "event_fortress_contest_enabled": true,
+      "event_fortress_race_margin": 1,
+      "event_fortress_min_enemy_stay": 3,
+      "event_fortress_preempt_ticks": 3,
+      "event_fortress_withdraw_priority": 1.5,
+      "event_unrivaled_risk_multiplier": 4.0,
+      "reach_collision_retry_ticks": 2,
+      "battle_curve_enabled": true,
+      "battle_curve_protect_resources": true,
+      "battle_curve_start_tick": 142,
+      "battle_curve_ramp_ticks": 87,
+      "battle_curve_shape": 1.39985,
+      "battle_curve_damage_need_power": 0.65948,
+      "battle_curve_combat_end": 1.98778,
+      "battle_curve_search_end": 1.49225,
+      "battle_curve_hp_risk_end": 0.98093,
+      "battle_curve_future_risk_end": 0.68252,
+      "battle_curve_route_risk_end": 0.49755,
+      "purpose_enabled": true,
+      "purpose_start_tick": 146,
+      "purpose_protect_resources": true,
+      "purpose_resource_floor": 1.0,
+      "purpose_battle_floor": 0.56244,
+      "purpose_intercept_weight": 0.79781,
+      "purpose_intercept_horizon": 2,
+      "purpose_heading_weight": 2.34223,
+      "purpose_escape_weight": 1.18581,
+      "purpose_patrol_visible_scale": 0.6664,
+      "purpose_chase_progress_ticks": 28,
+      "opening_collection_ticks": 60,
+      "chase_cooldown_ticks": 13,
+      "battle_curve_third_party_end": 1.01427,
+      "duel_stalemate_enabled": true,
+      "duel_stalemate_ticks": 16,
+      "duel_stalemate_start_tick": 80,
+      "duel_stalemate_maximum_hp": 60.0,
+      "duel_stalemate_death_risk_factor": 0.15,
+      "planning_enabled": true,
+      "planning_horizon": 12,
+      "planning_beam_width": 16,
+      "planning_max_nodes": 12000,
+      "planning_budget_ms": 30.0,
+      "planning_discount": 0.94,
+      "planning_terminal_weight": 0.55,
+      "planning_memory_half_life": 35.0,
+      "planning_enemy_pressure": 2.0,
+      "planning_exploration_floor": 0.15,
+      "planning_route_tie_margin": 0.005,
+      "planning_future_risk_weight": 0.15,
+      "separate_goal_switch_bonus": true,
+      "navigation_cycle_window": 16,
+      "navigation_cycle_start_tick": 40,
+      "navigation_cycle_cooldown": 12,
+      "navigation_cycle_cost": 0.2,
+      "neural_enabled": false,
+      "planning_tactical_bridge": true,
+      "planning_exact_death_loss": true,
+      "planning_distribution_state": true,
+      "planning_safe_terminal": true,
+      "planning_continue_baseline": true,
+      "planning_reach_recovery": true,
+      "planning_recovery_ticks": 16,
+      "planning_memory_model": 1,
+      "mode": "stage2_planning",
+      "planning_independent_opponents": false
+    }
+  },
+  "holdout": {
+    "seed_start": 3311031,
+    "maps": 32,
+    "spawns": [
+      "fixed",
+      "corner_shuffle",
+      "uniform_free",
+      "clustered"
+    ],
+    "profiles": [
+      "baseline",
+      "planning"
+    ],
+    "games": 256,
+    "paid_api_calls": 0
+  }
+}

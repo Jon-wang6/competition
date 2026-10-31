@@ -1,0 +1,286 @@
+{
+  "saved_at": "2026-10-30T14:55:11.261087+08:00",
+  "selected_historical_resource_reference": {
+    "selected": "purpose_46",
+    "criterion": "highest yesterday equal-weight official/mixed resource mean",
+    "official_maps": 128,
+    "mixed_maps": 128,
+    "official_resource_raw": 69.21875,
+    "mixed_resource_raw": 54.453125,
+    "balanced_resource_raw": 61.8359375,
+    "historical_checkpoint": "/home/jon/robot/competition/checkpoints/stage2/20261029-purpose-purpose_46",
+    "retested_control_maps": 16,
+    "retested_baseline_resource_raw": 61.875,
+    "retested_original_donor_resource_raw": 60.0,
+    "current_candidate_profile": "joint17",
+    "current_candidate_status": "experimental_not_promoted",
+    "current_combat_parameters_unchanged": true,
+    "production_replaced": false
+  },
+  "candidate_profile": "joint17",
+  "candidate_accepted_as_default": false,
+  "release_gates": {
+    "all_combat_parameters_unchanged": true,
+    "both_environments_resource_preserved": false,
+    "both_environments_combat_preserved": true,
+    "both_environments_reach_preserved": true,
+    "balanced_resource_improved": true,
+    "resource_gain_bootstrap95_excludes_zero": false
+  },
+  "fresh_paired_maps": 128,
+  "validation_seeds": [
+    1124000,
+    1124127
+  ],
+  "before": {
+    "n": 128,
+    "reach_completed": 127,
+    "reach_rate": 0.9921875,
+    "conditional_score60": 42.007421875,
+    "actual_score45": 28.569921875,
+    "conditional_at_least50_rate": 0.2109375,
+    "resource_raw": 60.15625,
+    "component_means": {
+      "resource": 15.01953125,
+      "combat": 13.550390625,
+      "normal_task": 4.765625,
+      "high_task": 3.7109375,
+      "reach_task": 4.9609375
+    },
+    "reach_late_matches": 1,
+    "decision_mean_ms": 3.42374334375,
+    "decision_max_ms": 166.211,
+    "invalid_actions": 0,
+    "incomplete_matches": 0
+  },
+  "after": {
+    "n": 128,
+    "reach_completed": 128,
+    "reach_rate": 1,
+    "conditional_score60": 42.149609375,
+    "actual_score45": 28.673046875,
+    "conditional_at_least50_rate": 0.2421875,
+    "resource_raw": 60.390625,
+    "component_means": {
+      "resource": 15.078125,
+      "combat": 13.594921875,
+      "normal_task": 4.765625,
+      "high_task": 3.7109375,
+      "reach_task": 5.0
+    },
+    "reach_late_matches": 0,
+    "decision_mean_ms": 3.410892859375,
+    "decision_max_ms": 185.616,
+    "invalid_actions": 0,
+    "incomplete_matches": 0
+  },
+  "per_environment": {
+    "official": {
+      "n": 64,
+      "before": {
+        "n": 64,
+        "reach_completed": 64,
+        "reach_rate": 1,
+        "conditional_score60": 45.765625,
+        "actual_score45": 31.78125,
+        "conditional_at_least50_rate": 0.375,
+        "resource_raw": 68.125,
+        "component_means": {
+          "resource": 16.9921875,
+          "combat": 14.7890625,
+          "normal_task": 4.921875,
+          "high_task": 4.0625,
+          "reach_task": 5.0
+        },
+        "reach_late_matches": 0,
+        "decision_mean_ms": 2.82186153125,
+        "decision_max_ms": 166.211,
+        "invalid_actions": 0,
+        "incomplete_matches": 0
+      },
+      "after": {
+        "n": 64,
+        "reach_completed": 64,
+        "reach_rate": 1,
+        "conditional_score60": 46.15,
+        "actual_score45": 32.165625,
+        "conditional_at_least50_rate": 0.40625,
+        "resource_raw": 69.53125,
+        "component_means": {
+          "resource": 17.34375,
+          "combat": 14.821875,
+          "normal_task": 4.921875,
+          "high_task": 4.0625,
+          "reach_task": 5.0
+        },
+        "reach_late_matches": 0,
+        "decision_mean_ms": 2.8022561875,
+        "decision_max_ms": 185.616,
+        "invalid_actions": 0,
+        "incomplete_matches": 0
+      },
+      "resource_score_delta": 0.3515625,
+      "resource_raw_delta": 1.40625,
+      "combat_delta": 0.032812500000000355,
+      "total_delta": 0.3843749999999986
+    },
+    "mixed": {
+      "n": 64,
+      "before": {
+        "n": 64,
+        "reach_completed": 63,
+        "reach_rate": 0.984375,
+        "conditional_score60": 38.24921875,
+        "actual_score45": 25.35859375,
+        "conditional_at_least50_rate": 0.046875,
+        "resource_raw": 52.1875,
+        "component_means": {
+          "resource": 13.046875,
+          "combat": 12.31171875,
+          "normal_task": 4.609375,
+          "high_task": 3.359375,
+          "reach_task": 4.921875
+        },
+        "reach_late_matches": 1,
+        "decision_mean_ms": 4.02562515625,
+        "decision_max_ms": 104.399,
+        "invalid_actions": 0,
+        "incomplete_matches": 0
+      },
+      "after": {
+        "n": 64,
+        "reach_completed": 64,
+        "reach_rate": 1,
+        "conditional_score60": 38.14921875,
+        "actual_score45": 25.18046875,
+        "conditional_at_least50_rate": 0.078125,
+        "resource_raw": 51.25,
+        "component_means": {
+          "resource": 12.8125,
+          "combat": 12.36796875,
+          "normal_task": 4.609375,
+          "high_task": 3.359375,
+          "reach_task": 5.0
+        },
+        "reach_late_matches": 0,
+        "decision_mean_ms": 4.01952953125,
+        "decision_max_ms": 107.815,
+        "invalid_actions": 0,
+        "incomplete_matches": 0
+      },
+      "resource_score_delta": -0.234375,
+      "resource_raw_delta": -0.9375,
+      "combat_delta": 0.05624999999999858,
+      "total_delta": -0.09999999999999432
+    }
+  },
+  "paired_statistics": {
+    "resource_raw": {
+      "mean_delta": 0.234375,
+      "bootstrap95": [
+        -0.78125,
+        1.25
+      ],
+      "improved": 13,
+      "unchanged": 105,
+      "regressed": 10
+    },
+    "resource": {
+      "mean_delta": 0.05859375,
+      "bootstrap95": [
+        -0.1953125,
+        0.3125
+      ],
+      "improved": 13,
+      "unchanged": 105,
+      "regressed": 10
+    },
+    "combat": {
+      "mean_delta": 0.04453125000000002,
+      "bootstrap95": [
+        -0.41601562499999994,
+        0.5025669642857142
+      ],
+      "improved": 13,
+      "unchanged": 103,
+      "regressed": 12
+    },
+    "actual_score": {
+      "mean_delta": 0.10312500000000001,
+      "bootstrap95": [
+        -0.3846540178571428,
+        0.5844308035714286
+      ],
+      "improved": 22,
+      "unchanged": 88,
+      "regressed": 18
+    },
+    "conditional_score": {
+      "mean_delta": 0.14218750000000002,
+      "bootstrap95": [
+        -0.34921875,
+        0.6432477678571431
+      ],
+      "improved": 22,
+      "unchanged": 88,
+      "regressed": 18
+    }
+  },
+  "formal_500ms_timing": {
+    "count": 500,
+    "max": 22.313,
+    "mean": 5.379182,
+    "p95": 13.564
+  },
+  "formal_500ms_all_seat_invalid": {
+    "A": 0,
+    "D": 0,
+    "C": 0,
+    "B": 0
+  },
+  "completed_matches_by_phase": {
+    "controls": 32,
+    "equivalence": 12,
+    "screen": 288,
+    "confirm": 216,
+    "validation": 256,
+    "normal-cadence": 1
+  },
+  "completed_matches_total": 805,
+  "infrastructure_retries": 13,
+  "ctest_passed": 31,
+  "source_changes": [
+    {
+      "file": "rmtc_connection/CMakeLists.txt",
+      "change": "changed"
+    },
+    {
+      "file": "rmtc_connection/src/stage2/stage2_strategy.cpp",
+      "change": "changed"
+    },
+    {
+      "file": "rmtc_connection/src/core/connection_node.cpp",
+      "change": "changed"
+    },
+    {
+      "file": "rmtc_connection/include/rmtc_connection/stage2_config.hpp",
+      "change": "changed"
+    },
+    {
+      "file": "rmtc_connection/include/rmtc_connection/stage2_strategy.hpp",
+      "change": "changed"
+    },
+    {
+      "file": "rmtc_connection/include/rmtc_connection/stage2_collection_transfer.hpp",
+      "change": "added"
+    },
+    {
+      "file": "rmtc_connection/tests/stage2_collection_transfer_test.cpp",
+      "change": "added"
+    }
+  ],
+  "paid_model_calls": 0,
+  "score_note": "Resource raw value is not the 30-point resource component. Offline cached events grant no true AI qualification. Conditional total adds raw task completions only as a diagnostic, not as an actual score.",
+  "conclusion": "Historical purpose_46 selected as requested. Time-limited resource-only transfer preserves combat configuration and slightly raises aggregate means, but mixed-opponent resources fall and confidence interval includes zero. Keep it as an experimental candidate; do not replace production defaults.",
+  "next_training_baseline": "/home/jon/robot/competition/checkpoints/stage2/20261030-resource-protected-battle"
+}

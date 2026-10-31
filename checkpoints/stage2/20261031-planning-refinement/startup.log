@@ -1,0 +1,4 @@
+[0m[INFO] [1793430204.589429017] [rmtc_connection]: READY team=A mode=stage2_planning resource_order=joint perception=/team_A/perception[0m
+[0m[INFO] [1793430204.589916196] [rmtc_connection]: STAGE2 resource/mission/combat/explore baseline; ticks=500; AI handled by independent ai_node process[0m
+[0m[INFO] [1793430207.578038484] [rclcpp]: signal_handler(SIGINT/SIGTERM)[0m
+[0m[INFO] [1793430207.578583525] [rmtc_connection]: SUMMARY {"event":"summary","frames":0,"matched_receipts":0,"parse_errors":0,"process_runtime_ms":2990.37492,"receipt_errors":0,"sent":0,"sessions":0,"successful_moves":0}[0m

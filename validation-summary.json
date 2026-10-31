@@ -1,0 +1,16 @@
+{
+  "official_validator_passed": 128,
+  "stages": [
+    1,
+    2
+  ],
+  "fixed_seeds": [
+    0,
+    63
+  ],
+  "random_replay": true,
+  "invalid_seeds_rejected": true,
+  "overwrite_rejected": true,
+  "default_seed": 0,
+  "stage1_seed0_visible_resources_at_spawn": 3
+}

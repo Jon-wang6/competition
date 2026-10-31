@@ -1,0 +1,403 @@
+{
+  "completed_at_utc": "2026-10-31T07:02:10.956647+00:00",
+  "cohort": {
+    "untouched_maps": 32,
+    "map_size": [
+      24,
+      24
+    ],
+    "seed_start": 3311031,
+    "seed_end": 3311062,
+    "spawns": [
+      "fixed",
+      "corner_shuffle",
+      "uniform_free",
+      "clustered"
+    ],
+    "profiles": 2,
+    "games_per_profile": 128,
+    "full_games": 256,
+    "ticks_per_game": 500,
+    "opponents": "Half official B/C/D, half seeded mixture of 1-3 saved strategies and remaining official bots.",
+    "development_excluded": true
+  },
+  "score_definitions": {
+    "score45": "Actual local referee resource+combat score, maximum45; offline event-JSON replay does not confer formal AI task qualification.",
+    "conditional_score60": "Actual resource+combat score plus5 per publicly confirmed completed task, conditional on formal AI qualification; not actual online match total.",
+    "resource_final": "Raw collected resource value; resource_score=min(value/120,1)*30.",
+    "combat_score": "Local official-compatible combat scoring, maximum15."
+  },
+  "frozen_configuration": "/home/jon/robot/competition/runtime/stage2-planning-refinement-20261031/frozen-selection.json",
+  "neural_enabled": false,
+  "paid_api_calls": 0,
+  "complete_games_all_experiments_this_round": 960,
+  "evaluation": {
+    "all": {
+      "baseline": {
+        "all_tasks_rate": 0.7421875,
+        "by_spawn": {
+          "clustered": {
+            "conditional": 49.720312500000006,
+            "n": 32,
+            "resource": 86.25
+          },
+          "corner_shuffle": {
+            "conditional": 44.0859375,
+            "n": 32,
+            "resource": 66.875
+          },
+          "fixed": {
+            "conditional": 44.20357142857143,
+            "n": 32,
+            "resource": 65.3125
+          },
+          "uniform_free": {
+            "conditional": 44.07857142857142,
+            "n": 32,
+            "resource": 64.375
+          }
+        },
+        "combat_score": 14.213504464285716,
+        "conditional_score60": 45.52209821428571,
+        "decision_max_ms": 110.667,
+        "decision_mean_ms": 3.2511197499999986,
+        "n": 128,
+        "neural_changed": 0.0,
+        "neural_inference_mean_ms": 0.0,
+        "raw_tasks": 2.7421875,
+        "reach_rate": 1.0,
+        "resource40": 55.546875,
+        "resource80": 69.140625,
+        "resource_final": 70.703125,
+        "resource_score": 17.59765625,
+        "score45": 31.811160714285712,
+        "mission_details": {
+          "collect_two_normal": {
+            "completed": 127,
+            "games": 128,
+            "completion_rate": 0.9921875,
+            "conditional_points_mean": 4.9609375,
+            "actual_points_mean": 0
+          },
+          "collect_high_value": {
+            "completed": 96,
+            "games": 128,
+            "completion_rate": 0.75,
+            "conditional_points_mean": 3.75,
+            "actual_points_mean": 0
+          },
+          "reach_target": {
+            "completed": 128,
+            "games": 128,
+            "completion_rate": 1.0,
+            "conditional_points_mean": 5.0,
+            "actual_points_mean": 0
+          }
+        },
+        "conditional_score_at_least_50_rate": 0.34375,
+        "conditional_median": 45.0,
+        "conditional_min": 25.799999999999997,
+        "conditional_p10_nearest_rank": 32.5,
+        "all_three_tasks_count": 95,
+        "slowest_game": {
+          "seed": 3311041,
+          "spawn": "uniform_free",
+          "decision_ms": {
+            "count": 500,
+            "max": 110.667,
+            "mean": 1.977076,
+            "p95": 5.327
+          }
+        },
+        "invalid_actions": 0,
+        "games_with_incomplete_frames_actions_receipts": 0
+      },
+      "planning": {
+        "all_tasks_rate": 0.7421875,
+        "by_spawn": {
+          "clustered": {
+            "conditional": 50.5859375,
+            "n": 32,
+            "resource": 90.9375
+          },
+          "corner_shuffle": {
+            "conditional": 44.359375,
+            "n": 32,
+            "resource": 66.875
+          },
+          "fixed": {
+            "conditional": 43.215625,
+            "n": 32,
+            "resource": 63.125
+          },
+          "uniform_free": {
+            "conditional": 44.54375,
+            "n": 32,
+            "resource": 66.25
+          }
+        },
+        "combat_score": 14.094140625000003,
+        "conditional_score60": 45.67617187499999,
+        "decision_max_ms": 173.817,
+        "decision_mean_ms": 5.0146419062500005,
+        "n": 128,
+        "neural_changed": 0.0,
+        "neural_inference_mean_ms": 0.0,
+        "raw_tasks": 2.734375,
+        "reach_rate": 1.0,
+        "resource40": 57.109375,
+        "resource80": 70.15625,
+        "resource_final": 71.796875,
+        "resource_score": 17.91015625,
+        "score45": 32.004296875,
+        "vs_baseline": {
+          "actual_bootstrap95": [
+            -0.6425223214285712,
+            1.0494977678571433
+          ],
+          "actual_delta": 0.19313616071428574,
+          "bootstrap95": [
+            -0.685379464285714,
+            1.0216517857142857
+          ],
+          "conditional_delta": 0.15407366071428563,
+          "paired_maps": 32,
+          "resource_delta": 1.09375
+        },
+        "mission_details": {
+          "collect_two_normal": {
+            "completed": 124,
+            "games": 128,
+            "completion_rate": 0.96875,
+            "conditional_points_mean": 4.84375,
+            "actual_points_mean": 0
+          },
+          "collect_high_value": {
+            "completed": 98,
+            "games": 128,
+            "completion_rate": 0.765625,
+            "conditional_points_mean": 3.828125,
+            "actual_points_mean": 0
+          },
+          "reach_target": {
+            "completed": 128,
+            "games": 128,
+            "completion_rate": 1.0,
+            "conditional_points_mean": 5.0,
+            "actual_points_mean": 0
+          }
+        },
+        "conditional_score_at_least_50_rate": 0.3671875,
+        "conditional_median": 47.5,
+        "conditional_min": 22.5,
+        "conditional_p10_nearest_rank": 32.3,
+        "all_three_tasks_count": 95,
+        "slowest_game": {
+          "seed": 3311043,
+          "spawn": "corner_shuffle",
+          "decision_ms": {
+            "count": 500,
+            "max": 173.817,
+            "mean": 4.780609999999999,
+            "p95": 10.761
+          }
+        },
+        "invalid_actions": 0,
+        "games_with_incomplete_frames_actions_receipts": 0
+      }
+    },
+    "mixed": {
+      "baseline": {
+        "all_tasks_rate": 0.65625,
+        "by_spawn": {
+          "clustered": {
+            "conditional": 46.053124999999994,
+            "n": 16,
+            "resource": 74.375
+          },
+          "corner_shuffle": {
+            "conditional": 41.7,
+            "n": 16,
+            "resource": 60.625
+          },
+          "fixed": {
+            "conditional": 40.25089285714286,
+            "n": 16,
+            "resource": 54.375
+          },
+          "uniform_free": {
+            "conditional": 39.919642857142854,
+            "n": 16,
+            "resource": 50.625
+          }
+        },
+        "combat_score": 13.738727678571427,
+        "conditional_score60": 41.98091517857142,
+        "decision_max_ms": 110.667,
+        "decision_mean_ms": 3.6807676562500005,
+        "n": 64,
+        "neural_changed": 0.0,
+        "neural_inference_mean_ms": 0.0,
+        "raw_tasks": 2.65625,
+        "reach_rate": 1.0,
+        "resource40": 50.15625,
+        "resource80": 59.53125,
+        "resource_final": 60.0,
+        "resource_score": 14.9609375,
+        "score45": 28.699665178571422
+      },
+      "planning": {
+        "all_tasks_rate": 0.65625,
+        "by_spawn": {
+          "clustered": {
+            "conditional": 45.909375,
+            "n": 16,
+            "resource": 76.875
+          },
+          "corner_shuffle": {
+            "conditional": 41.83124999999999,
+            "n": 16,
+            "resource": 61.25
+          },
+          "fixed": {
+            "conditional": 39.55625,
+            "n": 16,
+            "resource": 53.125
+          },
+          "uniform_free": {
+            "conditional": 41.6125,
+            "n": 16,
+            "resource": 56.875
+          }
+        },
+        "combat_score": 13.516406249999996,
+        "conditional_score60": 42.22734375,
+        "decision_max_ms": 173.817,
+        "decision_mean_ms": 5.538431531250001,
+        "n": 64,
+        "neural_changed": 0.0,
+        "neural_inference_mean_ms": 0.0,
+        "raw_tasks": 2.640625,
+        "reach_rate": 1.0,
+        "resource40": 53.28125,
+        "resource80": 61.25,
+        "resource_final": 62.03125,
+        "resource_score": 15.5078125,
+        "score45": 29.024218750000006,
+        "vs_baseline": {
+          "actual_bootstrap95": [
+            -1.134375,
+            1.828013392857143
+          ],
+          "actual_delta": 0.32455357142857144,
+          "bootstrap95": [
+            -1.1585937499999996,
+            1.6677455357142854
+          ],
+          "conditional_delta": 0.2464285714285715,
+          "paired_maps": 16,
+          "resource_delta": 2.03125
+        }
+      }
+    },
+    "official": {
+      "baseline": {
+        "all_tasks_rate": 0.828125,
+        "by_spawn": {
+          "clustered": {
+            "conditional": 53.3875,
+            "n": 16,
+            "resource": 98.125
+          },
+          "corner_shuffle": {
+            "conditional": 46.471875,
+            "n": 16,
+            "resource": 73.125
+          },
+          "fixed": {
+            "conditional": 48.15625,
+            "n": 16,
+            "resource": 76.25
+          },
+          "uniform_free": {
+            "conditional": 48.237500000000004,
+            "n": 16,
+            "resource": 78.125
+          }
+        },
+        "combat_score": 14.688281250000001,
+        "conditional_score60": 49.063281249999996,
+        "decision_max_ms": 73.35,
+        "decision_mean_ms": 2.821471843750001,
+        "n": 64,
+        "neural_changed": 0.0,
+        "neural_inference_mean_ms": 0.0,
+        "raw_tasks": 2.828125,
+        "reach_rate": 1.0,
+        "resource40": 60.9375,
+        "resource80": 78.75,
+        "resource_final": 81.40625,
+        "resource_score": 20.234375,
+        "score45": 34.922656249999996
+      },
+      "planning": {
+        "all_tasks_rate": 0.828125,
+        "by_spawn": {
+          "clustered": {
+            "conditional": 55.2625,
+            "n": 16,
+            "resource": 105.0
+          },
+          "corner_shuffle": {
+            "conditional": 46.8875,
+            "n": 16,
+            "resource": 72.5
+          },
+          "fixed": {
+            "conditional": 46.875,
+            "n": 16,
+            "resource": 73.125
+          },
+          "uniform_free": {
+            "conditional": 47.474999999999994,
+            "n": 16,
+            "resource": 75.625
+          }
+        },
+        "combat_score": 14.671875000000002,
+        "conditional_score60": 49.12500000000001,
+        "decision_max_ms": 120.848,
+        "decision_mean_ms": 4.490852281250002,
+        "n": 64,
+        "neural_changed": 0.0,
+        "neural_inference_mean_ms": 0.0,
+        "raw_tasks": 2.828125,
+        "reach_rate": 1.0,
+        "resource40": 60.9375,
+        "resource80": 79.0625,
+        "resource_final": 81.5625,
+        "resource_score": 20.3125,
+        "score45": 34.984375,
+        "vs_baseline": {
+          "actual_bootstrap95": [
+            -0.7664062500000001,
+            0.8343750000000001
+          ],
+          "actual_delta": 0.0617187500000001,
+          "bootstrap95": [
+            -0.92734375,
+            1.040625
+          ],
+          "conditional_delta": 0.06171874999999993,
+          "paired_maps": 16,
+          "resource_delta": 0.15625
+        }
+      }
+    }
+  },
+  "conclusion": {
+    "stable_score50_achieved": false,
+    "positive_generalization_established": false,
+    "reason": "32-map paired 95% confidence interval crosses zero. Preserve as independent experimental mode; original stage2 default unchanged."
+  }
+}

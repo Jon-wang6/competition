@@ -1,0 +1,76 @@
+Internal ctest changing into directory: /home/jon/robot/competition/build/rmtc_connection
+Test project /home/jon/robot/competition/build/rmtc_connection
+      Start  1: stage2_neural_test
+ 1/35 Test  #1: stage2_neural_test ................   Passed    0.14 sec
+      Start  2: stage2_neural_policy_test
+ 2/35 Test  #2: stage2_neural_policy_test .........   Passed    0.02 sec
+      Start  3: stage2_planning_test
+ 3/35 Test  #3: stage2_planning_test ..............   Passed    0.01 sec
+      Start  4: stage2_collection_transfer_test
+ 4/35 Test  #4: stage2_collection_transfer_test ...   Passed    0.00 sec
+      Start  5: coverage_route_test
+ 5/35 Test  #5: coverage_route_test ...............   Passed    0.01 sec
+      Start  6: frontier_exploration_test
+ 6/35 Test  #6: frontier_exploration_test .........   Passed    0.13 sec
+      Start  7: map_generator_test
+ 7/35 Test  #7: map_generator_test ................   Passed    0.08 sec
+      Start  8: practice_rules_test
+ 8/35 Test  #8: practice_rules_test ...............   Passed    0.01 sec
+      Start  9: practice_gateway_test
+ 9/35 Test  #9: practice_gateway_test .............   Passed    0.01 sec
+      Start 10: weighted_resource_test
+10/35 Test #10: weighted_resource_test ............   Passed    0.08 sec
+      Start 11: resource_route_test
+11/35 Test #11: resource_route_test ...............   Passed    0.03 sec
+      Start 12: resource_strategy_test
+12/35 Test #12: resource_strategy_test ............   Passed    0.00 sec
+      Start 13: stage2_duel_stalemate_test
+13/35 Test #13: stage2_duel_stalemate_test ........   Passed    0.01 sec
+      Start 14: stage2_strategy_test
+14/35 Test #14: stage2_strategy_test ..............   Passed    0.03 sec
+      Start 15: ai_protocol_test
+15/35 Test #15: ai_protocol_test ..................   Passed    0.01 sec
+      Start 16: stage2_events_test
+16/35 Test #16: stage2_events_test ................   Passed    0.01 sec
+      Start 17: stage2_frontier_value_test
+17/35 Test #17: stage2_frontier_value_test ........   Passed    0.00 sec
+      Start 18: stage2_exploration_value_test
+18/35 Test #18: stage2_exploration_value_test .....   Passed    0.00 sec
+      Start 19: stage2_resource_sweep_test
+19/35 Test #19: stage2_resource_sweep_test ........   Passed    0.00 sec
+      Start 20: stage2_collection_search_test
+20/35 Test #20: stage2_collection_search_test .....   Passed    0.00 sec
+      Start 21: stage2_battle_evidence_test
+21/35 Test #21: stage2_battle_evidence_test .......   Passed    0.00 sec
+      Start 22: stage2_navigation_progress_test
+22/35 Test #22: stage2_navigation_progress_test ...   Passed    0.00 sec
+      Start 23: stage2_enemy_belief_test
+23/35 Test #23: stage2_enemy_belief_test ..........   Passed    0.00 sec
+      Start 24: stage2_interference_test
+24/35 Test #24: stage2_interference_test ..........   Passed    0.00 sec
+      Start 25: stage2_resource_race_test
+25/35 Test #25: stage2_resource_race_test .........   Passed    0.01 sec
+      Start 26: stage2_acquisition_curve_test
+26/35 Test #26: stage2_acquisition_curve_test .....   Passed    0.01 sec
+      Start 27: stage2_purpose_test
+27/35 Test #27: stage2_purpose_test ...............   Passed    0.00 sec
+      Start 28: stage2_battle_curve_test
+28/35 Test #28: stage2_battle_curve_test ..........   Passed    0.01 sec
+      Start 29: stage2_rollout_test
+29/35 Test #29: stage2_rollout_test ...............   Passed    0.00 sec
+      Start 30: astar_test
+30/35 Test #30: astar_test ........................   Passed    0.00 sec
+      Start 31: protocol_test
+31/35 Test #31: protocol_test .....................   Passed    0.00 sec
+      Start 32: public_interface_test
+32/35 Test #32: public_interface_test .............   Passed    0.01 sec
+      Start 33: map_memory_test
+33/35 Test #33: map_memory_test ...................   Passed    0.02 sec
+      Start 34: mapping_node_test
+34/35 Test #34: mapping_node_test .................   Passed    0.38 sec
+      Start 35: mapping_events_test
+35/35 Test #35: mapping_events_test ...............   Passed    0.24 sec
+
+100% tests passed, 0 tests failed out of 35
+
+Total Test time (real) =   1.28 sec

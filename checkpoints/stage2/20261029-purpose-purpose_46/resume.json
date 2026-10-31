@@ -1,0 +1,434 @@
+{
+  "saved_at": "2026-10-30T00:31:46.380043+08:00",
+  "profile": "purpose_46",
+  "parameters": {
+    "acquisition_curve_enabled": true,
+    "acquisition_resource_weight": 3.63877,
+    "acquisition_explore_peak": 4.57999,
+    "acquisition_explore_floor": 0.0,
+    "acquisition_explore_half_ticks": 45.88984,
+    "acquisition_explore_shape": 1.50886,
+    "acquisition_silence_half_ticks": 20.29022,
+    "acquisition_silence_grace_ticks": 2,
+    "contested_resource_factor": 0.26668,
+    "competition_softness": 1.1375,
+    "route_information_weight": 0.0,
+    "information_softness": 0.0,
+    "resource_lookahead_weight": 0.0,
+    "temporal_policy_enabled": true,
+    "resource_age_ticks": 37.90788,
+    "temporal_resource_age_end": 8.98741,
+    "visible_resource_weight": 1.2,
+    "competition_weight": 1.0,
+    "temporal_competition_end": 1.0,
+    "temporal_route_information_end": 0.0,
+    "temporal_lookahead_end": 0.0,
+    "temporal_transition_ticks": 94,
+    "temporal_shape": 1.03189,
+    "opening_reach_weight": 0.70001,
+    "reach_ramp_ticks": 140,
+    "opening_combat_weight": 0.54141,
+    "combat_weight_end": 1.25868,
+    "combat_ramp_ticks": 228,
+    "frontier_resource_half_life": 48.33912,
+    "information_cap": 1.8093,
+    "joint_future_weight": 0.0,
+    "temporal_third_party_attack_end": 0.36647,
+    "temporal_third_party_risk_end": 0.05,
+    "purpose_enabled": true,
+    "purpose_resource_quiet_ticks": 8,
+    "purpose_resource_floor": 0.42361,
+    "purpose_battle_floor": 0.67991,
+    "purpose_intercept_weight": 0.70439,
+    "purpose_intercept_horizon": 3,
+    "purpose_heading_weight": 2.39938,
+    "purpose_escape_weight": 1.04687,
+    "purpose_chase_progress_ticks": 19,
+    "chase_shared_progress": true,
+    "attack_probability": 0.53329,
+    "hp_loss_cost": 0.01189,
+    "death_cost": 2.58207,
+    "future_exposure_cost": 0.03745,
+    "route_risk": 0.08031,
+    "remembered_risk": 0.00675,
+    "kill_reward_estimate": 16.27004,
+    "intent_chase_weight": 0.13194,
+    "intent_risk_weight": 0.28035,
+    "intent_heading_weight": 2.42915,
+    "third_party_attack_bonus": 0.09843,
+    "third_party_risk_discount": 0.38625,
+    "recent_enemy_search_weight": 1.43326,
+    "recent_enemy_half_life": 9.94954,
+    "recent_enemy_max_age": 29,
+    "patrol_value": 0.65567,
+    "patrol_stale_ticks": 68.25012,
+    "patrol_enemy_hint": 0.70746,
+    "chase_stall_ticks": 8,
+    "chase_cooldown_ticks": 12,
+    "event_fortress_value": 3.47708,
+    "event_fortress_hold": 2.02096,
+    "event_heal_value": 0.04323,
+    "event_pepper_value": 0.01468,
+    "mission_potential": 0.5556,
+    "switch_margin": 0.0245,
+    "travel_offset": 1.85861
+  },
+  "parameter_file": "/home/jon/robot/competition/checkpoints/stage2/20261029-purpose-purpose_46/parameters.yaml",
+  "validation": {
+    "profile": "purpose_46",
+    "parameters": {
+      "acquisition_curve_enabled": true,
+      "acquisition_resource_weight": 3.63877,
+      "acquisition_explore_peak": 4.57999,
+      "acquisition_explore_floor": 0.0,
+      "acquisition_explore_half_ticks": 45.88984,
+      "acquisition_explore_shape": 1.50886,
+      "acquisition_silence_half_ticks": 20.29022,
+      "acquisition_silence_grace_ticks": 2,
+      "contested_resource_factor": 0.26668,
+      "competition_softness": 1.1375,
+      "route_information_weight": 0.0,
+      "information_softness": 0.0,
+      "resource_lookahead_weight": 0.0,
+      "temporal_policy_enabled": true,
+      "resource_age_ticks": 37.90788,
+      "temporal_resource_age_end": 8.98741,
+      "visible_resource_weight": 1.2,
+      "competition_weight": 1.0,
+      "temporal_competition_end": 1.0,
+      "temporal_route_information_end": 0.0,
+      "temporal_lookahead_end": 0.0,
+      "temporal_transition_ticks": 94,
+      "temporal_shape": 1.03189,
+      "opening_reach_weight": 0.70001,
+      "reach_ramp_ticks": 140,
+      "opening_combat_weight": 0.54141,
+      "combat_weight_end": 1.25868,
+      "combat_ramp_ticks": 228,
+      "frontier_resource_half_life": 48.33912,
+      "information_cap": 1.8093,
+      "joint_future_weight": 0.0,
+      "temporal_third_party_attack_end": 0.36647,
+      "temporal_third_party_risk_end": 0.05,
+      "purpose_enabled": true,
+      "purpose_resource_quiet_ticks": 8,
+      "purpose_resource_floor": 0.42361,
+      "purpose_battle_floor": 0.67991,
+      "purpose_intercept_weight": 0.70439,
+      "purpose_intercept_horizon": 3,
+      "purpose_heading_weight": 2.39938,
+      "purpose_escape_weight": 1.04687,
+      "purpose_chase_progress_ticks": 19,
+      "chase_shared_progress": true,
+      "attack_probability": 0.53329,
+      "hp_loss_cost": 0.01189,
+      "death_cost": 2.58207,
+      "future_exposure_cost": 0.03745,
+      "route_risk": 0.08031,
+      "remembered_risk": 0.00675,
+      "kill_reward_estimate": 16.27004,
+      "intent_chase_weight": 0.13194,
+      "intent_risk_weight": 0.28035,
+      "intent_heading_weight": 2.42915,
+      "third_party_attack_bonus": 0.09843,
+      "third_party_risk_discount": 0.38625,
+      "recent_enemy_search_weight": 1.43326,
+      "recent_enemy_half_life": 9.94954,
+      "recent_enemy_max_age": 29,
+      "patrol_value": 0.65567,
+      "patrol_stale_ticks": 68.25012,
+      "patrol_enemy_hint": 0.70746,
+      "chase_stall_ticks": 8,
+      "chase_cooldown_ticks": 12,
+      "event_fortress_value": 3.47708,
+      "event_fortress_hold": 2.02096,
+      "event_heal_value": 0.04323,
+      "event_pepper_value": 0.01468,
+      "mission_potential": 0.5556,
+      "switch_margin": 0.0245,
+      "travel_offset": 1.85861
+    },
+    "accepted": false,
+    "gates": {
+      "production_totals_preserved": true,
+      "incumbent_totals_preserved": false,
+      "official_resource_preserved": true,
+      "mixed_resource_preserved": true,
+      "weighted_resource_improved": true,
+      "fifty_preserved": true,
+      "lower_tail_preserved": false
+    },
+    "comparisons": {
+      "official": {
+        "matched_maps": 128,
+        "candidate": "purpose_46",
+        "baseline": {
+          "n": 128,
+          "actual_mean": 31.437890625,
+          "conditional_mean": 45.344140625,
+          "conditional_p10": 33.5,
+          "conditional_min": 21.9,
+          "conditional_at_least_50": 50,
+          "conditional_at_least_50_rate": 0.390625,
+          "resource_mean": 68.203125,
+          "resource_at_least_80_rate": 0.421875,
+          "damage_mean": 499.5424107142857,
+          "damage_at_least_500_rate": 0.7890625,
+          "all_raw_tasks_rate": 0.796875,
+          "relative_actual_margin_mean": 6.092689732142857,
+          "decision_mean_ms": 4.796246875,
+          "decision_max_ms": 166.117,
+          "actual_ai_qualified_matches": 0
+        },
+        "candidate_metrics": {
+          "n": 128,
+          "actual_mean": 31.776171875,
+          "conditional_mean": 45.643359375,
+          "conditional_p10": 32.5,
+          "conditional_min": 17.5,
+          "conditional_at_least_50": 49,
+          "conditional_at_least_50_rate": 0.3828125,
+          "resource_mean": 69.21875,
+          "resource_at_least_80_rate": 0.4296875,
+          "damage_mean": 501.54017857142856,
+          "damage_at_least_500_rate": 0.75,
+          "all_raw_tasks_rate": 0.78125,
+          "relative_actual_margin_mean": 4.744475446428571,
+          "decision_mean_ms": 5.5390575,
+          "decision_max_ms": 192.849,
+          "actual_ai_qualified_matches": 0
+        },
+        "actual_paired": {
+          "mean_gain": 0.33828125000000014,
+          "bootstrap_95_interval": [
+            -0.5203125,
+            1.2074218750000003
+          ],
+          "wins_ties_losses": [
+            55,
+            31,
+            42
+          ]
+        },
+        "conditional_paired": {
+          "mean_gain": 0.2992187500000003,
+          "bootstrap_95_interval": [
+            -0.7542968749999995,
+            1.3273437500000003
+          ],
+          "wins_ties_losses": [
+            55,
+            31,
+            42
+          ]
+        },
+        "versus_incumbent": {
+          "matched_maps": 128,
+          "candidate": "purpose_46",
+          "baseline": {
+            "n": 128,
+            "actual_mean": 31.964955357142856,
+            "conditional_mean": 45.949330357142856,
+            "conditional_p10": 35.0,
+            "conditional_min": 22.5,
+            "conditional_at_least_50": 52,
+            "conditional_at_least_50_rate": 0.40625,
+            "resource_mean": 69.296875,
+            "resource_at_least_80_rate": 0.453125,
+            "damage_mean": 509.73214285714283,
+            "damage_at_least_500_rate": 0.875,
+            "all_raw_tasks_rate": 0.8046875,
+            "relative_actual_margin_mean": 6.026729910714286,
+            "decision_mean_ms": 4.71460678125,
+            "decision_max_ms": 169.797,
+            "actual_ai_qualified_matches": 0
+          },
+          "candidate_metrics": {
+            "n": 128,
+            "actual_mean": 31.776171875,
+            "conditional_mean": 45.643359375,
+            "conditional_p10": 32.5,
+            "conditional_min": 17.5,
+            "conditional_at_least_50": 49,
+            "conditional_at_least_50_rate": 0.3828125,
+            "resource_mean": 69.21875,
+            "resource_at_least_80_rate": 0.4296875,
+            "damage_mean": 501.54017857142856,
+            "damage_at_least_500_rate": 0.75,
+            "all_raw_tasks_rate": 0.78125,
+            "relative_actual_margin_mean": 4.744475446428571,
+            "decision_mean_ms": 5.5390575,
+            "decision_max_ms": 192.849,
+            "actual_ai_qualified_matches": 0
+          },
+          "actual_paired": {
+            "mean_gain": -0.18878348214285712,
+            "bootstrap_95_interval": [
+              -1.0558593749999998,
+              0.6535156249999997
+            ],
+            "wins_ties_losses": [
+              35,
+              50,
+              43
+            ]
+          },
+          "conditional_paired": {
+            "mean_gain": -0.3059709821428569,
+            "bootstrap_95_interval": [
+              -1.332254464285714,
+              0.690290178571429
+            ],
+            "wins_ties_losses": [
+              35,
+              50,
+              43
+            ]
+          }
+        }
+      },
+      "mixed": {
+        "matched_maps": 128,
+        "candidate": "purpose_46",
+        "baseline": {
+          "n": 128,
+          "actual_mean": 24.859988839285716,
+          "conditional_mean": 37.67248883928571,
+          "conditional_p10": 23.0,
+          "conditional_min": 7.4,
+          "conditional_at_least_50": 13,
+          "conditional_at_least_50_rate": 0.1015625,
+          "resource_mean": 53.828125,
+          "resource_at_least_80_rate": 0.1796875,
+          "damage_mean": 390.1432291666667,
+          "damage_at_least_500_rate": 0.4609375,
+          "all_raw_tasks_rate": 0.6015625,
+          "relative_actual_margin_mean": -4.016052827380952,
+          "decision_mean_ms": 7.7057471875,
+          "decision_max_ms": 171.681,
+          "actual_ai_qualified_matches": 0
+        },
+        "candidate_metrics": {
+          "n": 128,
+          "actual_mean": 26.26986607142857,
+          "conditional_mean": 39.043303571428574,
+          "conditional_p10": 29.9,
+          "conditional_min": 14.9,
+          "conditional_at_least_50": 21,
+          "conditional_at_least_50_rate": 0.1640625,
+          "resource_mean": 54.453125,
+          "resource_at_least_80_rate": 0.203125,
+          "damage_mean": 438.38169642857144,
+          "damage_at_least_500_rate": 0.59375,
+          "all_raw_tasks_rate": 0.59375,
+          "relative_actual_margin_mean": -3.7130022321428573,
+          "decision_mean_ms": 8.441627453125,
+          "decision_max_ms": 195.529,
+          "actual_ai_qualified_matches": 0
+        },
+        "actual_paired": {
+          "mean_gain": 1.409877232142857,
+          "bootstrap_95_interval": [
+            0.3244419642857139,
+            2.4845424107142855
+          ],
+          "wins_ties_losses": [
+            65,
+            21,
+            42
+          ]
+        },
+        "conditional_paired": {
+          "mean_gain": 1.3708147321428568,
+          "bootstrap_95_interval": [
+            0.015122767857142588,
+            2.689564732142857
+          ],
+          "wins_ties_losses": [
+            64,
+            21,
+            43
+          ]
+        },
+        "versus_incumbent": {
+          "matched_maps": 128,
+          "candidate": "purpose_46",
+          "baseline": {
+            "n": 128,
+            "actual_mean": 25.028013392857144,
+            "conditional_mean": 37.95770089285714,
+            "conditional_p10": 25.4,
+            "conditional_min": 9.35,
+            "conditional_at_least_50": 12,
+            "conditional_at_least_50_rate": 0.09375,
+            "resource_mean": 53.984375,
+            "resource_at_least_80_rate": 0.1875,
+            "damage_mean": 397.2935267857143,
+            "damage_at_least_500_rate": 0.4375,
+            "all_raw_tasks_rate": 0.625,
+            "relative_actual_margin_mean": -4.38046875,
+            "decision_mean_ms": 7.82963596875,
+            "decision_max_ms": 170.834,
+            "actual_ai_qualified_matches": 0
+          },
+          "candidate_metrics": {
+            "n": 128,
+            "actual_mean": 26.26986607142857,
+            "conditional_mean": 39.043303571428574,
+            "conditional_p10": 29.9,
+            "conditional_min": 14.9,
+            "conditional_at_least_50": 21,
+            "conditional_at_least_50_rate": 0.1640625,
+            "resource_mean": 54.453125,
+            "resource_at_least_80_rate": 0.203125,
+            "damage_mean": 438.38169642857144,
+            "damage_at_least_500_rate": 0.59375,
+            "all_raw_tasks_rate": 0.59375,
+            "relative_actual_margin_mean": -3.7130022321428573,
+            "decision_mean_ms": 8.441627453125,
+            "decision_max_ms": 195.529,
+            "actual_ai_qualified_matches": 0
+          },
+          "actual_paired": {
+            "mean_gain": 1.2418526785714286,
+            "bootstrap_95_interval": [
+              0.08582589285714289,
+              2.37890625
+            ],
+            "wins_ties_losses": [
+              61,
+              24,
+              43
+            ]
+          },
+          "conditional_paired": {
+            "mean_gain": 1.0856026785714286,
+            "bootstrap_95_interval": [
+              -0.23710937500000018,
+              2.3550223214285713
+            ],
+            "wins_ties_losses": [
+              60,
+              24,
+              44
+            ]
+          }
+        }
+      }
+    },
+    "paid_calls": 0
+  },
+  "deployed": false,
+  "previous_checkpoint": "/home/jon/robot/competition/checkpoints/stage2/20261029-joint04",
+  "user_constraints": [
+    "采集权重整局不衰减，只有探索随时间降低。",
+    "无合适资源可采时比较截击、巡敌、堡垒/回血/机关；资源重现可重返采集。",
+    "保存当前组，后续以此和joint_04对照继续联合训练；所有决策代码仍为C++。"
+  ],
+  "next_diagnosis": [
+    "按完整轨迹区分资源被抢、路线绕行与目标中断。",
+    "分析追逐预算是否过早换目标，及截击概率与实际下一步的误差。",
+    "本轮验证地图已看过，后续新结论必须用新的盲测种子。"
+  ],
+  "paid_calls": 0
+}

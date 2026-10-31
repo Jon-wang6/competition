@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<!--
+  文件：package.xml
+  用途：向ROS 2/colcon声明rmtc_connection包的名称、版本、维护者和依赖。
+  rclcpp提供C++节点接口，std_msgs提供String消息，nlohmann_json负责JSON。
+  具体源文件、编译及安装规则由同目录的CMakeLists.txt定义。
+  XML声明必须位于文件最前，因此文件说明放在声明之后。
+-->
+<package format="3">
+  <name>rmtc_connection</name>
+  <version>0.1.0</version>
+  <description>RMTC public ROS interface connection and receipt verification.</description>
+  <maintainer email="jon@example.invalid">Jon</maintainer>
+  <license>MIT</license>
+  <buildtool_depend>ament_cmake</buildtool_depend>
+  <depend>rclcpp</depend>
+  <depend>std_msgs</depend>
+  <depend>nlohmann_json</depend>
+  <depend>boost</depend>
+  <depend>libcurl_vendor</depend>
+  <depend>nav_msgs</depend>
+  <depend>geometry_msgs</depend>
+  <depend>visualization_msgs</depend>
+  <depend>tf2_ros</depend>
+  <!-- C++神经网络训练器和梯度测试使用Eigen；正式网络推理只依赖标准C++。 -->
+  <test_depend>eigen</test_depend>
+  <exec_depend>rviz2</exec_depend>
+  <exec_depend>ament_index_python</exec_depend>
+  <!-- .launch.py文件使用的运行时启动接口，业务程序仍由C++实现。 -->
+  <exec_depend>launch</exec_depend>
+  <exec_depend>launch_ros</exec_depend>
+  <exec_depend>ros2launch</exec_depend>
+  <export><build_type>ament_cmake</build_type></export>
+</package>

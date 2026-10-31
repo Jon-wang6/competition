@@ -1,0 +1,64 @@
+Internal ctest changing into directory: /home/jon/robot/competition/build/rmtc_connection
+Test project /home/jon/robot/competition/build/rmtc_connection
+      Start 29: mapping_events_test
+      Start  2: frontier_exploration_test
+      Start 28: mapping_node_test
+      Start  3: map_generator_test
+ 1/29 Test #28: mapping_node_test .................   Passed    0.24 sec
+      Start 20: stage2_resource_race_test
+ 2/29 Test #20: stage2_resource_race_test .........   Passed    0.02 sec
+      Start  6: weighted_resource_test
+ 3/29 Test #29: mapping_events_test ...............   Passed    0.36 sec
+      Start 21: stage2_acquisition_curve_test
+ 4/29 Test  #3: map_generator_test ................   Passed    0.37 sec
+      Start 22: stage2_purpose_test
+ 5/29 Test #21: stage2_acquisition_curve_test .....   Passed    0.02 sec
+      Start  7: resource_route_test
+ 6/29 Test #22: stage2_purpose_test ...............   Passed    0.02 sec
+      Start  5: practice_gateway_test
+ 7/29 Test  #5: practice_gateway_test .............   Passed    0.04 sec
+      Start 15: stage2_collection_search_test
+ 8/29 Test #15: stage2_collection_search_test .....   Passed    0.01 sec
+      Start 19: stage2_interference_test
+ 9/29 Test #19: stage2_interference_test ..........   Passed    0.00 sec
+      Start  1: coverage_route_test
+10/29 Test  #1: coverage_route_test ...............   Passed    0.04 sec
+      Start 17: stage2_navigation_progress_test
+11/29 Test #17: stage2_navigation_progress_test ...   Passed    0.01 sec
+      Start 23: stage2_rollout_test
+12/29 Test  #7: resource_route_test ...............   Passed    0.12 sec
+      Start 16: stage2_battle_evidence_test
+13/29 Test #16: stage2_battle_evidence_test .......   Passed    0.01 sec
+      Start 13: stage2_exploration_value_test
+14/29 Test #23: stage2_rollout_test ...............   Passed    0.03 sec
+      Start 26: public_interface_test
+15/29 Test #13: stage2_exploration_value_test .....   Passed    0.01 sec
+      Start 18: stage2_enemy_belief_test
+16/29 Test #18: stage2_enemy_belief_test ..........   Passed    0.00 sec
+      Start  9: stage2_strategy_test
+17/29 Test  #6: weighted_resource_test ............   Passed    0.30 sec
+      Start 14: stage2_resource_sweep_test
+18/29 Test #26: public_interface_test .............   Passed    0.04 sec
+      Start  4: practice_rules_test
+19/29 Test  #9: stage2_strategy_test ..............   Passed    0.03 sec
+      Start 12: stage2_frontier_value_test
+20/29 Test #14: stage2_resource_sweep_test ........   Passed    0.01 sec
+      Start 11: stage2_events_test
+21/29 Test  #4: practice_rules_test ...............   Passed    0.01 sec
+      Start 10: ai_protocol_test
+22/29 Test #12: stage2_frontier_value_test ........   Passed    0.01 sec
+      Start 24: astar_test
+23/29 Test #10: ai_protocol_test ..................   Passed    0.01 sec
+      Start 25: protocol_test
+24/29 Test #11: stage2_events_test ................   Passed    0.01 sec
+      Start  8: resource_strategy_test
+25/29 Test #24: astar_test ........................   Passed    0.01 sec
+      Start 27: map_memory_test
+26/29 Test #25: protocol_test .....................   Passed    0.01 sec
+27/29 Test  #2: frontier_exploration_test .........   Passed    0.60 sec
+28/29 Test  #8: resource_strategy_test ............   Passed    0.01 sec
+29/29 Test #27: map_memory_test ...................   Passed    0.01 sec
+
+100% tests passed, 0 tests failed out of 29
+
+Total Test time (real) =   0.61 sec

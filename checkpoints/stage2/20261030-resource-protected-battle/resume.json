@@ -1,0 +1,12 @@
+{
+  "status": "experimental_candidate",
+  "profile": "v4opening40",
+  "objective": "Preserve resource points while improving average combat points with timed collection and purposeful pursuit.",
+  "next_training_parameters": "/home/jon/robot/competition/checkpoints/stage2/20261030-resource-protected-battle/parameters.yaml",
+  "runtime": "/home/jon/robot/competition/runtime/stage2-battle-curve-20261030-1302",
+  "source_checkpoint": "/home/jon/robot/competition/checkpoints/stage2/20261030-fortress-aware",
+  "production_parameter_group_replaced": false,
+  "stable_gain_demonstrated": false,
+  "qualification_note": "Offline cached event interpretations do not grant real AI task-score eligibility.",
+  "launch_command": "ros2 launch rmtc_connection stage2.launch.py strategy_params_file:=/home/jon/robot/competition/checkpoints/stage2/20261030-resource-protected-battle/parameters.yaml"
+}

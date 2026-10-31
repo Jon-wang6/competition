@@ -1,0 +1,10 @@
+{
+  "built_sha256": "8eff55dbeefa48be0ad07fb5a73c21285a171f42018e809a6b91427442334d46",
+  "tested_sha256": "8eff55dbeefa48be0ad07fb5a73c21285a171f42018e809a6b91427442334d46",
+  "installed_sha256": "ac2c307277bc32f89d53ba2cb716b64e0a3e9e7cf37396a499f64c893943bd2b",
+  "tested_equals_built": true,
+  "installed_equals_tested_after_standard_cmake_rpath_removal": true,
+  "installed_parameters_match_frozen_source": true,
+  "original_default_preserved": true,
+  "controller_and_presence_trainer_in_compilation_database": true
+}

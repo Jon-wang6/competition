@@ -1,0 +1,165 @@
+Arguments (pass arguments as '<name>:=<value>'):
+
+    'stage':
+        One of: ['2']
+        (default: '2')
+
+    'mode':
+        One of: ['stage2_planning']
+        (default: 'stage2_planning')
+
+    'tick_ms':
+        no description given
+        (default: '500')
+
+    'bots':
+        no description given
+        (default: 'B,C,D')
+
+    'project_dir':
+        唯一编译及安装根目录
+        (default: '/home/jon/robot/competition')
+
+    'update':
+        启动前重新编译最新代码. Valid choices are: ['true', 'false']
+        (default: 'true')
+
+    'seed':
+        -1随机；其余整数（含0）固定；尺寸按阶段20×20/24×24
+        (default: '0')
+
+    'max_ticks':
+        留空按阶段100/500，同时传给裁判与选手
+        (default: '')
+
+    'team':
+        本队席位. Valid choices are: ['A', 'B', 'C', 'D']
+        (default: 'A')
+
+    'team_name':
+        本队显示名称
+        (default: 'Jon C++ 接入测试')
+
+    'domain_id':
+        三端共用的公开ROS域
+        (default: '27')
+
+    'internal_domain_id':
+        官方内部域，留空为公开域加1
+        (default: '')
+
+    'port':
+        裁判网页端口
+        (default: '8080')
+
+    'use_rviz':
+        是否打开RViz；false仍启动建图. Valid choices are: ['true', 'false']
+        (default: 'true')
+
+    'resource_order':
+        留空读取最新C++策略配置. Valid choices are: ['', 'tour', 'nearest', 'weighted', 'joint']
+        (default: '')
+
+    'phase_enabled':
+        第二阶段分期实验开关；留空读取C++配置. Valid choices are: ['', 'true', 'false']
+        (default: '')
+
+    'separate_goal_switch_bonus':
+        目标惯性与动作收益分离；留空读取C++配置. Valid choices are: ['', 'true', 'false']
+        (default: '')
+
+    'resource_race_enabled':
+        整局一次性资源优先与争抢路线；留空读取C++配置. Valid choices are: ['', 'true', 'false']
+        (default: '')
+
+    'acquisition_curve_enabled':
+        固定采集偏好与探索时间衰减；留空读取C++配置. Valid choices are: ['', 'true', 'false']
+        (default: '')
+
+    'temporal_policy_enabled':
+        按参数含义拟合前后期曲线；留空读取C++配置. Valid choices are: ['', 'true', 'false']
+        (default: '')
+
+    'purpose_enabled':
+        可选覆盖目的切换与截击预测开关. Valid choices are: ['', 'true', 'false']
+        (default: '')
+
+    'strategy_params_file':
+        可选保存的ROS策略参数YAML路径
+        (default: '')
+
+    'k_edge':
+        留空读取C++边缘系数
+        (default: '')
+
+    'k_value':
+        留空读取C++价值系数
+        (default: '')
+
+    'config_file':
+        显式完整地图配置，优先于seed
+        (default: '')
+
+    'ai_mode':
+        练习AI模式. Valid choices are: ['mock', 'real']
+        (default: 'mock')
+
+    'ai_enabled':
+        第二阶段另起AI进程，第一阶段忽略. Valid choices are: ['true', 'false']
+        (default: 'true')
+
+    'ai_url':
+        留空使用本次网页端口的聊天接口
+        (default: '')
+
+    'ai_service_mode':
+        留空与练习ai_mode同步；正式单独启动可选official. Valid choices are: ['', 'mock', 'real', 'official']
+        (default: '')
+
+    'ai_model':
+        留空使用网关默认模型
+        (default: '')
+
+    'ai_json_mode':
+        上游支持时要求JSON对象输出. Valid choices are: ['true', 'false']
+        (default: 'false')
+
+    'ai_disable_thinking':
+        DeepSeek扩展：关闭思考模式. Valid choices are: ['true', 'false']
+        (default: 'true')
+
+    'ai_token_env':
+        令牌环境变量名
+        (default: 'RMTC_AI_TOKEN')
+
+    'ai_timeout_ms':
+        独立AI进程HTTP超时毫秒
+        (default: '10000')
+
+    'ai_max_calls':
+        本程序每局请求预算
+        (default: '40')
+
+    'ai_cooldown_ms':
+        AI请求最小间隔毫秒
+        (default: '500')
+
+    'ai_log_file':
+        可选独立AI JSONL路径
+        (default: '')
+
+    'referee_dir':
+        本地v1.2修正版；官方原包保留
+        (default: PathJoinSubstitution('LaunchConfig('project_dir'), 'referee', 'local_v1.2', 'rmtc_practice''))
+
+    'data_dir':
+        裁判运行记录
+        (default: PathJoinSubstitution('LaunchConfig('project_dir'), 'runtime', 'referee''))
+
+    'ros_log_dir':
+        三端ROS日志目录
+        (default: PathJoinSubstitution('LaunchConfig('project_dir'), 'runtime', 'ros''))
+
+    'log_file':
+        可选选手JSONL日志
+        (default: '')

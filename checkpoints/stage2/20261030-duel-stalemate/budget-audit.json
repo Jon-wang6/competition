@@ -1,0 +1,14 @@
+{
+  "actual_account_balance_difference_cny": 4.6,
+  "analysis_cny_by_returned_usage": 3.1506696,
+  "runtime_cny_by_returned_usage": 1.4521275200000028,
+  "unknown_request_reserved_upper_cny": 0.068368,
+  "combined_conservative_upper_cny": 4.671165120000003,
+  "authorized_total_ceiling_cny": 5.0,
+  "all_paid_call_processes_stopped": true,
+  "note": "User corrected the purpose: earlier analysis calls were stopped. They are included in the same total budget. Subsequent DeepSeek calls came only from running AI nodes. Balance difference and published-price usage estimates differ; both are reported rather than conflated.",
+  "balance_difference_at_analysis_stop_cny": 2.61,
+  "balance_difference_after_analysis_stop_cny": 1.99,
+  "known_usage_total_cny": 4.602797120000003,
+  "billing_period_note": "Intermediate balance queries can settle late; the before/after-stop balance intervals cannot reliably attribute costs by purpose. Purpose breakdown uses returned token usage and published prices. Final account delta matches the known total within cent rounding."
+}

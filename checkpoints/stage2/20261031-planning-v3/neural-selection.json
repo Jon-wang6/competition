@@ -1,0 +1,60 @@
+{
+  "comparison": {
+    "medium_250": {
+      "delta_vs_core": -0.029464285714285388,
+      "map_bootstrap95": [
+        -2.0749999999999993,
+        2.077232142857143
+      ],
+      "p10": 32.5,
+      "core_p10": 31.3,
+      "raw_resource": 69.0625,
+      "collection_changed": 1503
+    },
+    "small_250": {
+      "delta_vs_core": 0.7750000000000002,
+      "map_bootstrap95": [
+        -0.5281249999999993,
+        2.25625
+      ],
+      "p10": 32.5,
+      "core_p10": 31.3,
+      "raw_resource": 72.8125,
+      "collection_changed": 2168
+    },
+    "small_125": {
+      "delta_vs_core": 0.21138392857142863,
+      "map_bootstrap95": [
+        -0.6276785714285713,
+        1.247321428571429
+      ],
+      "p10": 30.25,
+      "core_p10": 31.3,
+      "raw_resource": 70.9375,
+      "collection_changed": 657
+    },
+    "medium_125": {
+      "delta_vs_core": 0.6250000000000001,
+      "map_bootstrap95": [
+        -0.675,
+        1.803125
+      ],
+      "p10": 32.5,
+      "core_p10": 31.3,
+      "raw_resource": 72.5,
+      "collection_changed": 562
+    }
+  },
+  "selected": "core",
+  "reason": "No nonzero neural candidate establishes positive map-clustered 95% gain vs core; keep separately saved research checkpoints disabled.",
+  "observed_games": 192,
+  "paid_api_calls": 0,
+  "actual_collection_root_changes": {
+    "medium_250": 1503,
+    "small_250": 2168,
+    "small_125": 657,
+    "core": 0,
+    "baseline": 0,
+    "medium_125": 562
+  }
+}

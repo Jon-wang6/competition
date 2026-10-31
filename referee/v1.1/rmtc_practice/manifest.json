@@ -1,0 +1,25 @@
+{
+  "name": "rmtc-practice",
+  "format_version": 1,
+  "platform": "Ubuntu 22.04 / ROS 2 Humble / x86_64",
+  "practice_only": true,
+  "core_source_sha256": "b3912533613350d3dae515b70fd66d8414a4f508a03992651e1913ea71ce4dd7",
+  "files": {
+    "CONTESTANT_PROTOCOL.md": "c7f7d4d31faaae316a2722d45715acce38f52bb5de640ae43a18bd4d51b1f89a",
+    "README.md": "5fed94d60eef0a0f141645e3555340a45613105e1c667f1aeb7057e9be525555",
+    "bin/referee_node": "26850f21fdbb92a2063c49451fb5928e689bbe64cb0c90692a3e693534afcb6c",
+    "bin/robot_node": "09ba71673f0451d07ee4d62d9c5a43085478ae86b0892534cee7ca14bcb5f8aa",
+    "bin/scoring_node": "8643de36ec8ae1f071309f07324a334268b520ca169c86991dae784284df74b0",
+    "bin/simulator_node": "2f0157f77cabc5ea80128509913128ae6e26c38c8572dcd2c67ab8427bd5c3e0",
+    "bin/validate_config": "65880a3c77522c949ea005c69e0d7fd65f5ec49476a1e76202dbb86cd246e917",
+    "config/stage1.json": "76cb931722c6faa49639288fa5a21704d3390bd52ad2f1d1d95c15acc6e1d285",
+    "config/stage2.json": "35ef0e02ac17222f2e087845060a281476375564842f49aa3e0cdfbe70ca3f71",
+    "index.html": "13d6522616056c7d0e4b7b05b655af2a815287ac13ef6c2ee777cd3eeaff70bd",
+    "internal_ros.py": "fdb46717efda636e494f504856bb0995169328212428e6cf99eaf60dc8ae6e0a",
+    "practice.py": "a72f6be6915a75c142298ff1b8f3d1ff2adbe3d763eaa35915747459c0b0d82a",
+    "rules.txt": "78f26623fce84c5b886ba40bd8f8445ea6dd856154f8e3b031a403ad80c3be48",
+    "start_bot.sh": "ce72be9a7d77d4c0f4af931c8fe4cba78458cb0eeee7ea90b138d8dd3165954a",
+    "start_referee.sh": "25bf328c9e692efea85ba6d53c6b025e3227c1fc0467439e41c1d1b8a960369c",
+    "测试使用教程.md": "c368307ae0ec7fcd131817c2d73c481b89c9de05b6e1c3c8ceb3076be8a0ff9a"
+  }
+}

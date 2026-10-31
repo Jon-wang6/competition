@@ -1,0 +1,15 @@
+{
+  "runtime": "/home/jon/robot/competition/runtime/stage2-planning-v3-20261031",
+  "corpus": "/home/jon/robot/competition/runtime/stage2-planning-v3-20261031/corpus",
+  "training_maps": 64,
+  "training_games": 256,
+  "dataset_states": 6142,
+  "training_states": 5054,
+  "validation_states": 1088,
+  "neural_closed_loop_games": 192,
+  "ablation_games": 256,
+  "smoke_games": 8,
+  "paid_api_calls": 0,
+  "final_holdout": "complete: 32 unseen maps x 4 births x 2 profiles = 256 games",
+  "final_report": "/home/jon/robot/competition/runtime/stage2-planning-v3-20261031/final-evaluation.json"
+}

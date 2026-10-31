@@ -1,0 +1,36 @@
+{
+  "selection": "Frozen from development scores before examining unseen holdout scores",
+  "development_maps": 12,
+  "development_cases": 48,
+  "selected": [
+    {
+      "profile": "warm_small",
+      "model": "/home/jon/robot/competition/runtime/stage2-neural-20261030-v2/models/frozen-warm-small.json",
+      "shape": [
+        64,
+        64,
+        32,
+        1
+      ],
+      "weight": 0.5,
+      "margin": 0.003,
+      "development_score45": 30.436458333333334
+    },
+    {
+      "profile": "wide_strong",
+      "model": "/home/jon/robot/competition/runtime/stage2-neural-20261030-v2/models/frozen-wide-pair.json",
+      "shape": [
+        64,
+        128,
+        64,
+        1
+      ],
+      "weight": 1,
+      "margin": 0.015,
+      "development_score45": 30.288244047619045
+    }
+  ],
+  "holdout_seed": 1143100,
+  "holdout_maps": 32,
+  "holdout_cases_per_profile": 128
+}

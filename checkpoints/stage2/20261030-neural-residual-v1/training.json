@@ -1,0 +1,1774 @@
+{
+  "before": {
+    "baseline_teacher_agreement": 0.9455493968046952,
+    "mse": 0.0015940093868162084,
+    "samples": 17008,
+    "states": 3067,
+    "teacher_action_agreement": 0.9455493968046952,
+    "teacher_regret": 0.002599945189695493,
+    "zero_network_mse": 0.0015940093868162084
+  },
+  "best_validation_mse": 0.0016680180016828733,
+  "epochs": [
+    {
+      "epoch": 1,
+      "seconds": 0.128860108,
+      "train": {
+        "baseline_teacher_agreement": 0.9468695053894962,
+        "mse": 0.0015088603524493394,
+        "samples": 73473,
+        "states": 13081,
+        "teacher_action_agreement": 0.9354024921642077,
+        "teacher_regret": 0.002448315920195937,
+        "zero_network_mse": 0.0014281805421163143
+      },
+      "validation": {
+        "baseline_teacher_agreement": 0.9455493968046952,
+        "mse": 0.0016680180016828733,
+        "samples": 17008,
+        "states": 3067,
+        "teacher_action_agreement": 0.9367460058689273,
+        "teacher_regret": 0.0025878710470572347,
+        "zero_network_mse": 0.0015940093868162084
+      }
+    },
+    {
+      "epoch": 2,
+      "seconds": 0.259017648,
+      "train": {
+        "baseline_teacher_agreement": 0.9468695053894962,
+        "mse": 0.001511674913168489,
+        "samples": 73473,
+        "states": 13081,
+        "teacher_action_agreement": 0.9106337435975843,
+        "teacher_regret": 0.002685775943433668,
+        "zero_network_mse": 0.0014281805421163143
+      },
+      "validation": {
+        "baseline_teacher_agreement": 0.9455493968046952,
+        "mse": 0.001672103120236277,
+        "samples": 17008,
+        "states": 3067,
+        "teacher_action_agreement": 0.8999021845451581,
+        "teacher_regret": 0.002698815090298309,
+        "zero_network_mse": 0.0015940093868162084
+      }
+    },
+    {
+      "epoch": 3,
+      "seconds": 0.387798913,
+      "train": {
+        "baseline_teacher_agreement": 0.9468695053894962,
+        "mse": 0.0015655345680057739,
+        "samples": 73473,
+        "states": 13081,
+        "teacher_action_agreement": 0.9333384297836557,
+        "teacher_regret": 0.0025464352980472896,
+        "zero_network_mse": 0.0014281805421163143
+      },
+      "validation": {
+        "baseline_teacher_agreement": 0.9455493968046952,
+        "mse": 0.0017324867189022018,
+        "samples": 17008,
+        "states": 3067,
+        "teacher_action_agreement": 0.9325073361591132,
+        "teacher_regret": 0.0025736315327055856,
+        "zero_network_mse": 0.0015940093868162084
+      }
+    },
+    {
+      "epoch": 4,
+      "seconds": 0.516407176,
+      "train": {
+        "baseline_teacher_agreement": 0.9468695053894962,
+        "mse": 0.0015964098859805136,
+        "samples": 73473,
+        "states": 13081,
+        "teacher_action_agreement": 0.9269933491323293,
+        "teacher_regret": 0.0024314790024764135,
+        "zero_network_mse": 0.0014281805421163143
+      },
+      "validation": {
+        "baseline_teacher_agreement": 0.9455493968046952,
+        "mse": 0.0017686492304325259,
+        "samples": 17008,
+        "states": 3067,
+        "teacher_action_agreement": 0.9090316269970655,
+        "teacher_regret": 0.00256216121217805,
+        "zero_network_mse": 0.0015940093868162084
+      }
+    },
+    {
+      "epoch": 5,
+      "seconds": 0.644491401,
+      "train": {
+        "baseline_teacher_agreement": 0.9468695053894962,
+        "mse": 0.0015995465657842381,
+        "samples": 73473,
+        "states": 13081,
+        "teacher_action_agreement": 0.9352495986545372,
+        "teacher_regret": 0.0025451021270824986,
+        "zero_network_mse": 0.0014281805421163143
+      },
+      "validation": {
+        "baseline_teacher_agreement": 0.9455493968046952,
+        "mse": 0.001783524637719247,
+        "samples": 17008,
+        "states": 3067,
+        "teacher_action_agreement": 0.9341375937398109,
+        "teacher_regret": 0.0026223862084512194,
+        "zero_network_mse": 0.0015940093868162084
+      }
+    },
+    {
+      "epoch": 6,
+      "seconds": 0.773770693,
+      "train": {
+        "baseline_teacher_agreement": 0.9468695053894962,
+        "mse": 0.0015748101295295464,
+        "samples": 73473,
+        "states": 13081,
+        "teacher_action_agreement": 0.9282164972096935,
+        "teacher_regret": 0.0025504107117367107,
+        "zero_network_mse": 0.0014281805421163143
+      },
+      "validation": {
+        "baseline_teacher_agreement": 0.9455493968046952,
+        "mse": 0.0017584678661985277,
+        "samples": 17008,
+        "states": 3067,
+        "teacher_action_agreement": 0.9201173785458102,
+        "teacher_regret": 0.0025911937335054906,
+        "zero_network_mse": 0.0015940093868162084
+      }
+    },
+    {
+      "epoch": 7,
+      "seconds": 0.902797215,
+      "train": {
+        "baseline_teacher_agreement": 0.9468695053894962,
+        "mse": 0.0015982049725217727,
+        "samples": 73473,
+        "states": 13081,
+        "teacher_action_agreement": 0.9269933491323293,
+        "teacher_regret": 0.002584939064364335,
+        "zero_network_mse": 0.0014281805421163143
+      },
+      "validation": {
+        "baseline_teacher_agreement": 0.9455493968046952,
+        "mse": 0.0017846007758978992,
+        "samples": 17008,
+        "states": 3067,
+        "teacher_action_agreement": 0.9197913270296707,
+        "teacher_regret": 0.0026509185269399677,
+        "zero_network_mse": 0.0015940093868162084
+      }
+    },
+    {
+      "epoch": 8,
+      "seconds": 1.032728131,
+      "train": {
+        "baseline_teacher_agreement": 0.9468695053894962,
+        "mse": 0.0016919749020544346,
+        "samples": 73473,
+        "states": 13081,
+        "teacher_action_agreement": 0.9276813699258466,
+        "teacher_regret": 0.0022913026607231683,
+        "zero_network_mse": 0.0014281805421163143
+      },
+      "validation": {
+        "baseline_teacher_agreement": 0.9455493968046952,
+        "mse": 0.0018993663766677937,
+        "samples": 17008,
+        "states": 3067,
+        "teacher_action_agreement": 0.9250081512879035,
+        "teacher_regret": 0.00260328136466737,
+        "zero_network_mse": 0.0015940093868162084
+      }
+    },
+    {
+      "epoch": 9,
+      "seconds": 1.169984395,
+      "train": {
+        "baseline_teacher_agreement": 0.9468695053894962,
+        "mse": 0.0017390268486184573,
+        "samples": 73473,
+        "states": 13081,
+        "teacher_action_agreement": 0.9266875621129883,
+        "teacher_regret": 0.0024621641848373566,
+        "zero_network_mse": 0.0014281805421163143
+      },
+      "validation": {
+        "baseline_teacher_agreement": 0.9455493968046952,
+        "mse": 0.0019479896999507961,
+        "samples": 17008,
+        "states": 3067,
+        "teacher_action_agreement": 0.9240299967394848,
+        "teacher_regret": 0.0028260956118641334,
+        "zero_network_mse": 0.0015940093868162084
+      }
+    },
+    {
+      "epoch": 10,
+      "seconds": 1.307570461,
+      "train": {
+        "baseline_teacher_agreement": 0.9468695053894962,
+        "mse": 0.0016686791535194514,
+        "samples": 73473,
+        "states": 13081,
+        "teacher_action_agreement": 0.9109395306169253,
+        "teacher_regret": 0.002340506374591835,
+        "zero_network_mse": 0.0014281805421163143
+      },
+      "validation": {
+        "baseline_teacher_agreement": 0.9455493968046952,
+        "mse": 0.0018746748809222585,
+        "samples": 17008,
+        "states": 3067,
+        "teacher_action_agreement": 0.8972937724160417,
+        "teacher_regret": 0.0027870989622038682,
+        "zero_network_mse": 0.0015940093868162084
+      }
+    },
+    {
+      "epoch": 11,
+      "seconds": 1.450207844,
+      "train": {
+        "baseline_teacher_agreement": 0.9468695053894962,
+        "mse": 0.0018554789590550134,
+        "samples": 73473,
+        "states": 13081,
+        "teacher_action_agreement": 0.9325739622353031,
+        "teacher_regret": 0.0021583730363722645,
+        "zero_network_mse": 0.0014281805421163143
+      },
+      "validation": {
+        "baseline_teacher_agreement": 0.9455493968046952,
+        "mse": 0.0021038503614201685,
+        "samples": 17008,
+        "states": 3067,
+        "teacher_action_agreement": 0.93478969677209,
+        "teacher_regret": 0.0025546274402906163,
+        "zero_network_mse": 0.0015940093868162084
+      }
+    },
+    {
+      "epoch": 12,
+      "seconds": 1.596988312,
+      "train": {
+        "baseline_teacher_agreement": 0.9468695053894962,
+        "mse": 0.0017296802550141605,
+        "samples": 73473,
+        "states": 13081,
+        "teacher_action_agreement": 0.9243941594679306,
+        "teacher_regret": 0.0021605189428442503,
+        "zero_network_mse": 0.0014281805421163143
+      },
+      "validation": {
+        "baseline_teacher_agreement": 0.9455493968046952,
+        "mse": 0.0019473058586905912,
+        "samples": 17008,
+        "states": 3067,
+        "teacher_action_agreement": 0.9129442451907401,
+        "teacher_regret": 0.0026768459619624456,
+        "zero_network_mse": 0.0015940093868162084
+      }
+    },
+    {
+      "epoch": 13,
+      "seconds": 1.768908818,
+      "train": {
+        "baseline_teacher_agreement": 0.9468695053894962,
+        "mse": 0.0018613391011593568,
+        "samples": 73473,
+        "states": 13081,
+        "teacher_action_agreement": 0.9230945646357313,
+        "teacher_regret": 0.0022864118172358314,
+        "zero_network_mse": 0.0014281805421163143
+      },
+      "validation": {
+        "baseline_teacher_agreement": 0.9455493968046952,
+        "mse": 0.0021009181066498307,
+        "samples": 17008,
+        "states": 3067,
+        "teacher_action_agreement": 0.9139223997391588,
+        "teacher_regret": 0.0028682056203166357,
+        "zero_network_mse": 0.0015940093868162084
+      }
+    },
+    {
+      "epoch": 14,
+      "seconds": 1.951161548,
+      "train": {
+        "baseline_teacher_agreement": 0.9468695053894962,
+        "mse": 0.0021254784979160253,
+        "samples": 73473,
+        "states": 13081,
+        "teacher_action_agreement": 0.9375430012995948,
+        "teacher_regret": 0.0020539992836333433,
+        "zero_network_mse": 0.0014281805421163143
+      },
+      "validation": {
+        "baseline_teacher_agreement": 0.9455493968046952,
+        "mse": 0.002371336868841302,
+        "samples": 17008,
+        "states": 3067,
+        "teacher_action_agreement": 0.9416367786110206,
+        "teacher_regret": 0.0026276487707399456,
+        "zero_network_mse": 0.0015940093868162084
+      }
+    },
+    {
+      "epoch": 15,
+      "seconds": 2.139415808,
+      "train": {
+        "baseline_teacher_agreement": 0.9468695053894962,
+        "mse": 0.002163598903902981,
+        "samples": 73473,
+        "states": 13081,
+        "teacher_action_agreement": 0.9362434064673955,
+        "teacher_regret": 0.0020436157523053004,
+        "zero_network_mse": 0.0014281805421163143
+      },
+      "validation": {
+        "baseline_teacher_agreement": 0.9455493968046952,
+        "mse": 0.002418637799075018,
+        "samples": 17008,
+        "states": 3067,
+        "teacher_action_agreement": 0.9285947179654386,
+        "teacher_regret": 0.0026738812333445983,
+        "zero_network_mse": 0.0015940093868162084
+      }
+    },
+    {
+      "epoch": 16,
+      "seconds": 2.349561881,
+      "train": {
+        "baseline_teacher_agreement": 0.9468695053894962,
+        "mse": 0.00207374555637098,
+        "samples": 73473,
+        "states": 13081,
+        "teacher_action_agreement": 0.9331855362739852,
+        "teacher_regret": 0.002113239642062093,
+        "zero_network_mse": 0.0014281805421163143
+      },
+      "validation": {
+        "baseline_teacher_agreement": 0.9455493968046952,
+        "mse": 0.002333621822827857,
+        "samples": 17008,
+        "states": 3067,
+        "teacher_action_agreement": 0.9325073361591132,
+        "teacher_regret": 0.0025679946231482995,
+        "zero_network_mse": 0.0015940093868162084
+      }
+    },
+    {
+      "epoch": 17,
+      "seconds": 2.590282308,
+      "train": {
+        "baseline_teacher_agreement": 0.9468695053894962,
+        "mse": 0.0024992814838028076,
+        "samples": 73473,
+        "states": 13081,
+        "teacher_action_agreement": 0.9367785337512423,
+        "teacher_regret": 0.002024996984560799,
+        "zero_network_mse": 0.0014281805421163143
+      },
+      "validation": {
+        "baseline_teacher_agreement": 0.9455493968046952,
+        "mse": 0.0027652193345215387,
+        "samples": 17008,
+        "states": 3067,
+        "teacher_action_agreement": 0.941310727094881,
+        "teacher_regret": 0.0026620165994533564,
+        "zero_network_mse": 0.0015940093868162084
+      }
+    },
+    {
+      "epoch": 18,
+      "seconds": 2.835392839,
+      "train": {
+        "baseline_teacher_agreement": 0.9468695053894962,
+        "mse": 0.0027024264281026375,
+        "samples": 73473,
+        "states": 13081,
+        "teacher_action_agreement": 0.9386897026221237,
+        "teacher_regret": 0.002009526009505299,
+        "zero_network_mse": 0.0014281805421163143
+      },
+      "validation": {
+        "baseline_teacher_agreement": 0.9455493968046952,
+        "mse": 0.002999611455905199,
+        "samples": 17008,
+        "states": 3067,
+        "teacher_action_agreement": 0.9445712422562765,
+        "teacher_regret": 0.0024022297650969906,
+        "zero_network_mse": 0.0015940093868162084
+      }
+    },
+    {
+      "epoch": 19,
+      "seconds": 3.095330266,
+      "train": {
+        "baseline_teacher_agreement": 0.9468695053894962,
+        "mse": 0.0025201142829777636,
+        "samples": 73473,
+        "states": 13081,
+        "teacher_action_agreement": 0.9378487883189358,
+        "teacher_regret": 0.0022050761201105554,
+        "zero_network_mse": 0.0014281805421163143
+      },
+      "validation": {
+        "baseline_teacher_agreement": 0.9455493968046952,
+        "mse": 0.002780621021981584,
+        "samples": 17008,
+        "states": 3067,
+        "teacher_action_agreement": 0.9331594391913922,
+        "teacher_regret": 0.002732106651637107,
+        "zero_network_mse": 0.0015940093868162084
+      }
+    },
+    {
+      "epoch": 20,
+      "seconds": 3.368157003,
+      "train": {
+        "baseline_teacher_agreement": 0.9468695053894962,
+        "mse": 0.002746010765794377,
+        "samples": 73473,
+        "states": 13081,
+        "teacher_action_agreement": 0.9208011619906735,
+        "teacher_regret": 0.0025434005812773252,
+        "zero_network_mse": 0.0014281805421163143
+      },
+      "validation": {
+        "baseline_teacher_agreement": 0.9455493968046952,
+        "mse": 0.002988129936281638,
+        "samples": 17008,
+        "states": 3067,
+        "teacher_action_agreement": 0.925334202804043,
+        "teacher_regret": 0.0026430444889899594,
+        "zero_network_mse": 0.0015940093868162084
+      }
+    },
+    {
+      "epoch": 21,
+      "seconds": 3.67567047,
+      "train": {
+        "baseline_teacher_agreement": 0.9468695053894962,
+        "mse": 0.0024655203575452804,
+        "samples": 73473,
+        "states": 13081,
+        "teacher_action_agreement": 0.9331855362739852,
+        "teacher_regret": 0.002366090596981729,
+        "zero_network_mse": 0.0014281805421163143
+      },
+      "validation": {
+        "baseline_teacher_agreement": 0.9455493968046952,
+        "mse": 0.002681102655797821,
+        "samples": 17008,
+        "states": 3067,
+        "teacher_action_agreement": 0.9331594391913922,
+        "teacher_regret": 0.0026231563519251025,
+        "zero_network_mse": 0.0015940093868162084
+      }
+    },
+    {
+      "epoch": 22,
+      "seconds": 4.020186209,
+      "train": {
+        "baseline_teacher_agreement": 0.9468695053894962,
+        "mse": 0.0022897349539015327,
+        "samples": 73473,
+        "states": 13081,
+        "teacher_action_agreement": 0.9378487883189358,
+        "teacher_regret": 0.0020776112603976297,
+        "zero_network_mse": 0.0014281805421163143
+      },
+      "validation": {
+        "baseline_teacher_agreement": 0.9455493968046952,
+        "mse": 0.0025098874689341664,
+        "samples": 17008,
+        "states": 3067,
+        "teacher_action_agreement": 0.9419628301271601,
+        "teacher_regret": 0.0026726815262054855,
+        "zero_network_mse": 0.0015940093868162084
+      }
+    },
+    {
+      "epoch": 23,
+      "seconds": 4.430442904,
+      "train": {
+        "baseline_teacher_agreement": 0.9468695053894962,
+        "mse": 0.0027859333485708905,
+        "samples": 73473,
+        "states": 13081,
+        "teacher_action_agreement": 0.9355553856738782,
+        "teacher_regret": 0.002118589744189508,
+        "zero_network_mse": 0.0014281805421163143
+      },
+      "validation": {
+        "baseline_teacher_agreement": 0.9455493968046952,
+        "mse": 0.0030358410685628638,
+        "samples": 17008,
+        "states": 3067,
+        "teacher_action_agreement": 0.9328333876752527,
+        "teacher_regret": 0.0026654756207995164,
+        "zero_network_mse": 0.0015940093868162084
+      }
+    },
+    {
+      "epoch": 24,
+      "seconds": 4.893440706,
+      "train": {
+        "baseline_teacher_agreement": 0.9468695053894962,
+        "mse": 0.0030762018755691144,
+        "samples": 73473,
+        "states": 13081,
+        "teacher_action_agreement": 0.9376958948092653,
+        "teacher_regret": 0.0020203071879843723,
+        "zero_network_mse": 0.0014281805421163143
+      },
+      "validation": {
+        "baseline_teacher_agreement": 0.9455493968046952,
+        "mse": 0.0033243480820139668,
+        "samples": 17008,
+        "states": 3067,
+        "teacher_action_agreement": 0.9426149331594392,
+        "teacher_regret": 0.002446016740418592,
+        "zero_network_mse": 0.0015940093868162084
+      }
+    },
+    {
+      "epoch": 25,
+      "seconds": 5.407607058,
+      "train": {
+        "baseline_teacher_agreement": 0.9468695053894962,
+        "mse": 0.0032335854487402144,
+        "samples": 73473,
+        "states": 13081,
+        "teacher_action_agreement": 0.9289045180032107,
+        "teacher_regret": 0.0023449741861765144,
+        "zero_network_mse": 0.0014281805421163143
+      },
+      "validation": {
+        "baseline_teacher_agreement": 0.9455493968046952,
+        "mse": 0.0034838110350620876,
+        "samples": 17008,
+        "states": 3067,
+        "teacher_action_agreement": 0.9354417998043691,
+        "teacher_regret": 0.002532732547046741,
+        "zero_network_mse": 0.0015940093868162084
+      }
+    },
+    {
+      "epoch": 26,
+      "seconds": 5.957944257,
+      "train": {
+        "baseline_teacher_agreement": 0.9468695053894962,
+        "mse": 0.003636324714840746,
+        "samples": 73473,
+        "states": 13081,
+        "teacher_action_agreement": 0.9335677700481615,
+        "teacher_regret": 0.002195723536132921,
+        "zero_network_mse": 0.0014281805421163143
+      },
+      "validation": {
+        "baseline_teacher_agreement": 0.9455493968046952,
+        "mse": 0.0038928728775293577,
+        "samples": 17008,
+        "states": 3067,
+        "teacher_action_agreement": 0.9354417998043691,
+        "teacher_regret": 0.002481906062006599,
+        "zero_network_mse": 0.0015940093868162084
+      }
+    },
+    {
+      "epoch": 27,
+      "seconds": 6.56209238,
+      "train": {
+        "baseline_teacher_agreement": 0.9468695053894962,
+        "mse": 0.0032612065880276374,
+        "samples": 73473,
+        "states": 13081,
+        "teacher_action_agreement": 0.9427413806283923,
+        "teacher_regret": 0.0019869884411831003,
+        "zero_network_mse": 0.0014281805421163143
+      },
+      "validation": {
+        "baseline_teacher_agreement": 0.9455493968046952,
+        "mse": 0.0035064790649394903,
+        "samples": 17008,
+        "states": 3067,
+        "teacher_action_agreement": 0.9354417998043691,
+        "teacher_regret": 0.00260717218655324,
+        "zero_network_mse": 0.0015940093868162084
+      }
+    },
+    {
+      "epoch": 28,
+      "seconds": 7.193347712,
+      "train": {
+        "baseline_teacher_agreement": 0.9468695053894962,
+        "mse": 0.003372865314828126,
+        "samples": 73473,
+        "states": 13081,
+        "teacher_action_agreement": 0.941135998776852,
+        "teacher_regret": 0.0020107518742512173,
+        "zero_network_mse": 0.0014281805421163143
+      },
+      "validation": {
+        "baseline_teacher_agreement": 0.9455493968046952,
+        "mse": 0.0036048808019423914,
+        "samples": 17008,
+        "states": 3067,
+        "teacher_action_agreement": 0.938376263449625,
+        "teacher_regret": 0.00246714258785571,
+        "zero_network_mse": 0.0015940093868162084
+      }
+    },
+    {
+      "epoch": 29,
+      "seconds": 7.885998769,
+      "train": {
+        "baseline_teacher_agreement": 0.9468695053894962,
+        "mse": 0.003450340093423171,
+        "samples": 73473,
+        "states": 13081,
+        "teacher_action_agreement": 0.9339500038223377,
+        "teacher_regret": 0.0020765051549450687,
+        "zero_network_mse": 0.0014281805421163143
+      },
+      "validation": {
+        "baseline_teacher_agreement": 0.9455493968046952,
+        "mse": 0.0036984135053252645,
+        "samples": 17008,
+        "states": 3067,
+        "teacher_action_agreement": 0.9406586240626019,
+        "teacher_regret": 0.0025281142271925227,
+        "zero_network_mse": 0.0015940093868162084
+      }
+    },
+    {
+      "epoch": 30,
+      "seconds": 8.587452151,
+      "train": {
+        "baseline_teacher_agreement": 0.9468695053894962,
+        "mse": 0.003310420171047474,
+        "samples": 73473,
+        "states": 13081,
+        "teacher_action_agreement": 0.942053359834875,
+        "teacher_regret": 0.0019200826811881628,
+        "zero_network_mse": 0.0014281805421163143
+      },
+      "validation": {
+        "baseline_teacher_agreement": 0.9455493968046952,
+        "mse": 0.0035497460019239205,
+        "samples": 17008,
+        "states": 3067,
+        "teacher_action_agreement": 0.9351157482882295,
+        "teacher_regret": 0.0025245833575415866,
+        "zero_network_mse": 0.0015940093868162084
+      }
+    },
+    {
+      "epoch": 31,
+      "seconds": 9.263390379,
+      "train": {
+        "baseline_teacher_agreement": 0.9468695053894962,
+        "mse": 0.0035215530846237236,
+        "samples": 73473,
+        "states": 13081,
+        "teacher_action_agreement": 0.9361669597125603,
+        "teacher_regret": 0.0021580377062383016,
+        "zero_network_mse": 0.0014281805421163143
+      },
+      "validation": {
+        "baseline_teacher_agreement": 0.9455493968046952,
+        "mse": 0.0037363245173037225,
+        "samples": 17008,
+        "states": 3067,
+        "teacher_action_agreement": 0.9367460058689273,
+        "teacher_regret": 0.0025509151620005206,
+        "zero_network_mse": 0.0015940093868162084
+      }
+    },
+    {
+      "epoch": 32,
+      "seconds": 9.957203882,
+      "train": {
+        "baseline_teacher_agreement": 0.9468695053894962,
+        "mse": 0.0032881672891225478,
+        "samples": 73473,
+        "states": 13081,
+        "teacher_action_agreement": 0.9398364039446525,
+        "teacher_regret": 0.001982536814641362,
+        "zero_network_mse": 0.0014281805421163143
+      },
+      "validation": {
+        "baseline_teacher_agreement": 0.9455493968046952,
+        "mse": 0.0034889648572263986,
+        "samples": 17008,
+        "states": 3067,
+        "teacher_action_agreement": 0.9204434300619498,
+        "teacher_regret": 0.00252512511027853,
+        "zero_network_mse": 0.0015940093868162084
+      }
+    },
+    {
+      "epoch": 33,
+      "seconds": 10.635883468,
+      "train": {
+        "baseline_teacher_agreement": 0.9468695053894962,
+        "mse": 0.0045961608179904264,
+        "samples": 73473,
+        "states": 13081,
+        "teacher_action_agreement": 0.9383839156027827,
+        "teacher_regret": 0.0020472081779540525,
+        "zero_network_mse": 0.0014281805421163143
+      },
+      "validation": {
+        "baseline_teacher_agreement": 0.9455493968046952,
+        "mse": 0.004829887671935605,
+        "samples": 17008,
+        "states": 3067,
+        "teacher_action_agreement": 0.93478969677209,
+        "teacher_regret": 0.0025542727912403343,
+        "zero_network_mse": 0.0015940093868162084
+      }
+    },
+    {
+      "epoch": 34,
+      "seconds": 11.328051253,
+      "train": {
+        "baseline_teacher_agreement": 0.9468695053894962,
+        "mse": 0.0041037916966177946,
+        "samples": 73473,
+        "states": 13081,
+        "teacher_action_agreement": 0.9338735570675025,
+        "teacher_regret": 0.002155415031133329,
+        "zero_network_mse": 0.0014281805421163143
+      },
+      "validation": {
+        "baseline_teacher_agreement": 0.9455493968046952,
+        "mse": 0.004289583630661633,
+        "samples": 17008,
+        "states": 3067,
+        "teacher_action_agreement": 0.9351157482882295,
+        "teacher_regret": 0.0023988474032476666,
+        "zero_network_mse": 0.0015940093868162084
+      }
+    },
+    {
+      "epoch": 35,
+      "seconds": 12.087517645,
+      "train": {
+        "baseline_teacher_agreement": 0.9468695053894962,
+        "mse": 0.004649146171061858,
+        "samples": 73473,
+        "states": 13081,
+        "teacher_action_agreement": 0.9400657442091583,
+        "teacher_regret": 0.0019527034773790676,
+        "zero_network_mse": 0.0014281805421163143
+      },
+      "validation": {
+        "baseline_teacher_agreement": 0.9455493968046952,
+        "mse": 0.004848731549442934,
+        "samples": 17008,
+        "states": 3067,
+        "teacher_action_agreement": 0.9403325725464623,
+        "teacher_regret": 0.0025605382712132287,
+        "zero_network_mse": 0.0015940093868162084
+      }
+    },
+    {
+      "epoch": 36,
+      "seconds": 12.810014449,
+      "train": {
+        "baseline_teacher_agreement": 0.9468695053894962,
+        "mse": 0.005555614780289123,
+        "samples": 73473,
+        "states": 13081,
+        "teacher_action_agreement": 0.9216420762938613,
+        "teacher_regret": 0.0024998144728079056,
+        "zero_network_mse": 0.0014281805421163143
+      },
+      "validation": {
+        "baseline_teacher_agreement": 0.9455493968046952,
+        "mse": 0.005760224328494186,
+        "samples": 17008,
+        "states": 3067,
+        "teacher_action_agreement": 0.9312031300945549,
+        "teacher_regret": 0.0025621151154873673,
+        "zero_network_mse": 0.0015940093868162084
+      }
+    },
+    {
+      "epoch": 37,
+      "seconds": 13.502668127,
+      "train": {
+        "baseline_teacher_agreement": 0.9468695053894962,
+        "mse": 0.00466076896001128,
+        "samples": 73473,
+        "states": 13081,
+        "teacher_action_agreement": 0.9442703157250975,
+        "teacher_regret": 0.0018177246436455775,
+        "zero_network_mse": 0.0014281805421163143
+      },
+      "validation": {
+        "baseline_teacher_agreement": 0.9455493968046952,
+        "mse": 0.004883665295716132,
+        "samples": 17008,
+        "states": 3067,
+        "teacher_action_agreement": 0.9295728725138572,
+        "teacher_regret": 0.0024695935770627647,
+        "zero_network_mse": 0.0015940093868162084
+      }
+    },
+    {
+      "epoch": 38,
+      "seconds": 14.199365159,
+      "train": {
+        "baseline_teacher_agreement": 0.9468695053894962,
+        "mse": 0.005698338315348369,
+        "samples": 73473,
+        "states": 13081,
+        "teacher_action_agreement": 0.9357082791835487,
+        "teacher_regret": 0.002070976698769793,
+        "zero_network_mse": 0.0014281805421163143
+      },
+      "validation": {
+        "baseline_teacher_agreement": 0.9455493968046952,
+        "mse": 0.005936708080143357,
+        "samples": 17008,
+        "states": 3067,
+        "teacher_action_agreement": 0.9354417998043691,
+        "teacher_regret": 0.0026318720939154786,
+        "zero_network_mse": 0.0015940093868162084
+      }
+    },
+    {
+      "epoch": 39,
+      "seconds": 14.95760726,
+      "train": {
+        "baseline_teacher_agreement": 0.9468695053894962,
+        "mse": 0.004821299689596131,
+        "samples": 73473,
+        "states": 13081,
+        "teacher_action_agreement": 0.9208011619906735,
+        "teacher_regret": 0.0023430324958399248,
+        "zero_network_mse": 0.0014281805421163143
+      },
+      "validation": {
+        "baseline_teacher_agreement": 0.9455493968046952,
+        "mse": 0.005014353820954662,
+        "samples": 17008,
+        "states": 3067,
+        "teacher_action_agreement": 0.9096837300293447,
+        "teacher_regret": 0.0025951266719268285,
+        "zero_network_mse": 0.0015940093868162084
+      }
+    },
+    {
+      "epoch": 40,
+      "seconds": 15.71549837,
+      "train": {
+        "baseline_teacher_agreement": 0.9468695053894962,
+        "mse": 0.006356920358203426,
+        "samples": 73473,
+        "states": 13081,
+        "teacher_action_agreement": 0.9304334530999159,
+        "teacher_regret": 0.002281359635023477,
+        "zero_network_mse": 0.0014281805421163143
+      },
+      "validation": {
+        "baseline_teacher_agreement": 0.9455493968046952,
+        "mse": 0.006537716297363444,
+        "samples": 17008,
+        "states": 3067,
+        "teacher_action_agreement": 0.9406586240626019,
+        "teacher_regret": 0.0024846795692726625,
+        "zero_network_mse": 0.0015940093868162084
+      }
+    },
+    {
+      "epoch": 41,
+      "seconds": 16.447732274,
+      "train": {
+        "baseline_teacher_agreement": 0.9468695053894962,
+        "mse": 0.006278293432990581,
+        "samples": 73473,
+        "states": 13081,
+        "teacher_action_agreement": 0.9490100145248834,
+        "teacher_regret": 0.0017643901814738644,
+        "zero_network_mse": 0.0014281805421163143
+      },
+      "validation": {
+        "baseline_teacher_agreement": 0.9455493968046952,
+        "mse": 0.006434486736962028,
+        "samples": 17008,
+        "states": 3067,
+        "teacher_action_agreement": 0.9400065210303228,
+        "teacher_regret": 0.0023549009795041944,
+        "zero_network_mse": 0.0015940093868162084
+      }
+    },
+    {
+      "epoch": 42,
+      "seconds": 17.177233026,
+      "train": {
+        "baseline_teacher_agreement": 0.9468695053894962,
+        "mse": 0.006820981891908494,
+        "samples": 73473,
+        "states": 13081,
+        "teacher_action_agreement": 0.9294396452870576,
+        "teacher_regret": 0.0021725921676192684,
+        "zero_network_mse": 0.0014281805421163143
+      },
+      "validation": {
+        "baseline_teacher_agreement": 0.9455493968046952,
+        "mse": 0.006968204448358924,
+        "samples": 17008,
+        "states": 3067,
+        "teacher_action_agreement": 0.9298989240299967,
+        "teacher_regret": 0.0023705009973046492,
+        "zero_network_mse": 0.0015940093868162084
+      }
+    },
+    {
+      "epoch": 43,
+      "seconds": 17.921592251,
+      "train": {
+        "baseline_teacher_agreement": 0.9468695053894962,
+        "mse": 0.007395556688782788,
+        "samples": 73473,
+        "states": 13081,
+        "teacher_action_agreement": 0.9324975154804679,
+        "teacher_regret": 0.0020904790852931177,
+        "zero_network_mse": 0.0014281805421163143
+      },
+      "validation": {
+        "baseline_teacher_agreement": 0.9455493968046952,
+        "mse": 0.007557021857153828,
+        "samples": 17008,
+        "states": 3067,
+        "teacher_action_agreement": 0.9351157482882295,
+        "teacher_regret": 0.0025451507412211772,
+        "zero_network_mse": 0.0015940093868162084
+      }
+    },
+    {
+      "epoch": 44,
+      "seconds": 18.673625971,
+      "train": {
+        "baseline_teacher_agreement": 0.9468695053894962,
+        "mse": 0.006079379465252125,
+        "samples": 73473,
+        "states": 13081,
+        "teacher_action_agreement": 0.9207247152358382,
+        "teacher_regret": 0.002271361945935081,
+        "zero_network_mse": 0.0014281805421163143
+      },
+      "validation": {
+        "baseline_teacher_agreement": 0.9455493968046952,
+        "mse": 0.006185588903782244,
+        "samples": 17008,
+        "states": 3067,
+        "teacher_action_agreement": 0.9080534724486469,
+        "teacher_regret": 0.002548547750636498,
+        "zero_network_mse": 0.0015940093868162084
+      }
+    },
+    {
+      "epoch": 45,
+      "seconds": 19.412442501,
+      "train": {
+        "baseline_teacher_agreement": 0.9468695053894962,
+        "mse": 0.006049423648149066,
+        "samples": 73473,
+        "states": 13081,
+        "teacher_action_agreement": 0.9315801544224448,
+        "teacher_regret": 0.0021951605639314335,
+        "zero_network_mse": 0.0014281805421163143
+      },
+      "validation": {
+        "baseline_teacher_agreement": 0.9455493968046952,
+        "mse": 0.006104481867804133,
+        "samples": 17008,
+        "states": 3067,
+        "teacher_action_agreement": 0.9367460058689273,
+        "teacher_regret": 0.002477305018452019,
+        "zero_network_mse": 0.0015940093868162084
+      }
+    },
+    {
+      "epoch": 46,
+      "seconds": 20.169515393,
+      "train": {
+        "baseline_teacher_agreement": 0.9468695053894962,
+        "mse": 0.00933730225193535,
+        "samples": 73473,
+        "states": 13081,
+        "teacher_action_agreement": 0.9436587416864154,
+        "teacher_regret": 0.0018698454378378068,
+        "zero_network_mse": 0.0014281805421163143
+      },
+      "validation": {
+        "baseline_teacher_agreement": 0.9455493968046952,
+        "mse": 0.009508007839761802,
+        "samples": 17008,
+        "states": 3067,
+        "teacher_action_agreement": 0.9312031300945549,
+        "teacher_regret": 0.0025205079214046283,
+        "zero_network_mse": 0.0015940093868162084
+      }
+    },
+    {
+      "epoch": 47,
+      "seconds": 20.930648438,
+      "train": {
+        "baseline_teacher_agreement": 0.9468695053894962,
+        "mse": 0.007751169718060839,
+        "samples": 73473,
+        "states": 13081,
+        "teacher_action_agreement": 0.9217185230486966,
+        "teacher_regret": 0.002794255243596047,
+        "zero_network_mse": 0.0014281805421163143
+      },
+      "validation": {
+        "baseline_teacher_agreement": 0.9455493968046952,
+        "mse": 0.007919418062951277,
+        "samples": 17008,
+        "states": 3067,
+        "teacher_action_agreement": 0.9230518421910662,
+        "teacher_regret": 0.0032432747051283285,
+        "zero_network_mse": 0.0015940093868162084
+      }
+    },
+    {
+      "epoch": 48,
+      "seconds": 21.523381611,
+      "train": {
+        "baseline_teacher_agreement": 0.9468695053894962,
+        "mse": 0.006044086636269795,
+        "samples": 73473,
+        "states": 13081,
+        "teacher_action_agreement": 0.9455699105572969,
+        "teacher_regret": 0.0018557289677647588,
+        "zero_network_mse": 0.0014281805421163143
+      },
+      "validation": {
+        "baseline_teacher_agreement": 0.9455493968046952,
+        "mse": 0.006136550431793977,
+        "samples": 17008,
+        "states": 3067,
+        "teacher_action_agreement": 0.9373981089012063,
+        "teacher_regret": 0.002456257650362225,
+        "zero_network_mse": 0.0015940093868162084
+      }
+    },
+    {
+      "epoch": 49,
+      "seconds": 22.13958785,
+      "train": {
+        "baseline_teacher_agreement": 0.9468695053894962,
+        "mse": 0.006767860774591078,
+        "samples": 73473,
+        "states": 13081,
+        "teacher_action_agreement": 0.9463343781056495,
+        "teacher_regret": 0.0018274154838116804,
+        "zero_network_mse": 0.0014281805421163143
+      },
+      "validation": {
+        "baseline_teacher_agreement": 0.9455493968046952,
+        "mse": 0.006888352338102355,
+        "samples": 17008,
+        "states": 3067,
+        "teacher_action_agreement": 0.9387023149657646,
+        "teacher_regret": 0.00245956533639256,
+        "zero_network_mse": 0.0015940093868162084
+      }
+    },
+    {
+      "epoch": 50,
+      "seconds": 22.770955318,
+      "train": {
+        "baseline_teacher_agreement": 0.9468695053894962,
+        "mse": 0.00786658682537269,
+        "samples": 73473,
+        "states": 13081,
+        "teacher_action_agreement": 0.928980964758046,
+        "teacher_regret": 0.002132312091664816,
+        "zero_network_mse": 0.0014281805421163143
+      },
+      "validation": {
+        "baseline_teacher_agreement": 0.9455493968046952,
+        "mse": 0.007963007341931495,
+        "samples": 17008,
+        "states": 3067,
+        "teacher_action_agreement": 0.9328333876752527,
+        "teacher_regret": 0.0026019541944380204,
+        "zero_network_mse": 0.0015940093868162084
+      }
+    },
+    {
+      "epoch": 51,
+      "seconds": 23.402409262,
+      "train": {
+        "baseline_teacher_agreement": 0.9468695053894962,
+        "mse": 0.009198961888322976,
+        "samples": 73473,
+        "states": 13081,
+        "teacher_action_agreement": 0.9384603623576179,
+        "teacher_regret": 0.0018886347579429807,
+        "zero_network_mse": 0.0014281805421163143
+      },
+      "validation": {
+        "baseline_teacher_agreement": 0.9455493968046952,
+        "mse": 0.009316873111844318,
+        "samples": 17008,
+        "states": 3067,
+        "teacher_action_agreement": 0.9357678513205087,
+        "teacher_regret": 0.0025829778537181645,
+        "zero_network_mse": 0.0015940093868162084
+      }
+    },
+    {
+      "epoch": 52,
+      "seconds": 24.054662286,
+      "train": {
+        "baseline_teacher_agreement": 0.9468695053894962,
+        "mse": 0.00906207644422011,
+        "samples": 73473,
+        "states": 13081,
+        "teacher_action_agreement": 0.9428178273832276,
+        "teacher_regret": 0.0017646933720822792,
+        "zero_network_mse": 0.0014281805421163143
+      },
+      "validation": {
+        "baseline_teacher_agreement": 0.9455493968046952,
+        "mse": 0.009161897026229542,
+        "samples": 17008,
+        "states": 3067,
+        "teacher_action_agreement": 0.9341375937398109,
+        "teacher_regret": 0.0025309676560747885,
+        "zero_network_mse": 0.0015940093868162084
+      }
+    },
+    {
+      "epoch": 53,
+      "seconds": 24.659883514,
+      "train": {
+        "baseline_teacher_agreement": 0.9468695053894962,
+        "mse": 0.007410481995753572,
+        "samples": 73473,
+        "states": 13081,
+        "teacher_action_agreement": 0.9436587416864154,
+        "teacher_regret": 0.0018453662149392482,
+        "zero_network_mse": 0.0014281805421163143
+      },
+      "validation": {
+        "baseline_teacher_agreement": 0.9455493968046952,
+        "mse": 0.0074617820649312714,
+        "samples": 17008,
+        "states": 3067,
+        "teacher_action_agreement": 0.9370720573850668,
+        "teacher_regret": 0.0024784868265189993,
+        "zero_network_mse": 0.0015940093868162084
+      }
+    },
+    {
+      "epoch": 54,
+      "seconds": 25.304508176,
+      "train": {
+        "baseline_teacher_agreement": 0.9468695053894962,
+        "mse": 0.008094760937574105,
+        "samples": 73473,
+        "states": 13081,
+        "teacher_action_agreement": 0.9469459521443315,
+        "teacher_regret": 0.0018285680973222555,
+        "zero_network_mse": 0.0014281805421163143
+      },
+      "validation": {
+        "baseline_teacher_agreement": 0.9455493968046952,
+        "mse": 0.008163278578980368,
+        "samples": 17008,
+        "states": 3067,
+        "teacher_action_agreement": 0.9344636452559505,
+        "teacher_regret": 0.0025230426814375037,
+        "zero_network_mse": 0.0015940093868162084
+      }
+    },
+    {
+      "epoch": 55,
+      "seconds": 25.918352248,
+      "train": {
+        "baseline_teacher_agreement": 0.9468695053894962,
+        "mse": 0.008615470312501478,
+        "samples": 73473,
+        "states": 13081,
+        "teacher_action_agreement": 0.9339500038223377,
+        "teacher_regret": 0.0019477313135151891,
+        "zero_network_mse": 0.0014281805421163143
+      },
+      "validation": {
+        "baseline_teacher_agreement": 0.9455493968046952,
+        "mse": 0.008786545766689122,
+        "samples": 17008,
+        "states": 3067,
+        "teacher_action_agreement": 0.9373981089012063,
+        "teacher_regret": 0.0024314273964403544,
+        "zero_network_mse": 0.0015940093868162084
+      }
+    },
+    {
+      "epoch": 56,
+      "seconds": 26.567791094,
+      "train": {
+        "baseline_teacher_agreement": 0.9468695053894962,
+        "mse": 0.00790292714397726,
+        "samples": 73473,
+        "states": 13081,
+        "teacher_action_agreement": 0.9302805595902454,
+        "teacher_regret": 0.001961318072375182,
+        "zero_network_mse": 0.0014281805421163143
+      },
+      "validation": {
+        "baseline_teacher_agreement": 0.9455493968046952,
+        "mse": 0.00801088237962106,
+        "samples": 17008,
+        "states": 3067,
+        "teacher_action_agreement": 0.9272905119008803,
+        "teacher_regret": 0.0026597413986061704,
+        "zero_network_mse": 0.0015940093868162084
+      }
+    },
+    {
+      "epoch": 57,
+      "seconds": 27.248113229,
+      "train": {
+        "baseline_teacher_agreement": 0.9468695053894962,
+        "mse": 0.009635562585227445,
+        "samples": 73473,
+        "states": 13081,
+        "teacher_action_agreement": 0.9300512193257396,
+        "teacher_regret": 0.0021398361208325987,
+        "zero_network_mse": 0.0014281805421163143
+      },
+      "validation": {
+        "baseline_teacher_agreement": 0.9455493968046952,
+        "mse": 0.009786576580999273,
+        "samples": 17008,
+        "states": 3067,
+        "teacher_action_agreement": 0.9380502119334855,
+        "teacher_regret": 0.0026182491823802828,
+        "zero_network_mse": 0.0015940093868162084
+      }
+    },
+    {
+      "epoch": 58,
+      "seconds": 27.923750732,
+      "train": {
+        "baseline_teacher_agreement": 0.9468695053894962,
+        "mse": 0.00812731717102811,
+        "samples": 73473,
+        "states": 13081,
+        "teacher_action_agreement": 0.9279871569451876,
+        "teacher_regret": 0.001985705071272571,
+        "zero_network_mse": 0.0014281805421163143
+      },
+      "validation": {
+        "baseline_teacher_agreement": 0.9455493968046952,
+        "mse": 0.008172387262559967,
+        "samples": 17008,
+        "states": 3067,
+        "teacher_action_agreement": 0.9191392239973916,
+        "teacher_regret": 0.002645366996351203,
+        "zero_network_mse": 0.0015940093868162084
+      }
+    },
+    {
+      "epoch": 59,
+      "seconds": 28.56911759,
+      "train": {
+        "baseline_teacher_agreement": 0.9468695053894962,
+        "mse": 0.00848355467725032,
+        "samples": 73473,
+        "states": 13081,
+        "teacher_action_agreement": 0.9333384297836557,
+        "teacher_regret": 0.001902624082677057,
+        "zero_network_mse": 0.0014281805421163143
+      },
+      "validation": {
+        "baseline_teacher_agreement": 0.9455493968046952,
+        "mse": 0.008577186374442073,
+        "samples": 17008,
+        "states": 3067,
+        "teacher_action_agreement": 0.941310727094881,
+        "teacher_regret": 0.0024719454106866302,
+        "zero_network_mse": 0.0015940093868162084
+      }
+    },
+    {
+      "epoch": 60,
+      "seconds": 29.012809492,
+      "train": {
+        "baseline_teacher_agreement": 0.9468695053894962,
+        "mse": 0.0069029340506722905,
+        "samples": 73473,
+        "states": 13081,
+        "teacher_action_agreement": 0.9510740769054353,
+        "teacher_regret": 0.001634894143947392,
+        "zero_network_mse": 0.0014281805421163143
+      },
+      "validation": {
+        "baseline_teacher_agreement": 0.9455493968046952,
+        "mse": 0.006987824141398929,
+        "samples": 17008,
+        "states": 3067,
+        "teacher_action_agreement": 0.9432670361917183,
+        "teacher_regret": 0.0023098070299202166,
+        "zero_network_mse": 0.0015940093868162084
+      }
+    },
+    {
+      "epoch": 61,
+      "seconds": 29.338431575,
+      "train": {
+        "baseline_teacher_agreement": 0.9468695053894962,
+        "mse": 0.00848369205202417,
+        "samples": 73473,
+        "states": 13081,
+        "teacher_action_agreement": 0.9409066585123461,
+        "teacher_regret": 0.0018468716805731865,
+        "zero_network_mse": 0.0014281805421163143
+      },
+      "validation": {
+        "baseline_teacher_agreement": 0.9455493968046952,
+        "mse": 0.008540772463953423,
+        "samples": 17008,
+        "states": 3067,
+        "teacher_action_agreement": 0.9390283664819041,
+        "teacher_regret": 0.0025043333760657953,
+        "zero_network_mse": 0.0015940093868162084
+      }
+    },
+    {
+      "epoch": 62,
+      "seconds": 29.665593087,
+      "train": {
+        "baseline_teacher_agreement": 0.9468695053894962,
+        "mse": 0.009457595177579105,
+        "samples": 73473,
+        "states": 13081,
+        "teacher_action_agreement": 0.9282164972096935,
+        "teacher_regret": 0.001998421914546762,
+        "zero_network_mse": 0.0014281805421163143
+      },
+      "validation": {
+        "baseline_teacher_agreement": 0.9455493968046952,
+        "mse": 0.009524780754931685,
+        "samples": 17008,
+        "states": 3067,
+        "teacher_action_agreement": 0.9168568633844147,
+        "teacher_regret": 0.0025029613346135944,
+        "zero_network_mse": 0.0015940093868162084
+      }
+    },
+    {
+      "epoch": 63,
+      "seconds": 29.968345887,
+      "train": {
+        "baseline_teacher_agreement": 0.9468695053894962,
+        "mse": 0.009627521568791726,
+        "samples": 73473,
+        "states": 13081,
+        "teacher_action_agreement": 0.9429707208928981,
+        "teacher_regret": 0.00177876944271545,
+        "zero_network_mse": 0.0014281805421163143
+      },
+      "validation": {
+        "baseline_teacher_agreement": 0.9455493968046952,
+        "mse": 0.009740344701645868,
+        "samples": 17008,
+        "states": 3067,
+        "teacher_action_agreement": 0.9357678513205087,
+        "teacher_regret": 0.002576505947903194,
+        "zero_network_mse": 0.0015940093868162084
+      }
+    },
+    {
+      "epoch": 64,
+      "seconds": 30.215442506,
+      "train": {
+        "baseline_teacher_agreement": 0.9468695053894962,
+        "mse": 0.00896516921653878,
+        "samples": 73473,
+        "states": 13081,
+        "teacher_action_agreement": 0.9407537650026756,
+        "teacher_regret": 0.001733301816745655,
+        "zero_network_mse": 0.0014281805421163143
+      },
+      "validation": {
+        "baseline_teacher_agreement": 0.9455493968046952,
+        "mse": 0.00908763988405147,
+        "samples": 17008,
+        "states": 3067,
+        "teacher_action_agreement": 0.9435930877078579,
+        "teacher_regret": 0.0022650423831425434,
+        "zero_network_mse": 0.0015940093868162084
+      }
+    },
+    {
+      "epoch": 65,
+      "seconds": 30.475349704,
+      "train": {
+        "baseline_teacher_agreement": 0.9468695053894962,
+        "mse": 0.008306958735449937,
+        "samples": 73473,
+        "states": 13081,
+        "teacher_action_agreement": 0.9214891827841908,
+        "teacher_regret": 0.001908143406448555,
+        "zero_network_mse": 0.0014281805421163143
+      },
+      "validation": {
+        "baseline_teacher_agreement": 0.9455493968046952,
+        "mse": 0.008341335422306612,
+        "samples": 17008,
+        "states": 3067,
+        "teacher_action_agreement": 0.9109879360939028,
+        "teacher_regret": 0.0024154261768806785,
+        "zero_network_mse": 0.0015940093868162084
+      }
+    },
+    {
+      "epoch": 66,
+      "seconds": 30.68799974,
+      "train": {
+        "baseline_teacher_agreement": 0.9468695053894962,
+        "mse": 0.007948410671890902,
+        "samples": 73473,
+        "states": 13081,
+        "teacher_action_agreement": 0.9387661493769589,
+        "teacher_regret": 0.0020805193058906725,
+        "zero_network_mse": 0.0014281805421163143
+      },
+      "validation": {
+        "baseline_teacher_agreement": 0.9455493968046952,
+        "mse": 0.008035778349791991,
+        "samples": 17008,
+        "states": 3067,
+        "teacher_action_agreement": 0.9305510270622759,
+        "teacher_regret": 0.0026095929316707848,
+        "zero_network_mse": 0.0015940093868162084
+      }
+    },
+    {
+      "epoch": 67,
+      "seconds": 30.904308066,
+      "train": {
+        "baseline_teacher_agreement": 0.9468695053894962,
+        "mse": 0.008574398410883345,
+        "samples": 73473,
+        "states": 13081,
+        "teacher_action_agreement": 0.9328033024998089,
+        "teacher_regret": 0.0020494770092286695,
+        "zero_network_mse": 0.0014281805421163143
+      },
+      "validation": {
+        "baseline_teacher_agreement": 0.9455493968046952,
+        "mse": 0.008647320103029417,
+        "samples": 17008,
+        "states": 3067,
+        "teacher_action_agreement": 0.9331594391913922,
+        "teacher_regret": 0.002616422132828667,
+        "zero_network_mse": 0.0015940093868162084
+      }
+    },
+    {
+      "epoch": 68,
+      "seconds": 31.150093875,
+      "train": {
+        "baseline_teacher_agreement": 0.9468695053894962,
+        "mse": 0.010055810104344191,
+        "samples": 73473,
+        "states": 13081,
+        "teacher_action_agreement": 0.9224065438422139,
+        "teacher_regret": 0.002140448053425886,
+        "zero_network_mse": 0.0014281805421163143
+      },
+      "validation": {
+        "baseline_teacher_agreement": 0.9455493968046952,
+        "mse": 0.010095598491772493,
+        "samples": 17008,
+        "states": 3067,
+        "teacher_action_agreement": 0.9227257906749267,
+        "teacher_regret": 0.0026167230205242707,
+        "zero_network_mse": 0.0015940093868162084
+      }
+    },
+    {
+      "epoch": 69,
+      "seconds": 31.440554556,
+      "train": {
+        "baseline_teacher_agreement": 0.9468695053894962,
+        "mse": 0.009432579612946874,
+        "samples": 73473,
+        "states": 13081,
+        "teacher_action_agreement": 0.927222689396835,
+        "teacher_regret": 0.002034382278131981,
+        "zero_network_mse": 0.0014281805421163143
+      },
+      "validation": {
+        "baseline_teacher_agreement": 0.9455493968046952,
+        "mse": 0.009530432985899612,
+        "samples": 17008,
+        "states": 3067,
+        "teacher_action_agreement": 0.9367460058689273,
+        "teacher_regret": 0.002402761110484498,
+        "zero_network_mse": 0.0015940093868162084
+      }
+    },
+    {
+      "epoch": 70,
+      "seconds": 31.805691738,
+      "train": {
+        "baseline_teacher_agreement": 0.9468695053894962,
+        "mse": 0.01212224276350126,
+        "samples": 73473,
+        "states": 13081,
+        "teacher_action_agreement": 0.9325739622353031,
+        "teacher_regret": 0.0018992618055570433,
+        "zero_network_mse": 0.0014281805421163143
+      },
+      "validation": {
+        "baseline_teacher_agreement": 0.9455493968046952,
+        "mse": 0.012340947359379779,
+        "samples": 17008,
+        "states": 3067,
+        "teacher_action_agreement": 0.9403325725464623,
+        "teacher_regret": 0.002431135858246199,
+        "zero_network_mse": 0.0015940093868162084
+      }
+    },
+    {
+      "epoch": 71,
+      "seconds": 32.199382174,
+      "train": {
+        "baseline_teacher_agreement": 0.9468695053894962,
+        "mse": 0.01040243811342728,
+        "samples": 73473,
+        "states": 13081,
+        "teacher_action_agreement": 0.9218714165583671,
+        "teacher_regret": 0.002167570256376989,
+        "zero_network_mse": 0.0014281805421163143
+      },
+      "validation": {
+        "baseline_teacher_agreement": 0.9455493968046952,
+        "mse": 0.010427824663152306,
+        "samples": 17008,
+        "states": 3067,
+        "teacher_action_agreement": 0.9302249755461363,
+        "teacher_regret": 0.002556332171116913,
+        "zero_network_mse": 0.0015940093868162084
+      }
+    },
+    {
+      "epoch": 72,
+      "seconds": 32.588112948,
+      "train": {
+        "baseline_teacher_agreement": 0.9468695053894962,
+        "mse": 0.009928514137159047,
+        "samples": 73473,
+        "states": 13081,
+        "teacher_action_agreement": 0.9384603623576179,
+        "teacher_regret": 0.001827316541130527,
+        "zero_network_mse": 0.0014281805421163143
+      },
+      "validation": {
+        "baseline_teacher_agreement": 0.9455493968046952,
+        "mse": 0.010065476242303925,
+        "samples": 17008,
+        "states": 3067,
+        "teacher_action_agreement": 0.9400065210303228,
+        "teacher_regret": 0.002356496572960901,
+        "zero_network_mse": 0.0015940093868162084
+      }
+    },
+    {
+      "epoch": 73,
+      "seconds": 32.987078621,
+      "train": {
+        "baseline_teacher_agreement": 0.9468695053894962,
+        "mse": 0.012220748387930566,
+        "samples": 73473,
+        "states": 13081,
+        "teacher_action_agreement": 0.9275284764161761,
+        "teacher_regret": 0.002208803553649623,
+        "zero_network_mse": 0.0014281805421163143
+      },
+      "validation": {
+        "baseline_teacher_agreement": 0.9455493968046952,
+        "mse": 0.012299977636253151,
+        "samples": 17008,
+        "states": 3067,
+        "teacher_action_agreement": 0.9357678513205087,
+        "teacher_regret": 0.0025887092208134004,
+        "zero_network_mse": 0.0015940093868162084
+      }
+    },
+    {
+      "epoch": 74,
+      "seconds": 33.415442313,
+      "train": {
+        "baseline_teacher_agreement": 0.9468695053894962,
+        "mse": 0.010823019646432896,
+        "samples": 73473,
+        "states": 13081,
+        "teacher_action_agreement": 0.9341028973320082,
+        "teacher_regret": 0.0019194053787594276,
+        "zero_network_mse": 0.0014281805421163143
+      },
+      "validation": {
+        "baseline_teacher_agreement": 0.9455493968046952,
+        "mse": 0.010900794855404444,
+        "samples": 17008,
+        "states": 3067,
+        "teacher_action_agreement": 0.9393544179980436,
+        "teacher_regret": 0.0025150345278328818,
+        "zero_network_mse": 0.0015940093868162084
+      }
+    },
+    {
+      "epoch": 75,
+      "seconds": 33.900087084,
+      "train": {
+        "baseline_teacher_agreement": 0.9468695053894962,
+        "mse": 0.009848672480918686,
+        "samples": 73473,
+        "states": 13081,
+        "teacher_action_agreement": 0.9324975154804679,
+        "teacher_regret": 0.0017257327985369633,
+        "zero_network_mse": 0.0014281805421163143
+      },
+      "validation": {
+        "baseline_teacher_agreement": 0.9455493968046952,
+        "mse": 0.009921985485485252,
+        "samples": 17008,
+        "states": 3067,
+        "teacher_action_agreement": 0.9367460058689273,
+        "teacher_regret": 0.0023503846106927794,
+        "zero_network_mse": 0.0015940093868162084
+      }
+    },
+    {
+      "epoch": 76,
+      "seconds": 34.380573233,
+      "train": {
+        "baseline_teacher_agreement": 0.9468695053894962,
+        "mse": 0.009892724216263412,
+        "samples": 73473,
+        "states": 13081,
+        "teacher_action_agreement": 0.9410595520220166,
+        "teacher_regret": 0.001739394161169174,
+        "zero_network_mse": 0.0014281805421163143
+      },
+      "validation": {
+        "baseline_teacher_agreement": 0.9455493968046952,
+        "mse": 0.009915233662894533,
+        "samples": 17008,
+        "states": 3067,
+        "teacher_action_agreement": 0.937724160417346,
+        "teacher_regret": 0.002546920415678593,
+        "zero_network_mse": 0.0015940093868162084
+      }
+    },
+    {
+      "epoch": 77,
+      "seconds": 34.94446592,
+      "train": {
+        "baseline_teacher_agreement": 0.9468695053894962,
+        "mse": 0.011557367466456005,
+        "samples": 73473,
+        "states": 13081,
+        "teacher_action_agreement": 0.948016206712025,
+        "teacher_regret": 0.00165741762561625,
+        "zero_network_mse": 0.0014281805421163143
+      },
+      "validation": {
+        "baseline_teacher_agreement": 0.9455493968046952,
+        "mse": 0.011604827457902095,
+        "samples": 17008,
+        "states": 3067,
+        "teacher_action_agreement": 0.9396804695141833,
+        "teacher_regret": 0.002428812503285274,
+        "zero_network_mse": 0.0015940093868162084
+      }
+    },
+    {
+      "epoch": 78,
+      "seconds": 35.537410577,
+      "train": {
+        "baseline_teacher_agreement": 0.9468695053894962,
+        "mse": 0.009898843071974906,
+        "samples": 73473,
+        "states": 13081,
+        "teacher_action_agreement": 0.9293631985322223,
+        "teacher_regret": 0.0020143388180261304,
+        "zero_network_mse": 0.0014281805421163143
+      },
+      "validation": {
+        "baseline_teacher_agreement": 0.9455493968046952,
+        "mse": 0.009890282415277476,
+        "samples": 17008,
+        "states": 3067,
+        "teacher_action_agreement": 0.928268666449299,
+        "teacher_regret": 0.0025933140261524515,
+        "zero_network_mse": 0.0015940093868162084
+      }
+    },
+    {
+      "epoch": 79,
+      "seconds": 36.135253527,
+      "train": {
+        "baseline_teacher_agreement": 0.9468695053894962,
+        "mse": 0.012464111175273336,
+        "samples": 73473,
+        "states": 13081,
+        "teacher_action_agreement": 0.9208011619906735,
+        "teacher_regret": 0.002099422763340503,
+        "zero_network_mse": 0.0014281805421163143
+      },
+      "validation": {
+        "baseline_teacher_agreement": 0.9455493968046952,
+        "mse": 0.012544361789727287,
+        "samples": 17008,
+        "states": 3067,
+        "teacher_action_agreement": 0.9289207694815781,
+        "teacher_regret": 0.0024897628149401865,
+        "zero_network_mse": 0.0015940093868162084
+      }
+    },
+    {
+      "epoch": 80,
+      "seconds": 36.691633869,
+      "train": {
+        "baseline_teacher_agreement": 0.9468695053894962,
+        "mse": 0.012159999580566126,
+        "samples": 73473,
+        "states": 13081,
+        "teacher_action_agreement": 0.9287516244935402,
+        "teacher_regret": 0.002005862619696526,
+        "zero_network_mse": 0.0014281805421163143
+      },
+      "validation": {
+        "baseline_teacher_agreement": 0.9455493968046952,
+        "mse": 0.012192070999879095,
+        "samples": 17008,
+        "states": 3067,
+        "teacher_action_agreement": 0.9380502119334855,
+        "teacher_regret": 0.0025747568596545672,
+        "zero_network_mse": 0.0015940093868162084
+      }
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "changed": [
+    "rmtc_connection/CMakeLists.txt",
+    "rmtc_connection/include/rmtc_connection/stage2_config.hpp",
+    "rmtc_connection/include/rmtc_connection/stage2_events.hpp",
+    "rmtc_connection/include/rmtc_connection/stage2_purpose.hpp",
+    "rmtc_connection/include/rmtc_connection/stage2_strategy.hpp",
+    "rmtc_connection/src/core/connection_node.cpp",
+    "rmtc_connection/src/stage2/stage2_events.cpp",
+    "rmtc_connection/src/stage2/stage2_strategy.cpp",
+    "rmtc_connection/src/visualization/event_markers.cpp",
+    "rmtc_connection/tests/mapping_events_test.cpp",
+    "rmtc_connection/tests/stage2_events_test.cpp"
+  ],
+  "new": [
+    "rmtc_connection/include/rmtc_connection/stage2_battle_curve.hpp",
+    "rmtc_connection/tests/stage2_battle_curve_test.cpp"
+  ],
+  "stage1_source_unchanged": true,
+  "referee_source_unchanged": true
+}

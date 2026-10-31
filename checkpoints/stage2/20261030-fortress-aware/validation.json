@@ -1,0 +1,314 @@
+{
+  "保存参数组64图回归": {
+    "official": {
+      "before": {
+        "n": 32,
+        "reach_completed": 32,
+        "reach_rate": 1,
+        "conditional_score60": 43.490625,
+        "actual_score45": 29.896875,
+        "conditional_at_least50_rate": 0.28125,
+        "resource_raw": 60.0,
+        "component_means": {
+          "resource": 15.0,
+          "combat": 14.896875,
+          "normal_task": 4.53125,
+          "high_task": 4.0625,
+          "reach_task": 5.0
+        },
+        "reach_late_matches": 0,
+        "decision_mean_ms": 4.3766138125000005,
+        "decision_max_ms": 93.161,
+        "invalid_actions": 0,
+        "incomplete_matches": 0
+      },
+      "after": {
+        "n": 32,
+        "reach_completed": 32,
+        "reach_rate": 1,
+        "conditional_score60": 43.490625,
+        "actual_score45": 29.896875,
+        "conditional_at_least50_rate": 0.28125,
+        "resource_raw": 60.0,
+        "component_means": {
+          "resource": 15.0,
+          "combat": 14.896875,
+          "normal_task": 4.53125,
+          "high_task": 4.0625,
+          "reach_task": 5.0
+        },
+        "reach_late_matches": 0,
+        "decision_mean_ms": 4.2423256875,
+        "decision_max_ms": 95.95,
+        "invalid_actions": 0,
+        "incomplete_matches": 0
+      },
+      "mean_delta": 0.0,
+      "conditional_gain_bootstrap95": [
+        0.0,
+        0.0
+      ],
+      "improved_matches": 0,
+      "regressed_matches": 0
+    },
+    "mixed": {
+      "before": {
+        "n": 32,
+        "reach_completed": 31,
+        "reach_rate": 0.96875,
+        "conditional_score60": 37.0765625,
+        "actual_score45": 24.4203125,
+        "conditional_at_least50_rate": 0.09375,
+        "resource_raw": 50.9375,
+        "component_means": {
+          "resource": 12.734375,
+          "combat": 11.6859375,
+          "normal_task": 4.375,
+          "high_task": 3.4375,
+          "reach_task": 4.84375
+        },
+        "reach_late_matches": 1,
+        "decision_mean_ms": 6.5998901875,
+        "decision_max_ms": 150.514,
+        "invalid_actions": 0,
+        "incomplete_matches": 0
+      },
+      "after": {
+        "n": 32,
+        "reach_completed": 32,
+        "reach_rate": 1,
+        "conditional_score60": 37.5234375,
+        "actual_score45": 24.7109375,
+        "conditional_at_least50_rate": 0.09375,
+        "resource_raw": 50.9375,
+        "component_means": {
+          "resource": 12.734375,
+          "combat": 11.9765625,
+          "normal_task": 4.375,
+          "high_task": 3.4375,
+          "reach_task": 5.0
+        },
+        "reach_late_matches": 1,
+        "decision_mean_ms": 6.4547925625,
+        "decision_max_ms": 157.748,
+        "invalid_actions": 0,
+        "incomplete_matches": 0
+      },
+      "mean_delta": 0.44687500000000047,
+      "conditional_gain_bootstrap95": [
+        -0.2999999999999995,
+        1.4375000000000009
+      ],
+      "improved_matches": 6,
+      "regressed_matches": 4
+    }
+  },
+  "默认参数组32图回归": {
+    "official": {
+      "before": {
+        "n": 16,
+        "reach_completed": 16,
+        "reach_rate": 1,
+        "conditional_score60": 45.6125,
+        "actual_score45": 31.55,
+        "conditional_at_least50_rate": 0.3125,
+        "resource_raw": 66.875,
+        "component_means": {
+          "resource": 16.71875,
+          "combat": 14.83125,
+          "normal_task": 4.6875,
+          "high_task": 4.375,
+          "reach_task": 5.0
+        },
+        "reach_late_matches": 0,
+        "decision_mean_ms": 3.545551625,
+        "decision_max_ms": 59.261,
+        "invalid_actions": 0,
+        "incomplete_matches": 0
+      },
+      "after": {
+        "n": 16,
+        "reach_completed": 16,
+        "reach_rate": 1,
+        "conditional_score60": 45.6125,
+        "actual_score45": 31.55,
+        "conditional_at_least50_rate": 0.3125,
+        "resource_raw": 66.875,
+        "component_means": {
+          "resource": 16.71875,
+          "combat": 14.83125,
+          "normal_task": 4.6875,
+          "high_task": 4.375,
+          "reach_task": 5.0
+        },
+        "reach_late_matches": 0,
+        "decision_mean_ms": 4.146628875,
+        "decision_max_ms": 61.053,
+        "invalid_actions": 0,
+        "incomplete_matches": 0
+      },
+      "mean_delta": 0.0,
+      "conditional_gain_bootstrap95": [
+        0.0,
+        0.0
+      ],
+      "improved_matches": 0,
+      "regressed_matches": 0
+    },
+    "mixed": {
+      "before": {
+        "n": 16,
+        "reach_completed": 16,
+        "reach_rate": 1,
+        "conditional_score60": 38.425,
+        "actual_score45": 24.675,
+        "conditional_at_least50_rate": 0.0625,
+        "resource_raw": 58.125,
+        "component_means": {
+          "resource": 14.53125,
+          "combat": 10.14375,
+          "normal_task": 5.0,
+          "high_task": 3.75,
+          "reach_task": 5.0
+        },
+        "reach_late_matches": 0,
+        "decision_mean_ms": 6.021409125,
+        "decision_max_ms": 114.504,
+        "invalid_actions": 0,
+        "incomplete_matches": 0
+      },
+      "after": {
+        "n": 16,
+        "reach_completed": 16,
+        "reach_rate": 1,
+        "conditional_score60": 38.73571428571429,
+        "actual_score45": 24.985714285714288,
+        "conditional_at_least50_rate": 0.0625,
+        "resource_raw": 58.125,
+        "component_means": {
+          "resource": 14.53125,
+          "combat": 10.454464285714286,
+          "normal_task": 5.0,
+          "high_task": 3.75,
+          "reach_task": 5.0
+        },
+        "reach_late_matches": 0,
+        "decision_mean_ms": 6.86145775,
+        "decision_max_ms": 122.003,
+        "invalid_actions": 0,
+        "incomplete_matches": 0
+      },
+      "mean_delta": 0.31071428571428616,
+      "conditional_gain_bootstrap95": [
+        -1.1517857142857135,
+        1.89375
+      ],
+      "improved_matches": 4,
+      "regressed_matches": 2
+    }
+  },
+  "保存参数组32张新图": {
+    "official": {
+      "before": {
+        "n": 16,
+        "reach_completed": 16,
+        "reach_rate": 1,
+        "conditional_score60": 44.75625,
+        "actual_score45": 31.00625,
+        "conditional_at_least50_rate": 0.4375,
+        "resource_raw": 66.875,
+        "component_means": {
+          "resource": 16.71875,
+          "combat": 14.2875,
+          "normal_task": 4.6875,
+          "high_task": 4.0625,
+          "reach_task": 5.0
+        },
+        "reach_late_matches": 0,
+        "decision_mean_ms": 3.6933735,
+        "decision_max_ms": 136.923,
+        "invalid_actions": 0,
+        "incomplete_matches": 0
+      },
+      "after": {
+        "n": 16,
+        "reach_completed": 16,
+        "reach_rate": 1,
+        "conditional_score60": 44.75625,
+        "actual_score45": 31.00625,
+        "conditional_at_least50_rate": 0.4375,
+        "resource_raw": 66.875,
+        "component_means": {
+          "resource": 16.71875,
+          "combat": 14.2875,
+          "normal_task": 4.6875,
+          "high_task": 4.0625,
+          "reach_task": 5.0
+        },
+        "reach_late_matches": 0,
+        "decision_mean_ms": 3.6764333750000002,
+        "decision_max_ms": 145.28,
+        "invalid_actions": 0,
+        "incomplete_matches": 0
+      },
+      "mean_delta": 0.0,
+      "conditional_gain_bootstrap95": [
+        0.0,
+        0.0
+      ],
+      "improved_matches": 0,
+      "regressed_matches": 0
+    },
+    "mixed": {
+      "before": {
+        "n": 16,
+        "reach_completed": 16,
+        "reach_rate": 1,
+        "conditional_score60": 33.450446428571425,
+        "actual_score45": 21.88794642857143,
+        "conditional_at_least50_rate": 0.0625,
+        "resource_raw": 45.0,
+        "component_means": {
+          "resource": 11.25,
+          "combat": 10.637946428571428,
+          "normal_task": 3.75,
+          "high_task": 2.8125,
+          "reach_task": 5.0
+        },
+        "reach_late_matches": 0,
+        "decision_mean_ms": 6.0486305,
+        "decision_max_ms": 180.311,
+        "invalid_actions": 0,
+        "incomplete_matches": 0
+      },
+      "after": {
+        "n": 16,
+        "reach_completed": 16,
+        "reach_rate": 1,
+        "conditional_score60": 33.919196428571425,
+        "actual_score45": 22.35669642857143,
+        "conditional_at_least50_rate": 0.0625,
+        "resource_raw": 45.0,
+        "component_means": {
+          "resource": 11.25,
+          "combat": 11.106696428571428,
+          "normal_task": 3.75,
+          "high_task": 2.8125,
+          "reach_task": 5.0
+        },
+        "reach_late_matches": 0,
+        "decision_mean_ms": 6.12078275,
+        "decision_max_ms": 172.967,
+        "invalid_actions": 0,
+        "incomplete_matches": 0
+      },
+      "mean_delta": 0.4687499999999998,
+      "conditional_gain_bootstrap95": [
+        -0.5999999999999996,
+        1.95
+      ],
+      "improved_matches": 2,
+      "regressed_matches": 2
+    }
+  }
+}

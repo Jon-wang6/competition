@@ -1,0 +1,567 @@
+{
+  "saved_at": "2026-10-30T00:31:47.170230+08:00",
+  "profile": "purpose46_patrol_guard",
+  "parameters": {
+    "acquisition_curve_enabled": true,
+    "acquisition_resource_weight": 3.63877,
+    "acquisition_explore_peak": 4.57999,
+    "acquisition_explore_floor": 0.0,
+    "acquisition_explore_half_ticks": 45.88984,
+    "acquisition_explore_shape": 1.50886,
+    "acquisition_silence_half_ticks": 20.29022,
+    "acquisition_silence_grace_ticks": 2,
+    "contested_resource_factor": 0.26668,
+    "competition_softness": 1.1375,
+    "route_information_weight": 0.0,
+    "information_softness": 0.0,
+    "resource_lookahead_weight": 0.0,
+    "temporal_policy_enabled": true,
+    "resource_age_ticks": 37.90788,
+    "temporal_resource_age_end": 8.98741,
+    "visible_resource_weight": 1.2,
+    "competition_weight": 1.0,
+    "temporal_competition_end": 1.0,
+    "temporal_route_information_end": 0.0,
+    "temporal_lookahead_end": 0.0,
+    "temporal_transition_ticks": 94,
+    "temporal_shape": 1.03189,
+    "opening_reach_weight": 0.70001,
+    "reach_ramp_ticks": 140,
+    "opening_combat_weight": 0.54141,
+    "combat_weight_end": 1.25868,
+    "combat_ramp_ticks": 228,
+    "frontier_resource_half_life": 48.33912,
+    "information_cap": 1.8093,
+    "joint_future_weight": 0.0,
+    "temporal_third_party_attack_end": 0.36647,
+    "temporal_third_party_risk_end": 0.05,
+    "purpose_enabled": true,
+    "purpose_resource_quiet_ticks": 8,
+    "purpose_resource_floor": 0.42361,
+    "purpose_battle_floor": 0.67991,
+    "purpose_intercept_weight": 0.70439,
+    "purpose_intercept_horizon": 3,
+    "purpose_heading_weight": 2.39938,
+    "purpose_escape_weight": 1.04687,
+    "purpose_chase_progress_ticks": 19,
+    "chase_shared_progress": true,
+    "attack_probability": 0.53329,
+    "hp_loss_cost": 0.01189,
+    "death_cost": 2.58207,
+    "future_exposure_cost": 0.03745,
+    "route_risk": 0.08031,
+    "remembered_risk": 0.00675,
+    "kill_reward_estimate": 16.27004,
+    "intent_chase_weight": 0.13194,
+    "intent_risk_weight": 0.28035,
+    "intent_heading_weight": 2.42915,
+    "third_party_attack_bonus": 0.09843,
+    "third_party_risk_discount": 0.38625,
+    "recent_enemy_search_weight": 1.43326,
+    "recent_enemy_half_life": 9.94954,
+    "recent_enemy_max_age": 29,
+    "patrol_value": 0.65567,
+    "patrol_stale_ticks": 68.25012,
+    "patrol_enemy_hint": 0.70746,
+    "chase_stall_ticks": 8,
+    "chase_cooldown_ticks": 12,
+    "event_fortress_value": 3.47708,
+    "event_fortress_hold": 2.02096,
+    "event_heal_value": 0.04323,
+    "event_pepper_value": 0.01468,
+    "mission_potential": 0.5556,
+    "switch_margin": 0.0245,
+    "travel_offset": 1.85861,
+    "purpose_patrol_visible_scale": 0.0
+  },
+  "validation": {
+    "profile": "purpose46_patrol_guard",
+    "parameters": {
+      "acquisition_curve_enabled": true,
+      "acquisition_resource_weight": 3.63877,
+      "acquisition_explore_peak": 4.57999,
+      "acquisition_explore_floor": 0.0,
+      "acquisition_explore_half_ticks": 45.88984,
+      "acquisition_explore_shape": 1.50886,
+      "acquisition_silence_half_ticks": 20.29022,
+      "acquisition_silence_grace_ticks": 2,
+      "contested_resource_factor": 0.26668,
+      "competition_softness": 1.1375,
+      "route_information_weight": 0.0,
+      "information_softness": 0.0,
+      "resource_lookahead_weight": 0.0,
+      "temporal_policy_enabled": true,
+      "resource_age_ticks": 37.90788,
+      "temporal_resource_age_end": 8.98741,
+      "visible_resource_weight": 1.2,
+      "competition_weight": 1.0,
+      "temporal_competition_end": 1.0,
+      "temporal_route_information_end": 0.0,
+      "temporal_lookahead_end": 0.0,
+      "temporal_transition_ticks": 94,
+      "temporal_shape": 1.03189,
+      "opening_reach_weight": 0.70001,
+      "reach_ramp_ticks": 140,
+      "opening_combat_weight": 0.54141,
+      "combat_weight_end": 1.25868,
+      "combat_ramp_ticks": 228,
+      "frontier_resource_half_life": 48.33912,
+      "information_cap": 1.8093,
+      "joint_future_weight": 0.0,
+      "temporal_third_party_attack_end": 0.36647,
+      "temporal_third_party_risk_end": 0.05,
+      "purpose_enabled": true,
+      "purpose_resource_quiet_ticks": 8,
+      "purpose_resource_floor": 0.42361,
+      "purpose_battle_floor": 0.67991,
+      "purpose_intercept_weight": 0.70439,
+      "purpose_intercept_horizon": 3,
+      "purpose_heading_weight": 2.39938,
+      "purpose_escape_weight": 1.04687,
+      "purpose_chase_progress_ticks": 19,
+      "chase_shared_progress": true,
+      "attack_probability": 0.53329,
+      "hp_loss_cost": 0.01189,
+      "death_cost": 2.58207,
+      "future_exposure_cost": 0.03745,
+      "route_risk": 0.08031,
+      "remembered_risk": 0.00675,
+      "kill_reward_estimate": 16.27004,
+      "intent_chase_weight": 0.13194,
+      "intent_risk_weight": 0.28035,
+      "intent_heading_weight": 2.42915,
+      "third_party_attack_bonus": 0.09843,
+      "third_party_risk_discount": 0.38625,
+      "recent_enemy_search_weight": 1.43326,
+      "recent_enemy_half_life": 9.94954,
+      "recent_enemy_max_age": 29,
+      "patrol_value": 0.65567,
+      "patrol_stale_ticks": 68.25012,
+      "patrol_enemy_hint": 0.70746,
+      "chase_stall_ticks": 8,
+      "chase_cooldown_ticks": 12,
+      "event_fortress_value": 3.47708,
+      "event_fortress_hold": 2.02096,
+      "event_heal_value": 0.04323,
+      "event_pepper_value": 0.01468,
+      "mission_potential": 0.5556,
+      "switch_margin": 0.0245,
+      "travel_offset": 1.85861,
+      "purpose_patrol_visible_scale": 0.0
+    },
+    "accepted": false,
+    "gates": {
+      "production_totals_preserved": false,
+      "incumbent_totals_preserved": false,
+      "resource_preserved": false,
+      "weighted_resource_improved": false,
+      "meaningful_weighted_gain": false,
+      "original_candidate_preserved": false,
+      "fifty_preserved": false,
+      "lower_tail_preserved": false
+    },
+    "comparisons": {
+      "official": {
+        "baseline": {
+          "matched_maps": 48,
+          "candidate": "guarded_candidate",
+          "baseline": {
+            "n": 48,
+            "actual_mean": 30.595833333333335,
+            "conditional_mean": 44.1375,
+            "conditional_p10": 32.5,
+            "conditional_min": 28.2,
+            "conditional_at_least_50": 15,
+            "conditional_at_least_50_rate": 0.3125,
+            "resource_mean": 63.541666666666664,
+            "resource_at_least_80_rate": 0.3333333333333333,
+            "damage_mean": 513.6458333333334,
+            "damage_at_least_500_rate": 0.875,
+            "all_raw_tasks_rate": 0.7083333333333334,
+            "relative_actual_margin_mean": 4.9625,
+            "decision_mean_ms": 4.331379375,
+            "decision_max_ms": 182.348,
+            "actual_ai_qualified_matches": 0
+          },
+          "candidate_metrics": {
+            "n": 48,
+            "actual_mean": 29.660416666666666,
+            "conditional_mean": 42.264583333333334,
+            "conditional_p10": 30.0,
+            "conditional_min": 20.4,
+            "conditional_at_least_50": 16,
+            "conditional_at_least_50_rate": 0.3333333333333333,
+            "resource_mean": 59.791666666666664,
+            "resource_at_least_80_rate": 0.3541666666666667,
+            "damage_mean": 516.2946428571429,
+            "damage_at_least_500_rate": 0.8541666666666666,
+            "all_raw_tasks_rate": 0.5625,
+            "relative_actual_margin_mean": 1.1104166666666666,
+            "decision_mean_ms": 4.6577447916666666,
+            "decision_max_ms": 164.552,
+            "actual_ai_qualified_matches": 0
+          },
+          "actual_paired": {
+            "mean_gain": -0.9354166666666666,
+            "bootstrap_95_interval": [
+              -2.53125,
+              0.5854166666666668
+            ],
+            "wins_ties_losses": [
+              13,
+              14,
+              21
+            ]
+          },
+          "conditional_paired": {
+            "mean_gain": -1.8729166666666666,
+            "bootstrap_95_interval": [
+              -3.970833333333333,
+              -0.002083333333333215
+            ],
+            "wins_ties_losses": [
+              13,
+              13,
+              22
+            ]
+          }
+        },
+        "incumbent": {
+          "matched_maps": 48,
+          "candidate": "guarded_candidate",
+          "baseline": {
+            "n": 48,
+            "actual_mean": 31.045833333333334,
+            "conditional_mean": 44.69166666666667,
+            "conditional_p10": 31.4,
+            "conditional_min": 27.6,
+            "conditional_at_least_50": 18,
+            "conditional_at_least_50_rate": 0.375,
+            "resource_mean": 65.83333333333333,
+            "resource_at_least_80_rate": 0.3958333333333333,
+            "damage_mean": 518.2589285714286,
+            "damage_at_least_500_rate": 0.8541666666666666,
+            "all_raw_tasks_rate": 0.7291666666666666,
+            "relative_actual_margin_mean": 4.620833333333334,
+            "decision_mean_ms": 4.761480375,
+            "decision_max_ms": 196.989,
+            "actual_ai_qualified_matches": 0
+          },
+          "candidate_metrics": {
+            "n": 48,
+            "actual_mean": 29.660416666666666,
+            "conditional_mean": 42.264583333333334,
+            "conditional_p10": 30.0,
+            "conditional_min": 20.4,
+            "conditional_at_least_50": 16,
+            "conditional_at_least_50_rate": 0.3333333333333333,
+            "resource_mean": 59.791666666666664,
+            "resource_at_least_80_rate": 0.3541666666666667,
+            "damage_mean": 516.2946428571429,
+            "damage_at_least_500_rate": 0.8541666666666666,
+            "all_raw_tasks_rate": 0.5625,
+            "relative_actual_margin_mean": 1.1104166666666666,
+            "decision_mean_ms": 4.6577447916666666,
+            "decision_max_ms": 164.552,
+            "actual_ai_qualified_matches": 0
+          },
+          "actual_paired": {
+            "mean_gain": -1.3854166666666665,
+            "bootstrap_95_interval": [
+              -2.8104166666666663,
+              -0.04374999999999981
+            ],
+            "wins_ties_losses": [
+              14,
+              17,
+              17
+            ]
+          },
+          "conditional_paired": {
+            "mean_gain": -2.4270833333333335,
+            "bootstrap_95_interval": [
+              -4.458333333333334,
+              -0.6895833333333333
+            ],
+            "wins_ties_losses": [
+              14,
+              17,
+              17
+            ]
+          }
+        },
+        "original_candidate": {
+          "matched_maps": 48,
+          "candidate": "guarded_candidate",
+          "baseline": {
+            "n": 48,
+            "actual_mean": 29.905208333333334,
+            "conditional_mean": 42.509375,
+            "conditional_p10": 30.0,
+            "conditional_min": 20.7,
+            "conditional_at_least_50": 16,
+            "conditional_at_least_50_rate": 0.3333333333333333,
+            "resource_mean": 60.208333333333336,
+            "resource_at_least_80_rate": 0.375,
+            "damage_mean": 516.1904761904761,
+            "damage_at_least_500_rate": 0.8958333333333334,
+            "all_raw_tasks_rate": 0.5625,
+            "relative_actual_margin_mean": 1.057291666666667,
+            "decision_mean_ms": 5.028719208333333,
+            "decision_max_ms": 195.485,
+            "actual_ai_qualified_matches": 0
+          },
+          "candidate_metrics": {
+            "n": 48,
+            "actual_mean": 29.660416666666666,
+            "conditional_mean": 42.264583333333334,
+            "conditional_p10": 30.0,
+            "conditional_min": 20.4,
+            "conditional_at_least_50": 16,
+            "conditional_at_least_50_rate": 0.3333333333333333,
+            "resource_mean": 59.791666666666664,
+            "resource_at_least_80_rate": 0.3541666666666667,
+            "damage_mean": 516.2946428571429,
+            "damage_at_least_500_rate": 0.8541666666666666,
+            "all_raw_tasks_rate": 0.5625,
+            "relative_actual_margin_mean": 1.1104166666666666,
+            "decision_mean_ms": 4.6577447916666666,
+            "decision_max_ms": 164.552,
+            "actual_ai_qualified_matches": 0
+          },
+          "actual_paired": {
+            "mean_gain": -0.24479166666666655,
+            "bootstrap_95_interval": [
+              -0.6458333333333331,
+              0.11458333333333341
+            ],
+            "wins_ties_losses": [
+              4,
+              38,
+              6
+            ]
+          },
+          "conditional_paired": {
+            "mean_gain": -0.24479166666666666,
+            "bootstrap_95_interval": [
+              -0.8260416666666667,
+              0.3239583333333334
+            ],
+            "wins_ties_losses": [
+              4,
+              38,
+              6
+            ]
+          }
+        }
+      },
+      "mixed": {
+        "baseline": {
+          "matched_maps": 48,
+          "candidate": "guarded_candidate",
+          "baseline": {
+            "n": 48,
+            "actual_mean": 25.06339285714286,
+            "conditional_mean": 38.18839285714286,
+            "conditional_p10": 30.0,
+            "conditional_min": 13.95,
+            "conditional_at_least_50": 1,
+            "conditional_at_least_50_rate": 0.020833333333333332,
+            "resource_mean": 50.833333333333336,
+            "resource_at_least_80_rate": 0.0625,
+            "damage_mean": 420.49603174603175,
+            "damage_at_least_500_rate": 0.5208333333333334,
+            "all_raw_tasks_rate": 0.6458333333333334,
+            "relative_actual_margin_mean": -5.537946428571429,
+            "decision_mean_ms": 6.594331583333333,
+            "decision_max_ms": 211.269,
+            "actual_ai_qualified_matches": 0
+          },
+          "candidate_metrics": {
+            "n": 48,
+            "actual_mean": 26.530505952380953,
+            "conditional_mean": 39.75967261904762,
+            "conditional_p10": 30.1,
+            "conditional_min": 20.0,
+            "conditional_at_least_50": 5,
+            "conditional_at_least_50_rate": 0.10416666666666667,
+            "resource_mean": 54.166666666666664,
+            "resource_at_least_80_rate": 0.125,
+            "damage_mean": 444.73214285714283,
+            "damage_at_least_500_rate": 0.6041666666666666,
+            "all_raw_tasks_rate": 0.6666666666666666,
+            "relative_actual_margin_mean": -3.674702380952381,
+            "decision_mean_ms": 6.8019114583333335,
+            "decision_max_ms": 117.49,
+            "actual_ai_qualified_matches": 0
+          },
+          "actual_paired": {
+            "mean_gain": 1.4671130952380955,
+            "bootstrap_95_interval": [
+              -0.434970238095238,
+              3.4720238095238094
+            ],
+            "wins_ties_losses": [
+              19,
+              13,
+              16
+            ]
+          },
+          "conditional_paired": {
+            "mean_gain": 1.5712797619047623,
+            "bootstrap_95_interval": [
+              -0.7566964285714277,
+              3.992559523809524
+            ],
+            "wins_ties_losses": [
+              20,
+              12,
+              16
+            ]
+          }
+        },
+        "incumbent": {
+          "matched_maps": 48,
+          "candidate": "guarded_candidate",
+          "baseline": {
+            "n": 48,
+            "actual_mean": 24.926041666666666,
+            "conditional_mean": 38.259375,
+            "conditional_p10": 27.700000000000003,
+            "conditional_min": 22.4,
+            "conditional_at_least_50": 2,
+            "conditional_at_least_50_rate": 0.041666666666666664,
+            "resource_mean": 51.666666666666664,
+            "resource_at_least_80_rate": 0.041666666666666664,
+            "damage_mean": 426.11607142857144,
+            "damage_at_least_500_rate": 0.6041666666666666,
+            "all_raw_tasks_rate": 0.6666666666666666,
+            "relative_actual_margin_mean": -4.353571428571429,
+            "decision_mean_ms": 6.8461930833333335,
+            "decision_max_ms": 184.6,
+            "actual_ai_qualified_matches": 0
+          },
+          "candidate_metrics": {
+            "n": 48,
+            "actual_mean": 26.530505952380953,
+            "conditional_mean": 39.75967261904762,
+            "conditional_p10": 30.1,
+            "conditional_min": 20.0,
+            "conditional_at_least_50": 5,
+            "conditional_at_least_50_rate": 0.10416666666666667,
+            "resource_mean": 54.166666666666664,
+            "resource_at_least_80_rate": 0.125,
+            "damage_mean": 444.73214285714283,
+            "damage_at_least_500_rate": 0.6041666666666666,
+            "all_raw_tasks_rate": 0.6666666666666666,
+            "relative_actual_margin_mean": -3.674702380952381,
+            "decision_mean_ms": 6.8019114583333335,
+            "decision_max_ms": 117.49,
+            "actual_ai_qualified_matches": 0
+          },
+          "actual_paired": {
+            "mean_gain": 1.6044642857142857,
+            "bootstrap_95_interval": [
+              -0.06919642857142876,
+              3.3913690476190474
+            ],
+            "wins_ties_losses": [
+              23,
+              12,
+              13
+            ]
+          },
+          "conditional_paired": {
+            "mean_gain": 1.5002976190476192,
+            "bootstrap_95_interval": [
+              -0.4056547619047615,
+              3.460416666666667
+            ],
+            "wins_ties_losses": [
+              23,
+              12,
+              13
+            ]
+          }
+        },
+        "original_candidate": {
+          "matched_maps": 48,
+          "candidate": "guarded_candidate",
+          "baseline": {
+            "n": 48,
+            "actual_mean": 27.003125,
+            "conditional_mean": 40.33645833333333,
+            "conditional_p10": 30.0,
+            "conditional_min": 19.9,
+            "conditional_at_least_50": 5,
+            "conditional_at_least_50_rate": 0.10416666666666667,
+            "resource_mean": 54.375,
+            "resource_at_least_80_rate": 0.125,
+            "damage_mean": 461.42857142857144,
+            "damage_at_least_500_rate": 0.6458333333333334,
+            "all_raw_tasks_rate": 0.6666666666666666,
+            "relative_actual_margin_mean": -3.088541666666667,
+            "decision_mean_ms": 7.143733041666667,
+            "decision_max_ms": 114.957,
+            "actual_ai_qualified_matches": 0
+          },
+          "candidate_metrics": {
+            "n": 48,
+            "actual_mean": 26.530505952380953,
+            "conditional_mean": 39.75967261904762,
+            "conditional_p10": 30.1,
+            "conditional_min": 20.0,
+            "conditional_at_least_50": 5,
+            "conditional_at_least_50_rate": 0.10416666666666667,
+            "resource_mean": 54.166666666666664,
+            "resource_at_least_80_rate": 0.125,
+            "damage_mean": 444.73214285714283,
+            "damage_at_least_500_rate": 0.6041666666666666,
+            "all_raw_tasks_rate": 0.6666666666666666,
+            "relative_actual_margin_mean": -3.674702380952381,
+            "decision_mean_ms": 6.8019114583333335,
+            "decision_max_ms": 117.49,
+            "actual_ai_qualified_matches": 0
+          },
+          "actual_paired": {
+            "mean_gain": -0.4726190476190473,
+            "bootstrap_95_interval": [
+              -1.350744047619047,
+              0.46502976190476225
+            ],
+            "wins_ties_losses": [
+              9,
+              27,
+              12
+            ]
+          },
+          "conditional_paired": {
+            "mean_gain": -0.5767857142857142,
+            "bootstrap_95_interval": [
+              -1.5226190476190473,
+              0.4072916666666668
+            ],
+            "wins_ties_losses": [
+              9,
+              27,
+              12
+            ]
+          }
+        }
+      }
+    },
+    "paid_calls": 0
+  },
+  "deployed": false,
+  "recommended_training_start": "/home/jon/robot/competition/checkpoints/stage2/20261029-joint04",
+  "constraints": [
+    "采集权重不随时间降低，探索单独衰减。",
+    "对同一敌人无收益长追逐须冷却；看见有攻击收益且不在冷却中的敌人时，巡逻倍率可独立调整。",
+    "继续优先改善资源；完整保存旧joint_04、原purpose_46和巡逻约束修正版。"
+  ],
+  "next_work": [
+    "用更多新图验证资源收益与战斗满分率；不要再次把本轮种子称为盲测。",
+    "按轨迹区分资源被抢、路线绕行、目标中断和未探索遗漏。"
+  ],
+  "paid_calls": 0
+}

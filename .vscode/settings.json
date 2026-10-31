@@ -1,0 +1,26 @@
+{
+    "cmake.sourceDirectory": "/home/jon/robot/competition/contestant_ws/src/rmtc_connection",
+    "cmake.buildDirectory": "/home/jon/robot/competition/build/rmtc_connection",
+    "C_Cpp.default.compileCommands": "/home/jon/robot/competition/build/compile_commands.json",
+    "C_Cpp.default.compilerPath": "/usr/bin/g++",
+    "C_Cpp.default.intelliSenseMode": "linux-gcc-x64",
+    "C_Cpp.default.cppStandard": "c++17",
+    "C_Cpp.default.includePath": [
+        "/home/jon/robot/competition/contestant_ws/src/rmtc_connection/include",
+        "/opt/ros/humble/include/**",
+        "/usr/include"
+    ],
+    "C_Cpp.default.browse.path": [
+        "/home/jon/robot/competition/contestant_ws/src/rmtc_connection/include",
+        "/home/jon/robot/competition/contestant_ws/src/rmtc_connection/src",
+        "/opt/ros/humble/include"
+    ],
+    "C_Cpp.files.exclude": {
+        "**/.vscode": true,
+        "**/.vs": true,
+        "**/build/**": true,
+        "**/install/**": true,
+        "**/log/**": true,
+        "**/runtime/**": true
+    }
+}

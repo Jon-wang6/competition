@@ -1,0 +1,5 @@
+[0m[INFO] [1793369981.064324568] [rmtc_connection]: NEURAL enabled: 32->64->32->1, parameters=4225, weight=0.5000, model=/home/jon/robot/competition/install/rmtc_connection/share/rmtc_connection/config/neural/stage2_residual.json[0m
+[0m[INFO] [1793369981.064860105] [rmtc_connection]: READY team=A mode=stage2 resource_order=joint perception=/team_A/perception[0m
+[0m[INFO] [1793369981.065085419] [rmtc_connection]: STAGE2 resource/mission/combat/explore baseline; ticks=500; AI handled by independent ai_node process[0m
+[0m[INFO] [1793369983.048874170] [rclcpp]: signal_handler(SIGINT/SIGTERM)[0m
+[0m[INFO] [1793369983.049223463] [rmtc_connection]: SUMMARY {"event":"summary","frames":0,"matched_receipts":0,"parse_errors":0,"process_runtime_ms":1986.408762,"receipt_errors":0,"sent":0,"sessions":0,"successful_moves":0}[0m

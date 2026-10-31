@@ -1,0 +1,8 @@
+{
+  "resume_initialize_max_parameter_difference": 0.0,
+  "blend": 0,
+  "clip": 0.3,
+  "unsafe_teacher_action_excluded": true,
+  "schema": "planning-v2-combat",
+  "samples": 300
+}

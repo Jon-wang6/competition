@@ -1,0 +1,11 @@
+contestant_ws/build/
+contestant_ws/install/
+contestant_ws/log/
+runtime/
+/.secrets/
+/build/
+/install/
+/log/
+/tmp/
+__pycache__/
+*.pyc

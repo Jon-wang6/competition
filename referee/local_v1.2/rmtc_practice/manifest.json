@@ -1,0 +1,60 @@
+{
+  "name": "rmtc-practice",
+  "format_version": 1,
+  "platform": "Ubuntu 22.04 / ROS 2 Humble / x86_64",
+  "practice_only": true,
+  "files": {
+    "CONTESTANT_PROTOCOL.md": "c7f7d4d31faaae316a2722d45715acce38f52bb5de640ae43a18bd4d51b1f89a",
+    "README.md": "5fed94d60eef0a0f141645e3555340a45613105e1c667f1aeb7057e9be525555",
+    "bin/referee_node": "26850f21fdbb92a2063c49451fb5928e689bbe64cb0c90692a3e693534afcb6c",
+    "bin/robot_node": "09ba71673f0451d07ee4d62d9c5a43085478ae86b0892534cee7ca14bcb5f8aa",
+    "bin/scoring_node": "c800766f825b6d49d2b7c36a9184701156342bcd1c27cea526581325237f8df1",
+    "bin/simulator_node": "2f0157f77cabc5ea80128509913128ae6e26c38c8572dcd2c67ab8427bd5c3e0",
+    "bin/validate_config": "65880a3c77522c949ea005c69e0d7fd65f5ec49476a1e76202dbb86cd246e917",
+    "config/stage1.json": "0bae7586344ebf8b1461ad9006da263a12272416f09a8c29b34529515c45ff76",
+    "config/stage2.json": "f111795535be538202b6dbbbfebba4f7d53e5f053bc4ab50b8c57e8132754aeb",
+    "index.html": "13d6522616056c7d0e4b7b05b655af2a815287ac13ef6c2ee777cd3eeaff70bd",
+    "internal_ros.py": "fdb46717efda636e494f504856bb0995169328212428e6cf99eaf60dc8ae6e0a",
+    "practice.py": "503e67dbbd5d2cb3685c82b54e3722c7a9c4a1e436563fe2331910ce3622e721",
+    "rules.txt": "d8303eaba6d3f897f0f97bd4b026d840e183129dc53aeaccd60d45788be1c611",
+    "start_bot.sh": "ce72be9a7d77d4c0f4af931c8fe4cba78458cb0eeee7ea90b138d8dd3165954a",
+    "start_referee.sh": "55ae47a8584c042df79d922f5e29e50ffdc383697b2ed999727921db833eef7d",
+    "测试使用教程.md": "c368307ae0ec7fcd131817c2d73c481b89c9de05b6e1c3c8ceb3076be8a0ff9a"
+  },
+  "local_patch": {
+    "version": "1.2-local",
+    "rules": "RMTC赛事规则v1.2",
+    "upstream_preserved": "../../v1.1/rmtc_practice",
+    "scoring": "C++ practice_scoring",
+    "gateway": "C++ practice_web",
+    "formal_qualification": false,
+    "gateway_aliases": "practice-X resolves current session token; shared quota"
+  },
+  "upstream_core_source_sha256": "b3912533613350d3dae515b70fd66d8414a4f508a03992651e1913ea71ce4dd7",
+  "upstream_files": {
+    "CONTESTANT_PROTOCOL.md": "c7f7d4d31faaae316a2722d45715acce38f52bb5de640ae43a18bd4d51b1f89a",
+    "README.md": "5fed94d60eef0a0f141645e3555340a45613105e1c667f1aeb7057e9be525555",
+    "bin/referee_node": "26850f21fdbb92a2063c49451fb5928e689bbe64cb0c90692a3e693534afcb6c",
+    "bin/robot_node": "09ba71673f0451d07ee4d62d9c5a43085478ae86b0892534cee7ca14bcb5f8aa",
+    "bin/scoring_node": "8643de36ec8ae1f071309f07324a334268b520ca169c86991dae784284df74b0",
+    "bin/simulator_node": "2f0157f77cabc5ea80128509913128ae6e26c38c8572dcd2c67ab8427bd5c3e0",
+    "bin/validate_config": "65880a3c77522c949ea005c69e0d7fd65f5ec49476a1e76202dbb86cd246e917",
+    "config/stage1.json": "76cb931722c6faa49639288fa5a21704d3390bd52ad2f1d1d95c15acc6e1d285",
+    "config/stage2.json": "35ef0e02ac17222f2e087845060a281476375564842f49aa3e0cdfbe70ca3f71",
+    "index.html": "13d6522616056c7d0e4b7b05b655af2a815287ac13ef6c2ee777cd3eeaff70bd",
+    "internal_ros.py": "fdb46717efda636e494f504856bb0995169328212428e6cf99eaf60dc8ae6e0a",
+    "practice.py": "a72f6be6915a75c142298ff1b8f3d1ff2adbe3d763eaa35915747459c0b0d82a",
+    "rules.txt": "78f26623fce84c5b886ba40bd8f8445ea6dd856154f8e3b031a403ad80c3be48",
+    "start_bot.sh": "ce72be9a7d77d4c0f4af931c8fe4cba78458cb0eeee7ea90b138d8dd3165954a",
+    "start_referee.sh": "25bf328c9e692efea85ba6d53c6b025e3227c1fc0467439e41c1d1b8a960369c",
+    "测试使用教程.md": "c368307ae0ec7fcd131817c2d73c481b89c9de05b6e1c3c8ceb3076be8a0ff9a"
+  },
+  "local_cpp_sources": {
+    "include/rmtc_connection/practice_rules.hpp": "4c01f02b33f4337394cd71ca7f70b4ac2acec712e8452375d7490da8668f4f6b",
+    "include/rmtc_connection/practice_gateway.hpp": "3ba1f79e455a32a8e9ab3a8b14b5332a0962119e11864eb83b55087310cad56f",
+    "src/referee/practice_scoring_main.cpp": "5ab57c6623756c09e538c74f5eff4ea8d2764678cbed137d889f0cbde3e6a054",
+    "src/referee/practice_gateway.cpp": "de14e1cbe983db0e50ebac199806a4551041d535419a530af0d2964afe895e11",
+    "src/referee/practice_web_main.cpp": "6fc6267b94c95e3a5b926e2de5fb190bdf49a4db2ad5750cee754bf9fa23a657",
+    "src/referee/map_generator.cpp": "d02d62ff6779c385f6258aa037cc6eade771a2c38c809df0907a70611ad8464e"
+  }
+}

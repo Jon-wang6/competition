@@ -1,0 +1,480 @@
+{
+  "passed": true,
+  "profile": "v4opening40",
+  "seed": 1106003,
+  "horizon": 500,
+  "tick_ms": 500,
+  "frames": 501,
+  "actions": 500,
+  "acks": 500,
+  "all_seat_invalid_actions": {
+    "A": 0,
+    "C": 0,
+    "D": 0,
+    "B": 0
+  },
+  "decision_ms": {
+    "count": 500,
+    "max": 19.926,
+    "mean": 3.968946,
+    "p95": 11.833
+  },
+  "alive_decision_ms": {
+    "mean": 4.062295081967213,
+    "p95": 11.833,
+    "max": 19.926
+  },
+  "match_seconds": 253.20302652900045,
+  "controller_sha256": "5568c9c0888122f6c37eb40175e1cabd39e69ac3388d696809e47629e0e3e4f4",
+  "reach_tick": 80,
+  "opening_policy": {
+    "prefix80": "aa434d70057ef184c9025b3156ac858d68251fcfa968e257371b1f9481b82053",
+    "all_actions": "485a10b730a0959c386009694cbe854af29f22b4eedeef6c72d2b780d5c0cfb9",
+    "active_frames": 348,
+    "guard_frames": 23,
+    "opening_collection_frames": 40,
+    "purpose_active_frames": 354,
+    "opening_forbidden_actions": 0
+  },
+  "paid_calls": 0,
+  "real_ai_eligible": false,
+  "board": {
+    "action_tick": 499,
+    "map_view": {
+      "map": {
+        "height": 24,
+        "width": 24
+      },
+      "obstacles": [
+        [
+          0,
+          5
+        ],
+        [
+          0,
+          13
+        ],
+        [
+          0,
+          16
+        ],
+        [
+          1,
+          6
+        ],
+        [
+          1,
+          8
+        ],
+        [
+          1,
+          10
+        ],
+        [
+          1,
+          20
+        ],
+        [
+          2,
+          14
+        ],
+        [
+          2,
+          16
+        ],
+        [
+          3,
+          12
+        ],
+        [
+          3,
+          21
+        ],
+        [
+          4,
+          18
+        ],
+        [
+          4,
+          21
+        ],
+        [
+          5,
+          2
+        ],
+        [
+          5,
+          18
+        ],
+        [
+          5,
+          22
+        ],
+        [
+          6,
+          5
+        ],
+        [
+          7,
+          5
+        ],
+        [
+          7,
+          7
+        ],
+        [
+          7,
+          8
+        ],
+        [
+          7,
+          9
+        ],
+        [
+          7,
+          21
+        ],
+        [
+          8,
+          2
+        ],
+        [
+          8,
+          13
+        ],
+        [
+          8,
+          23
+        ],
+        [
+          9,
+          11
+        ],
+        [
+          9,
+          17
+        ],
+        [
+          10,
+          4
+        ],
+        [
+          10,
+          5
+        ],
+        [
+          10,
+          12
+        ],
+        [
+          11,
+          10
+        ],
+        [
+          12,
+          16
+        ],
+        [
+          13,
+          1
+        ],
+        [
+          13,
+          5
+        ],
+        [
+          13,
+          16
+        ],
+        [
+          13,
+          21
+        ],
+        [
+          14,
+          3
+        ],
+        [
+          14,
+          14
+        ],
+        [
+          14,
+          17
+        ],
+        [
+          15,
+          15
+        ],
+        [
+          16,
+          6
+        ],
+        [
+          16,
+          10
+        ],
+        [
+          16,
+          21
+        ],
+        [
+          16,
+          22
+        ],
+        [
+          17,
+          7
+        ],
+        [
+          18,
+          3
+        ],
+        [
+          18,
+          12
+        ],
+        [
+          18,
+          17
+        ],
+        [
+          18,
+          18
+        ],
+        [
+          19,
+          10
+        ],
+        [
+          19,
+          16
+        ],
+        [
+          19,
+          22
+        ],
+        [
+          20,
+          4
+        ],
+        [
+          20,
+          10
+        ],
+        [
+          20,
+          19
+        ],
+        [
+          23,
+          5
+        ],
+        [
+          23,
+          14
+        ]
+      ],
+      "resources": [],
+      "robots": [
+        {
+          "alive": true,
+          "hp": 100,
+          "position": [
+            18,
+            8
+          ],
+          "team": "A"
+        },
+        {
+          "alive": true,
+          "hp": 20,
+          "position": [
+            17,
+            10
+          ],
+          "team": "B"
+        },
+        {
+          "alive": true,
+          "hp": 20,
+          "position": [
+            17,
+            12
+          ],
+          "team": "C"
+        },
+        {
+          "alive": true,
+          "hp": 100,
+          "position": [
+            18,
+            14
+          ],
+          "team": "D"
+        }
+      ]
+    },
+    "session_id": "practice-05fdbaeb7ef149a487f6dc17e9dbb38d",
+    "stage": 2,
+    "teams": [
+      {
+        "ai_eligible": false,
+        "alive": true,
+        "effective_damage": 420.0,
+        "hp": 100,
+        "invalid_actions": 0,
+        "mission_completed": 3,
+        "mission_completed_eligible": 0,
+        "mission_completed_raw": 3,
+        "rank": 1,
+        "resource_value": 70.0,
+        "score": 30.1,
+        "score_breakdown": {
+          "combat": 12.6,
+          "missions": 0.0,
+          "resource": 17.5
+        },
+        "team": "A",
+        "team_name": "Jon C++ 接入测试",
+        "tied": false
+      },
+      {
+        "ai_eligible": false,
+        "alive": true,
+        "effective_damage": 440.0,
+        "hp": 20,
+        "invalid_actions": 0,
+        "mission_completed": 2,
+        "mission_completed_eligible": 0,
+        "mission_completed_raw": 2,
+        "rank": 2,
+        "resource_value": 50.0,
+        "score": 25.7,
+        "score_breakdown": {
+          "combat": 13.2,
+          "missions": 0.0,
+          "resource": 12.5
+        },
+        "team": "C",
+        "team_name": "Jon C++ 接入测试",
+        "tied": false
+      },
+      {
+        "ai_eligible": false,
+        "alive": true,
+        "effective_damage": 470.0,
+        "hp": 100,
+        "invalid_actions": 0,
+        "mission_completed": 2,
+        "mission_completed_eligible": 0,
+        "mission_completed_raw": 2,
+        "rank": 3,
+        "resource_value": 40.0,
+        "score": 24.1,
+        "score_breakdown": {
+          "combat": 14.1,
+          "missions": 0.0,
+          "resource": 10.0
+        },
+        "team": "D",
+        "team_name": "Jon C++ 接入测试",
+        "tied": false
+      },
+      {
+        "ai_eligible": false,
+        "alive": true,
+        "effective_damage": 430.0,
+        "hp": 20,
+        "invalid_actions": 0,
+        "mission_completed": 2,
+        "mission_completed_eligible": 0,
+        "mission_completed_raw": 2,
+        "rank": 4,
+        "resource_value": 40.0,
+        "score": 22.9,
+        "score_breakdown": {
+          "combat": 12.9,
+          "missions": 0.0,
+          "resource": 10.0
+        },
+        "team": "B",
+        "team_name": "Jon C++ 接入测试",
+        "tied": false
+      }
+    ],
+    "tick": 500
+  },
+  "parameters": {
+    "acquisition_curve_enabled": true,
+    "acquisition_resource_weight": 4.01284,
+    "acquisition_explore_peak": 4.94843,
+    "acquisition_explore_floor": 0.0,
+    "acquisition_explore_half_ticks": 57.23053,
+    "acquisition_explore_shape": 1.50886,
+    "acquisition_silence_half_ticks": 26.80416,
+    "acquisition_silence_grace_ticks": 2,
+    "contested_resource_factor": 0.23107,
+    "competition_softness": 0.91659,
+    "route_information_weight": 0.0,
+    "information_softness": 0.0,
+    "resource_lookahead_weight": 0.0,
+    "temporal_policy_enabled": true,
+    "resource_age_ticks": 37.90788,
+    "temporal_resource_age_end": 8.98741,
+    "visible_resource_weight": 1.2,
+    "competition_weight": 1.0,
+    "temporal_competition_end": 1.0,
+    "temporal_route_information_end": 0.0,
+    "temporal_lookahead_end": 0.0,
+    "temporal_transition_ticks": 94,
+    "temporal_shape": 1.03189,
+    "opening_reach_weight": 0.65443,
+    "reach_ramp_ticks": 123,
+    "opening_combat_weight": 0.54519,
+    "combat_weight_end": 1.14219,
+    "combat_ramp_ticks": 223,
+    "frontier_resource_half_life": 48.33912,
+    "information_cap": 1.8093,
+    "joint_future_weight": 0.0,
+    "temporal_third_party_attack_end": 0.27091,
+    "temporal_third_party_risk_end": 0.10998,
+    "reach_finish_ticks": 200,
+    "reach_attack_pause_ticks": 3,
+    "reach_move_priority": 0.3,
+    "reach_stalemate_ticks": 12,
+    "event_fortress_value": 4.0,
+    "event_fortress_contest_enabled": true,
+    "event_fortress_race_margin": 1,
+    "event_fortress_min_enemy_stay": 3,
+    "event_fortress_preempt_ticks": 3,
+    "event_fortress_withdraw_priority": 1.5,
+    "event_unrivaled_risk_multiplier": 4.0,
+    "reach_collision_retry_ticks": 2,
+    "battle_curve_enabled": true,
+    "battle_curve_protect_resources": true,
+    "battle_curve_start_tick": 142,
+    "battle_curve_ramp_ticks": 87,
+    "battle_curve_shape": 1.39985,
+    "battle_curve_damage_need_power": 0.65948,
+    "battle_curve_combat_end": 1.98778,
+    "battle_curve_search_end": 1.49225,
+    "battle_curve_hp_risk_end": 0.98093,
+    "battle_curve_future_risk_end": 0.68252,
+    "battle_curve_route_risk_end": 0.49755,
+    "purpose_enabled": true,
+    "purpose_start_tick": 146,
+    "purpose_protect_resources": true,
+    "purpose_resource_floor": 1.0,
+    "purpose_battle_floor": 0.56244,
+    "purpose_intercept_weight": 0.79781,
+    "purpose_intercept_horizon": 2,
+    "purpose_heading_weight": 2.34223,
+    "purpose_escape_weight": 1.18581,
+    "purpose_patrol_visible_scale": 0.6664,
+    "purpose_chase_progress_ticks": 28,
+    "opening_collection_ticks": 40,
+    "chase_cooldown_ticks": 13,
+    "battle_curve_third_party_end": 1.01427
+  }
+}

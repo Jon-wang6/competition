@@ -1,0 +1,664 @@
+{
+  "candidates": [
+    {
+      "enemy_pressure": 0.0,
+      "half_life": 4.0,
+      "train": {
+        "map_mean_brier": 0.252978676735172,
+        "maps": 9,
+        "positive": 62,
+        "samples": 87
+      },
+      "validation": {
+        "map_mean_brier": 0.2719576465943005,
+        "maps": 3,
+        "positive": 20,
+        "samples": 38
+      }
+    },
+    {
+      "enemy_pressure": 0.5,
+      "half_life": 4.0,
+      "train": {
+        "map_mean_brier": 0.25486391240613027,
+        "maps": 9,
+        "positive": 62,
+        "samples": 87
+      },
+      "validation": {
+        "map_mean_brier": 0.2750642401786891,
+        "maps": 3,
+        "positive": 20,
+        "samples": 38
+      }
+    },
+    {
+      "enemy_pressure": 1.0,
+      "half_life": 4.0,
+      "train": {
+        "map_mean_brier": 0.2570964812305852,
+        "maps": 9,
+        "positive": 62,
+        "samples": 87
+      },
+      "validation": {
+        "map_mean_brier": 0.2783579380305698,
+        "maps": 3,
+        "positive": 20,
+        "samples": 38
+      }
+    },
+    {
+      "enemy_pressure": 2.0,
+      "half_life": 4.0,
+      "train": {
+        "map_mean_brier": 0.2621007390810768,
+        "maps": 9,
+        "positive": 62,
+        "samples": 87
+      },
+      "validation": {
+        "map_mean_brier": 0.28521869774977265,
+        "maps": 3,
+        "positive": 20,
+        "samples": 38
+      }
+    },
+    {
+      "enemy_pressure": 4.0,
+      "half_life": 4.0,
+      "train": {
+        "map_mean_brier": 0.2724967964546975,
+        "maps": 9,
+        "positive": 62,
+        "samples": 87
+      },
+      "validation": {
+        "map_mean_brier": 0.2987865135454892,
+        "maps": 3,
+        "positive": 20,
+        "samples": 38
+      }
+    },
+    {
+      "enemy_pressure": 0.0,
+      "half_life": 8.0,
+      "train": {
+        "map_mean_brier": 0.18654563780272015,
+        "maps": 9,
+        "positive": 62,
+        "samples": 87
+      },
+      "validation": {
+        "map_mean_brier": 0.18569740624562883,
+        "maps": 3,
+        "positive": 20,
+        "samples": 38
+      }
+    },
+    {
+      "enemy_pressure": 0.5,
+      "half_life": 8.0,
+      "train": {
+        "map_mean_brier": 0.1863214803516653,
+        "maps": 9,
+        "positive": 62,
+        "samples": 87
+      },
+      "validation": {
+        "map_mean_brier": 0.18615688035330616,
+        "maps": 3,
+        "positive": 20,
+        "samples": 38
+      }
+    },
+    {
+      "enemy_pressure": 1.0,
+      "half_life": 8.0,
+      "train": {
+        "map_mean_brier": 0.18650831903559656,
+        "maps": 9,
+        "positive": 62,
+        "samples": 87
+      },
+      "validation": {
+        "map_mean_brier": 0.18690409704203104,
+        "maps": 3,
+        "positive": 20,
+        "samples": 38
+      }
+    },
+    {
+      "enemy_pressure": 2.0,
+      "half_life": 8.0,
+      "train": {
+        "map_mean_brier": 0.18780732991418697,
+        "maps": 9,
+        "positive": 62,
+        "samples": 87
+      },
+      "validation": {
+        "map_mean_brier": 0.18910724600991913,
+        "maps": 3,
+        "positive": 20,
+        "samples": 38
+      }
+    },
+    {
+      "enemy_pressure": 4.0,
+      "half_life": 8.0,
+      "train": {
+        "map_mean_brier": 0.19266977563172222,
+        "maps": 9,
+        "positive": 62,
+        "samples": 87
+      },
+      "validation": {
+        "map_mean_brier": 0.19550509253184434,
+        "maps": 3,
+        "positive": 20,
+        "samples": 38
+      }
+    },
+    {
+      "enemy_pressure": 0.0,
+      "half_life": 12.0,
+      "train": {
+        "map_mean_brier": 0.16350205695144604,
+        "maps": 9,
+        "positive": 62,
+        "samples": 87
+      },
+      "validation": {
+        "map_mean_brier": 0.15664779639630635,
+        "maps": 3,
+        "positive": 20,
+        "samples": 38
+      }
+    },
+    {
+      "enemy_pressure": 0.5,
+      "half_life": 12.0,
+      "train": {
+        "map_mean_brier": 0.1623066192165974,
+        "maps": 9,
+        "positive": 62,
+        "samples": 87
+      },
+      "validation": {
+        "map_mean_brier": 0.15594415816851617,
+        "maps": 3,
+        "positive": 20,
+        "samples": 38
+      }
+    },
+    {
+      "enemy_pressure": 1.0,
+      "half_life": 12.0,
+      "train": {
+        "map_mean_brier": 0.16146304813002915,
+        "maps": 9,
+        "positive": 62,
+        "samples": 87
+      },
+      "validation": {
+        "map_mean_brier": 0.1554906020238496,
+        "maps": 3,
+        "positive": 20,
+        "samples": 38
+      }
+    },
+    {
+      "enemy_pressure": 2.0,
+      "half_life": 12.0,
+      "train": {
+        "map_mean_brier": 0.16064124728335596,
+        "maps": 9,
+        "positive": 62,
+        "samples": 87
+      },
+      "validation": {
+        "map_mean_brier": 0.1552180005774869,
+        "maps": 3,
+        "positive": 20,
+        "samples": 38
+      }
+    },
+    {
+      "enemy_pressure": 4.0,
+      "half_life": 12.0,
+      "train": {
+        "map_mean_brier": 0.16147552172507604,
+        "maps": 9,
+        "positive": 62,
+        "samples": 87
+      },
+      "validation": {
+        "map_mean_brier": 0.15665714177951237,
+        "maps": 3,
+        "positive": 20,
+        "samples": 38
+      }
+    },
+    {
+      "enemy_pressure": 0.0,
+      "half_life": 20.0,
+      "train": {
+        "map_mean_brier": 0.15031063332787364,
+        "maps": 9,
+        "positive": 62,
+        "samples": 87
+      },
+      "validation": {
+        "map_mean_brier": 0.14113166356399423,
+        "maps": 3,
+        "positive": 20,
+        "samples": 38
+      }
+    },
+    {
+      "enemy_pressure": 0.5,
+      "half_life": 20.0,
+      "train": {
+        "map_mean_brier": 0.14837180765486566,
+        "maps": 9,
+        "positive": 62,
+        "samples": 87
+      },
+      "validation": {
+        "map_mean_brier": 0.13940299853714175,
+        "maps": 3,
+        "positive": 20,
+        "samples": 38
+      }
+    },
+    {
+      "enemy_pressure": 1.0,
+      "half_life": 20.0,
+      "train": {
+        "map_mean_brier": 0.1466858977205712,
+        "maps": 9,
+        "positive": 62,
+        "samples": 87
+      },
+      "validation": {
+        "map_mean_brier": 0.1379555237002176,
+        "maps": 3,
+        "positive": 20,
+        "samples": 38
+      }
+    },
+    {
+      "enemy_pressure": 2.0,
+      "half_life": 20.0,
+      "train": {
+        "map_mean_brier": 0.143971976127421,
+        "maps": 9,
+        "positive": 62,
+        "samples": 87
+      },
+      "validation": {
+        "map_mean_brier": 0.1356834281018007,
+        "maps": 3,
+        "positive": 20,
+        "samples": 38
+      }
+    },
+    {
+      "enemy_pressure": 4.0,
+      "half_life": 20.0,
+      "train": {
+        "map_mean_brier": 0.14064308595819425,
+        "maps": 9,
+        "positive": 62,
+        "samples": 87
+      },
+      "validation": {
+        "map_mean_brier": 0.13289940896480767,
+        "maps": 3,
+        "positive": 20,
+        "samples": 38
+      }
+    },
+    {
+      "enemy_pressure": 0.0,
+      "half_life": 35.0,
+      "train": {
+        "map_mean_brier": 0.15308177598258685,
+        "maps": 9,
+        "positive": 62,
+        "samples": 87
+      },
+      "validation": {
+        "map_mean_brier": 0.14902570246504407,
+        "maps": 3,
+        "positive": 20,
+        "samples": 38
+      }
+    },
+    {
+      "enemy_pressure": 0.5,
+      "half_life": 35.0,
+      "train": {
+        "map_mean_brier": 0.1508809299813319,
+        "maps": 9,
+        "positive": 62,
+        "samples": 87
+      },
+      "validation": {
+        "map_mean_brier": 0.14610208046375528,
+        "maps": 3,
+        "positive": 20,
+        "samples": 38
+      }
+    },
+    {
+      "enemy_pressure": 1.0,
+      "half_life": 35.0,
+      "train": {
+        "map_mean_brier": 0.1488840826840796,
+        "maps": 9,
+        "positive": 62,
+        "samples": 87
+      },
+      "validation": {
+        "map_mean_brier": 0.14362473528345066,
+        "maps": 3,
+        "positive": 20,
+        "samples": 38
+      }
+    },
+    {
+      "enemy_pressure": 2.0,
+      "half_life": 35.0,
+      "train": {
+        "map_mean_brier": 0.14534175238924255,
+        "maps": 9,
+        "positive": 62,
+        "samples": 87
+      },
+      "validation": {
+        "map_mean_brier": 0.13960836754087874,
+        "maps": 3,
+        "positive": 20,
+        "samples": 38
+      }
+    },
+    {
+      "enemy_pressure": 4.0,
+      "half_life": 35.0,
+      "train": {
+        "map_mean_brier": 0.1396950499535301,
+        "maps": 9,
+        "positive": 62,
+        "samples": 87
+      },
+      "validation": {
+        "map_mean_brier": 0.13387957868332287,
+        "maps": 3,
+        "positive": 20,
+        "samples": 38
+      }
+    },
+    {
+      "enemy_pressure": 0.0,
+      "half_life": 50.0,
+      "train": {
+        "map_mean_brier": 0.16289357466530988,
+        "maps": 9,
+        "positive": 62,
+        "samples": 87
+      },
+      "validation": {
+        "map_mean_brier": 0.1675786127197937,
+        "maps": 3,
+        "positive": 20,
+        "samples": 38
+      }
+    },
+    {
+      "enemy_pressure": 0.5,
+      "half_life": 50.0,
+      "train": {
+        "map_mean_brier": 0.16054666954524283,
+        "maps": 9,
+        "positive": 62,
+        "samples": 87
+      },
+      "validation": {
+        "map_mean_brier": 0.1638527402700787,
+        "maps": 3,
+        "positive": 20,
+        "samples": 38
+      }
+    },
+    {
+      "enemy_pressure": 1.0,
+      "half_life": 50.0,
+      "train": {
+        "map_mean_brier": 0.15851795159355656,
+        "maps": 9,
+        "positive": 62,
+        "samples": 87
+      },
+      "validation": {
+        "map_mean_brier": 0.16064191281432452,
+        "maps": 3,
+        "positive": 20,
+        "samples": 38
+      }
+    },
+    {
+      "enemy_pressure": 2.0,
+      "half_life": 50.0,
+      "train": {
+        "map_mean_brier": 0.1549396111568326,
+        "maps": 9,
+        "positive": 62,
+        "samples": 87
+      },
+      "validation": {
+        "map_mean_brier": 0.1553694767861077,
+        "maps": 3,
+        "positive": 20,
+        "samples": 38
+      }
+    },
+    {
+      "enemy_pressure": 4.0,
+      "half_life": 50.0,
+      "train": {
+        "map_mean_brier": 0.14895778127228876,
+        "maps": 9,
+        "positive": 62,
+        "samples": 87
+      },
+      "validation": {
+        "map_mean_brier": 0.14776258067232395,
+        "maps": 3,
+        "positive": 20,
+        "samples": 38
+      }
+    },
+    {
+      "enemy_pressure": 0.0,
+      "half_life": 80.0,
+      "train": {
+        "map_mean_brier": 0.18548337242547783,
+        "maps": 9,
+        "positive": 62,
+        "samples": 87
+      },
+      "validation": {
+        "map_mean_brier": 0.20743082687889683,
+        "maps": 3,
+        "positive": 20,
+        "samples": 38
+      }
+    },
+    {
+      "enemy_pressure": 0.5,
+      "half_life": 80.0,
+      "train": {
+        "map_mean_brier": 0.18253133676488342,
+        "maps": 9,
+        "positive": 62,
+        "samples": 87
+      },
+      "validation": {
+        "map_mean_brier": 0.2030054694250072,
+        "maps": 3,
+        "positive": 20,
+        "samples": 38
+      }
+    },
+    {
+      "enemy_pressure": 1.0,
+      "half_life": 80.0,
+      "train": {
+        "map_mean_brier": 0.18023915415995953,
+        "maps": 9,
+        "positive": 62,
+        "samples": 87
+      },
+      "validation": {
+        "map_mean_brier": 0.19905053432125822,
+        "maps": 3,
+        "positive": 20,
+        "samples": 38
+      }
+    },
+    {
+      "enemy_pressure": 2.0,
+      "half_life": 80.0,
+      "train": {
+        "map_mean_brier": 0.17660042351933225,
+        "maps": 9,
+        "positive": 62,
+        "samples": 87
+      },
+      "validation": {
+        "map_mean_brier": 0.1922913978547746,
+        "maps": 3,
+        "positive": 20,
+        "samples": 38
+      }
+    },
+    {
+      "enemy_pressure": 4.0,
+      "half_life": 80.0,
+      "train": {
+        "map_mean_brier": 0.17082129953172148,
+        "maps": 9,
+        "positive": 62,
+        "samples": 87
+      },
+      "validation": {
+        "map_mean_brier": 0.1820805243481427,
+        "maps": 3,
+        "positive": 20,
+        "samples": 38
+      }
+    },
+    {
+      "enemy_pressure": 0.0,
+      "half_life": 120.0,
+      "train": {
+        "map_mean_brier": 0.21287602510763617,
+        "maps": 9,
+        "positive": 62,
+        "samples": 87
+      },
+      "validation": {
+        "map_mean_brier": 0.2519030642114408,
+        "maps": 3,
+        "positive": 20,
+        "samples": 38
+      }
+    },
+    {
+      "enemy_pressure": 0.5,
+      "half_life": 120.0,
+      "train": {
+        "map_mean_brier": 0.20919967049030783,
+        "maps": 9,
+        "positive": 62,
+        "samples": 87
+      },
+      "validation": {
+        "map_mean_brier": 0.24745069979285983,
+        "maps": 3,
+        "positive": 20,
+        "samples": 38
+      }
+    },
+    {
+      "enemy_pressure": 1.0,
+      "half_life": 120.0,
+      "train": {
+        "map_mean_brier": 0.2063783935137903,
+        "maps": 9,
+        "positive": 62,
+        "samples": 87
+      },
+      "validation": {
+        "map_mean_brier": 0.24334690547093532,
+        "maps": 3,
+        "positive": 20,
+        "samples": 38
+      }
+    },
+    {
+      "enemy_pressure": 2.0,
+      "half_life": 120.0,
+      "train": {
+        "map_mean_brier": 0.20221152390507152,
+        "maps": 9,
+        "positive": 62,
+        "samples": 87
+      },
+      "validation": {
+        "map_mean_brier": 0.2360475383261622,
+        "maps": 3,
+        "positive": 20,
+        "samples": 38
+      }
+    },
+    {
+      "enemy_pressure": 4.0,
+      "half_life": 120.0,
+      "train": {
+        "map_mean_brier": 0.19642948614530104,
+        "maps": 9,
+        "positive": 62,
+        "samples": 87
+      },
+      "validation": {
+        "map_mean_brier": 0.22431996051574976,
+        "maps": 3,
+        "positive": 20,
+        "samples": 38
+      }
+    }
+  ],
+  "legacy_validation": {
+    "map_mean_brier": 0.16831115798954244,
+    "maps": 3,
+    "positive": 20,
+    "samples": 38
+  },
+  "paid_api_calls": 0,
+  "planning_enemy_pressure": 4.0,
+  "planning_memory_half_life": 35.0,
+  "sample_selection": "confirmed reobservations only; unseen outcomes censored; route selection bias remains",
+  "schema": "resource-presence-v1",
+  "source": "runtime/stage2-planning-score-20261031-140213",
+  "split": "map seed modulo 4; remainder zero validation",
+  "validation": {
+    "map_mean_brier": 0.13387957868332287,
+    "maps": 3,
+    "positive": 20,
+    "samples": 38
+  },
+  "validation_supports_candidate": true
+}

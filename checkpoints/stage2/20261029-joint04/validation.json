@@ -1,0 +1,177 @@
+{
+  "profile": "joint_04",
+  "parameters": {
+    "acquisition_curve_enabled": true,
+    "acquisition_resource_weight": 4.01284,
+    "acquisition_explore_peak": 4.94843,
+    "acquisition_explore_floor": 0.0,
+    "acquisition_explore_half_ticks": 57.23053,
+    "acquisition_explore_shape": 1.50886,
+    "acquisition_silence_half_ticks": 26.80416,
+    "acquisition_silence_grace_ticks": 2,
+    "contested_resource_factor": 0.23107,
+    "competition_softness": 0.91659,
+    "route_information_weight": 0.0,
+    "information_softness": 0.0,
+    "resource_lookahead_weight": 0.0,
+    "temporal_policy_enabled": true,
+    "resource_age_ticks": 37.90788,
+    "temporal_resource_age_end": 8.98741,
+    "visible_resource_weight": 1.2,
+    "competition_weight": 1.0,
+    "temporal_competition_end": 1.0,
+    "temporal_route_information_end": 0.0,
+    "temporal_lookahead_end": 0.0,
+    "temporal_transition_ticks": 94,
+    "temporal_shape": 1.03189,
+    "opening_reach_weight": 0.65443,
+    "reach_ramp_ticks": 123,
+    "opening_combat_weight": 0.54519,
+    "combat_weight_end": 1.14219,
+    "combat_ramp_ticks": 223,
+    "frontier_resource_half_life": 48.33912,
+    "information_cap": 1.8093,
+    "joint_future_weight": 0.0,
+    "temporal_third_party_attack_end": 0.27091,
+    "temporal_third_party_risk_end": 0.10998
+  },
+  "accepted": false,
+  "gates": {
+    "official_resource_improves": false,
+    "mixed_resource_preserved": true,
+    "official_total_preserved": false,
+    "mixed_total_preserved": true,
+    "actual_preserved": false,
+    "fifty_preserved": true,
+    "lower_tail_preserved": true
+  },
+  "official": {
+    "matched_maps": 192,
+    "candidate": "joint_04",
+    "baseline": {
+      "n": 192,
+      "actual_mean": 31.1109375,
+      "conditional_mean": 44.80885416666667,
+      "conditional_p10": 32.5,
+      "conditional_min": 22.5,
+      "conditional_at_least_50": 56,
+      "conditional_at_least_50_rate": 0.2916666666666667,
+      "resource_mean": 65.67708333333333,
+      "resource_at_least_80_rate": 0.3229166666666667,
+      "damage_mean": 515.9375,
+      "damage_at_least_500_rate": 0.8645833333333334,
+      "all_raw_tasks_rate": 0.7447916666666666,
+      "relative_actual_margin_mean": 3.7934895833333333,
+      "decision_mean_ms": 2.7077462916666666,
+      "decision_max_ms": 102.326,
+      "actual_ai_qualified_matches": 0
+    },
+    "candidate_metrics": {
+      "n": 192,
+      "actual_mean": 30.90892857142857,
+      "conditional_mean": 44.58080357142857,
+      "conditional_p10": 32.5,
+      "conditional_min": 22.5,
+      "conditional_at_least_50": 64,
+      "conditional_at_least_50_rate": 0.3333333333333333,
+      "resource_mean": 64.63541666666667,
+      "resource_at_least_80_rate": 0.3489583333333333,
+      "damage_mean": 524.1964285714286,
+      "damage_at_least_500_rate": 0.9114583333333334,
+      "all_raw_tasks_rate": 0.7447916666666666,
+      "relative_actual_margin_mean": 4.386049107142857,
+      "decision_mean_ms": 2.6534356145833335,
+      "decision_max_ms": 101.001,
+      "actual_ai_qualified_matches": 0
+    },
+    "actual_paired": {
+      "mean_gain": -0.20200892857142863,
+      "bootstrap_95_interval": [
+        -0.8178943452380955,
+        0.4222842261904761
+      ],
+      "wins_ties_losses": [
+        65,
+        67,
+        60
+      ]
+    },
+    "conditional_paired": {
+      "mean_gain": -0.2280505952380952,
+      "bootstrap_95_interval": [
+        -0.9980282738095239,
+        0.5875000000000001
+      ],
+      "wins_ties_losses": [
+        66,
+        66,
+        60
+      ]
+    }
+  },
+  "mixed": {
+    "matched_maps": 96,
+    "candidate": "joint_04",
+    "baseline": {
+      "n": 96,
+      "actual_mean": 24.316369047619048,
+      "conditional_mean": 37.12886904761905,
+      "conditional_p10": 24.9,
+      "conditional_min": 13.5,
+      "conditional_at_least_50": 7,
+      "conditional_at_least_50_rate": 0.07291666666666667,
+      "resource_mean": 50.833333333333336,
+      "resource_at_least_80_rate": 0.10416666666666667,
+      "damage_mean": 403.24900793650795,
+      "damage_at_least_500_rate": 0.4270833333333333,
+      "all_raw_tasks_rate": 0.6145833333333334,
+      "relative_actual_margin_mean": -5.9348214285714285,
+      "decision_mean_ms": 4.526898020833333,
+      "decision_max_ms": 110.009,
+      "actual_ai_qualified_matches": 0
+    },
+    "candidate_metrics": {
+      "n": 96,
+      "actual_mean": 25.170386904761905,
+      "conditional_mean": 37.87872023809524,
+      "conditional_p10": 25.285714285714285,
+      "conditional_min": 15.0,
+      "conditional_at_least_50": 12,
+      "conditional_at_least_50_rate": 0.125,
+      "resource_mean": 53.020833333333336,
+      "resource_at_least_80_rate": 0.13541666666666666,
+      "damage_mean": 417.79017857142856,
+      "damage_at_least_500_rate": 0.5833333333333334,
+      "all_raw_tasks_rate": 0.5625,
+      "relative_actual_margin_mean": -3.9453125,
+      "decision_mean_ms": 4.4765285625,
+      "decision_max_ms": 124.041,
+      "actual_ai_qualified_matches": 0
+    },
+    "actual_paired": {
+      "mean_gain": 0.8540178571428569,
+      "bootstrap_95_interval": [
+        -0.5037202380952384,
+        2.172023809523809
+      ],
+      "wins_ties_losses": [
+        49,
+        17,
+        30
+      ]
+    },
+    "conditional_paired": {
+      "mean_gain": 0.7498511904761903,
+      "bootstrap_95_interval": [
+        -0.8587797619047619,
+        2.32797619047619
+      ],
+      "wins_ties_losses": [
+        49,
+        17,
+        30
+      ]
+    }
+  },
+  "paid_calls": 0
+}

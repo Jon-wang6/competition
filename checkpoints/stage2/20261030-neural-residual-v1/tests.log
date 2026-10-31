@@ -1,0 +1,74 @@
+Internal ctest changing into directory: /home/jon/robot/competition/build/rmtc_connection
+Test project /home/jon/robot/competition/build/rmtc_connection
+      Start  1: stage2_neural_test
+ 1/34 Test  #1: stage2_neural_test ................   Passed    0.05 sec
+      Start  2: stage2_neural_policy_test
+ 2/34 Test  #2: stage2_neural_policy_test .........   Passed    0.02 sec
+      Start  3: stage2_collection_transfer_test
+ 3/34 Test  #3: stage2_collection_transfer_test ...   Passed    0.00 sec
+      Start  4: coverage_route_test
+ 4/34 Test  #4: coverage_route_test ...............   Passed    0.01 sec
+      Start  5: frontier_exploration_test
+ 5/34 Test  #5: frontier_exploration_test .........   Passed    0.18 sec
+      Start  6: map_generator_test
+ 6/34 Test  #6: map_generator_test ................   Passed    0.11 sec
+      Start  7: practice_rules_test
+ 7/34 Test  #7: practice_rules_test ...............   Passed    0.00 sec
+      Start  8: practice_gateway_test
+ 8/34 Test  #8: practice_gateway_test .............   Passed    0.01 sec
+      Start  9: weighted_resource_test
+ 9/34 Test  #9: weighted_resource_test ............   Passed    0.11 sec
+      Start 10: resource_route_test
+10/34 Test #10: resource_route_test ...............   Passed    0.04 sec
+      Start 11: resource_strategy_test
+11/34 Test #11: resource_strategy_test ............   Passed    0.00 sec
+      Start 12: stage2_duel_stalemate_test
+12/34 Test #12: stage2_duel_stalemate_test ........   Passed    0.00 sec
+      Start 13: stage2_strategy_test
+13/34 Test #13: stage2_strategy_test ..............   Passed    0.02 sec
+      Start 14: ai_protocol_test
+14/34 Test #14: ai_protocol_test ..................   Passed    0.00 sec
+      Start 15: stage2_events_test
+15/34 Test #15: stage2_events_test ................   Passed    0.01 sec
+      Start 16: stage2_frontier_value_test
+16/34 Test #16: stage2_frontier_value_test ........   Passed    0.00 sec
+      Start 17: stage2_exploration_value_test
+17/34 Test #17: stage2_exploration_value_test .....   Passed    0.00 sec
+      Start 18: stage2_resource_sweep_test
+18/34 Test #18: stage2_resource_sweep_test ........   Passed    0.00 sec
+      Start 19: stage2_collection_search_test
+19/34 Test #19: stage2_collection_search_test .....   Passed    0.00 sec
+      Start 20: stage2_battle_evidence_test
+20/34 Test #20: stage2_battle_evidence_test .......   Passed    0.00 sec
+      Start 21: stage2_navigation_progress_test
+21/34 Test #21: stage2_navigation_progress_test ...   Passed    0.00 sec
+      Start 22: stage2_enemy_belief_test
+22/34 Test #22: stage2_enemy_belief_test ..........   Passed    0.00 sec
+      Start 23: stage2_interference_test
+23/34 Test #23: stage2_interference_test ..........   Passed    0.00 sec
+      Start 24: stage2_resource_race_test
+24/34 Test #24: stage2_resource_race_test .........   Passed    0.01 sec
+      Start 25: stage2_acquisition_curve_test
+25/34 Test #25: stage2_acquisition_curve_test .....   Passed    0.01 sec
+      Start 26: stage2_purpose_test
+26/34 Test #26: stage2_purpose_test ...............   Passed    0.01 sec
+      Start 27: stage2_battle_curve_test
+27/34 Test #27: stage2_battle_curve_test ..........   Passed    0.01 sec
+      Start 28: stage2_rollout_test
+28/34 Test #28: stage2_rollout_test ...............   Passed    0.00 sec
+      Start 29: astar_test
+29/34 Test #29: astar_test ........................   Passed    0.00 sec
+      Start 30: protocol_test
+30/34 Test #30: protocol_test .....................   Passed    0.00 sec
+      Start 31: public_interface_test
+31/34 Test #31: public_interface_test .............   Passed    0.01 sec
+      Start 32: map_memory_test
+32/34 Test #32: map_memory_test ...................   Passed    0.03 sec
+      Start 33: mapping_node_test
+33/34 Test #33: mapping_node_test .................   Passed    0.38 sec
+      Start 34: mapping_events_test
+34/34 Test #34: mapping_events_test ...............   Passed    0.25 sec
+
+100% tests passed, 0 tests failed out of 34
+
+Total Test time (real) =   1.33 sec

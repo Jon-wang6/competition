@@ -1,0 +1,30 @@
+{
+  "mode": "stage2_planning",
+  "entry": "stage2_planning.launch.py",
+  "parameters": "/home/jon/robot/competition/contestant_ws/src/rmtc_connection/config/stage2_planning.yaml",
+  "tests": {
+    "passed": 35,
+    "total": 35
+  },
+  "probe": {
+    "decisions": 30,
+    "mean_ms": 3.8069898,
+    "p95_ms": 4.263618,
+    "max_ms": 4.614425,
+    "minimum_completed_depth": 12,
+    "maximum_expanded_nodes": 3766,
+    "scope": "offline synthetic decision probes; not closed-loop match results"
+  },
+  "trained": false,
+  "paid_ai_requests": 0,
+  "referee_modified": false,
+  "original_parameters_sha256": "f6a1ace7740befaba2350be87191496f50b633c6677507221789587c9bc4c377",
+  "new_parameters_sha256": "c674fe2991df599a5bfa7ef1b5bcce81cbdbedf4baf7477145b5274d140a8af2",
+  "node_sha256": "4af7909a6c2d1b1c01b228dc2a7c312d5e72d44a38dc48c95df5d3ca2f0e0ce6",
+  "score_test_report": "/home/jon/robot/competition/runtime/stage2-planning-score-20261031-140213/evaluation.json",
+  "score_test_games": 96,
+  "score_test_conditional_mean": {
+    "baseline": 47.39330357142857,
+    "planning": 46.42291666666667
+  }
+}

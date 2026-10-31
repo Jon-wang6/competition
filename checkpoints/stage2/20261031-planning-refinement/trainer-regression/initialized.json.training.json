@@ -1,0 +1,57 @@
+{
+  "before": {
+    "baseline_teacher_agreement": 1.0,
+    "mse": 0.0666666713853677,
+    "original_policy_agreement": 0.0,
+    "original_policy_regret": 0.5000000149011612,
+    "policy_changes": 0,
+    "policy_margin": 0.003,
+    "policy_teacher_agreement": 0.0,
+    "policy_teacher_regret": 0.5000000149011612,
+    "policy_weight": 0.5,
+    "samples": 150,
+    "states": 50,
+    "teacher_action_agreement": 1.0,
+    "teacher_regret": 0.0,
+    "zero_network_mse": 0.026666668554147083
+  },
+  "best_validation_mse": 0.06662669614211462,
+  "epochs": [
+    {
+      "epoch": 1,
+      "seconds": 0.003386152,
+      "train": {
+        "baseline_teacher_agreement": 1.0,
+        "mse": 0.009980019181966782,
+        "original_policy_agreement": 0.0,
+        "original_policy_regret": 0.10000000149011612,
+        "policy_changes": 0,
+        "policy_margin": 0.003,
+        "policy_teacher_agreement": 0.0,
+        "policy_teacher_regret": 0.10000000149011612,
+        "policy_weight": 0.5,
+        "samples": 300,
+        "states": 100,
+        "teacher_action_agreement": 1.0,
+        "teacher_regret": 0.0,
+        "zero_network_mse": 0.010000000707805157
+      },
+      "validation": {
+        "baseline_teacher_agreement": 1.0,
+        "mse": 0.06662669614211462,
+        "original_policy_agreement": 0.0,
+        "original_policy_regret": 0.5000000149011612,
+        "policy_changes": 0,
+        "policy_margin": 0.003,
+        "policy_teacher_agreement": 0.0,
+        "policy_teacher_regret": 0.5000000149011612,
+        "policy_weight": 0.5,
+        "samples": 150,
+        "states": 50,
+        "teacher_action_agreement": 1.0,
+        "teacher_regret": 0.0,
+        "zero_network_mse": 0.026666668554147083
+      }
+    }
+  ]
+}

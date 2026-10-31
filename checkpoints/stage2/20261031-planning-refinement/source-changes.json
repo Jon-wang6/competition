@@ -1,0 +1,34 @@
+{
+  "modified": [
+    "CMakeLists.txt",
+    "config/stage2_planning.yaml",
+    "include/rmtc_connection/stage2_planning.hpp",
+    "include/rmtc_connection/stage2_rollout_config.hpp",
+    "include/rmtc_connection/stage2_strategy.hpp",
+    "src/core/connection_node.cpp",
+    "src/stage2/stage2_planning.cpp",
+    "src/stage2/stage2_rollout.cpp",
+    "src/stage2/stage2_strategy.cpp",
+    "tests/stage2_neural_test.cpp",
+    "tests/stage2_planning_test.cpp",
+    "tests/stage2_rollout_test.cpp",
+    "tools/neural_matches.cpp",
+    "tools/neural_training.hpp",
+    "tools/train_stage2_neural.cpp"
+  ],
+  "added": [
+    "tools/train_resource_presence.cpp"
+  ],
+  "removed": [
+    "launch/__pycache__/all.launch.cpython-310.pyc",
+    "launch/__pycache__/contestant.launch.cpython-310.pyc",
+    "launch/__pycache__/deepseek.launch.cpython-310.pyc",
+    "launch/__pycache__/referee.launch.cpython-310.pyc",
+    "launch/__pycache__/stage2.launch.cpython-310.pyc",
+    "launch/__pycache__/stage2_deepseek.launch.cpython-310.pyc"
+  ],
+  "not_compared_previously_unsnapshotted": [
+    "rviz/competition.rviz"
+  ],
+  "note": "Comparison uses only the pre-change snapshot coverage; existing RViz files were not in that snapshot and were not edited in this task."
+}

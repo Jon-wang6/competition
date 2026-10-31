@@ -1,0 +1,419 @@
+{
+  "all": {
+    "baseline": {
+      "all_tasks_rate": 0.78125,
+      "by_spawn": {
+        "clustered": {
+          "conditional": 49.24531249999999,
+          "n": 32,
+          "resource": 86.875
+        },
+        "corner_shuffle": {
+          "conditional": 43.35,
+          "n": 32,
+          "resource": 61.25
+        },
+        "fixed": {
+          "conditional": 42.8953125,
+          "n": 32,
+          "resource": 60.3125
+        },
+        "uniform_free": {
+          "conditional": 45.166071428571435,
+          "n": 32,
+          "resource": 67.1875
+        }
+      },
+      "combat_score": 14.265736607142857,
+      "conditional_score60": 45.164174107142856,
+      "decision_max_ms": 122.801,
+      "decision_mean_ms": 3.772372890625,
+      "n": 128,
+      "neural_changed": 0.0,
+      "neural_inference_mean_ms": 0.0,
+      "raw_tasks": 2.7578125,
+      "reach_rate": 1.0,
+      "resource40": 55.234375,
+      "resource80": 67.109375,
+      "resource_final": 68.90625,
+      "resource_score": 17.109375,
+      "score45": 31.375111607142856,
+      "vs_feedback": {
+        "actual_delta": 0.2708147321428571,
+        "bootstrap95": [
+          -0.4498883928571427,
+          0.9289620535714287
+        ],
+        "conditional_delta": 0.2708147321428571,
+        "paired_maps": 32,
+        "resource_delta": -0.3125
+      }
+    },
+    "feedback": {
+      "all_tasks_rate": 0.7734375,
+      "by_spawn": {
+        "clustered": {
+          "conditional": 50.11874999999999,
+          "n": 32,
+          "resource": 88.75
+        },
+        "corner_shuffle": {
+          "conditional": 43.07187500000001,
+          "n": 32,
+          "resource": 62.5
+        },
+        "fixed": {
+          "conditional": 42.25625,
+          "n": 32,
+          "resource": 59.6875
+        },
+        "uniform_free": {
+          "conditional": 44.12656250000001,
+          "n": 32,
+          "resource": 65.9375
+        }
+      },
+      "combat_score": 13.897265625000003,
+      "conditional_score60": 44.89335937499999,
+      "decision_max_ms": 131.236,
+      "decision_mean_ms": 3.7566175000000017,
+      "n": 128,
+      "neural_changed": 0.0,
+      "neural_inference_mean_ms": 0.0,
+      "raw_tasks": 2.7578125,
+      "reach_rate": 1.0,
+      "resource40": 55.234375,
+      "resource80": 67.5,
+      "resource_final": 69.21875,
+      "resource_score": 17.20703125,
+      "score45": 31.104296874999992
+    },
+    "neural": {
+      "all_tasks_rate": 0.765625,
+      "by_spawn": {
+        "clustered": {
+          "conditional": 49.21986607142857,
+          "n": 32,
+          "resource": 86.5625
+        },
+        "corner_shuffle": {
+          "conditional": 43.02455357142858,
+          "n": 32,
+          "resource": 62.1875
+        },
+        "fixed": {
+          "conditional": 43.239062499999996,
+          "n": 32,
+          "resource": 60.9375
+        },
+        "uniform_free": {
+          "conditional": 44.62075892857143,
+          "n": 32,
+          "resource": 65.9375
+        }
+      },
+      "combat_score": 14.186216517857146,
+      "conditional_score60": 45.026060267857126,
+      "decision_max_ms": 113.107,
+      "decision_mean_ms": 3.942509015625001,
+      "n": 128,
+      "neural_changed": 6.4609375,
+      "neural_inference_mean_ms": 0.03903831550466461,
+      "raw_tasks": 2.7421875,
+      "reach_rate": 1.0,
+      "resource40": 54.765625,
+      "resource80": 67.109375,
+      "resource_final": 68.90625,
+      "resource_score": 17.12890625,
+      "score45": 31.31512276785714,
+      "vs_feedback": {
+        "actual_delta": 0.21082589285714295,
+        "bootstrap95": [
+          -0.48649553571428583,
+          0.7141183035714287
+        ],
+        "conditional_delta": 0.13270089285714287,
+        "paired_maps": 32,
+        "resource_delta": -0.3125
+      }
+    }
+  },
+  "mixed": {
+    "baseline": {
+      "all_tasks_rate": 0.6875,
+      "by_spawn": {
+        "clustered": {
+          "conditional": 39.896875,
+          "n": 16,
+          "resource": 56.25
+        },
+        "corner_shuffle": {
+          "conditional": 38.575,
+          "n": 16,
+          "resource": 47.5
+        },
+        "fixed": {
+          "conditional": 42.15625,
+          "n": 16,
+          "resource": 60.0
+        },
+        "uniform_free": {
+          "conditional": 41.75714285714286,
+          "n": 16,
+          "resource": 55.625
+        }
+      },
+      "combat_score": 13.721316964285714,
+      "conditional_score60": 40.59631696428571,
+      "decision_max_ms": 122.801,
+      "decision_mean_ms": 4.5878257812499985,
+      "n": 64,
+      "neural_changed": 0.0,
+      "neural_inference_mean_ms": 0.0,
+      "raw_tasks": 2.640625,
+      "reach_rate": 1.0,
+      "resource40": 49.84375,
+      "resource80": 54.0625,
+      "resource_final": 54.84375,
+      "resource_score": 13.671875,
+      "score45": 27.393191964285716,
+      "vs_feedback": {
+        "actual_delta": 0.05647321428571411,
+        "bootstrap95": [
+          -1.3614955357142855,
+          0.9382812500000001
+        ],
+        "conditional_delta": -0.09977678571428567,
+        "paired_maps": 16,
+        "resource_delta": -1.71875
+      }
+    },
+    "feedback": {
+      "all_tasks_rate": 0.703125,
+      "by_spawn": {
+        "clustered": {
+          "conditional": 41.737500000000004,
+          "n": 16,
+          "resource": 60.625
+        },
+        "corner_shuffle": {
+          "conditional": 38.50625,
+          "n": 16,
+          "resource": 48.125
+        },
+        "fixed": {
+          "conditional": 40.85625,
+          "n": 16,
+          "resource": 59.375
+        },
+        "uniform_free": {
+          "conditional": 41.684374999999996,
+          "n": 16,
+          "resource": 58.125
+        }
+      },
+      "combat_score": 13.23515625,
+      "conditional_score60": 40.69609375,
+      "decision_max_ms": 131.236,
+      "decision_mean_ms": 4.6254835625,
+      "n": 64,
+      "neural_changed": 0.0,
+      "neural_inference_mean_ms": 0.0,
+      "raw_tasks": 2.671875,
+      "reach_rate": 1.0,
+      "resource40": 50.625,
+      "resource80": 55.9375,
+      "resource_final": 56.5625,
+      "resource_score": 14.1015625,
+      "score45": 27.33671875
+    },
+    "neural": {
+      "all_tasks_rate": 0.6875,
+      "by_spawn": {
+        "clustered": {
+          "conditional": 40.345982142857146,
+          "n": 16,
+          "resource": 57.5
+        },
+        "corner_shuffle": {
+          "conditional": 38.41160714285715,
+          "n": 16,
+          "resource": 47.5
+        },
+        "fixed": {
+          "conditional": 42.703125,
+          "n": 16,
+          "resource": 59.375
+        },
+        "uniform_free": {
+          "conditional": 42.560267857142854,
+          "n": 16,
+          "resource": 58.125
+        }
+      },
+      "combat_score": 13.934933035714288,
+      "conditional_score60": 41.005245535714295,
+      "decision_max_ms": 113.107,
+      "decision_mean_ms": 4.7994536875,
+      "n": 64,
+      "neural_changed": 8.8125,
+      "neural_inference_mean_ms": 0.0399867889284164,
+      "raw_tasks": 2.640625,
+      "reach_rate": 1.0,
+      "resource40": 49.84375,
+      "resource80": 55.0,
+      "resource_final": 55.625,
+      "resource_score": 13.8671875,
+      "score45": 27.802120535714295,
+      "vs_feedback": {
+        "actual_delta": 0.46540178571428575,
+        "bootstrap95": [
+          -0.7619419642857145,
+          1.2321428571428572
+        ],
+        "conditional_delta": 0.3091517857142858,
+        "paired_maps": 16,
+        "resource_delta": -0.9375
+      }
+    }
+  },
+  "official": {
+    "baseline": {
+      "all_tasks_rate": 0.875,
+      "by_spawn": {
+        "clustered": {
+          "conditional": 58.59375,
+          "n": 16,
+          "resource": 117.5
+        },
+        "corner_shuffle": {
+          "conditional": 48.125,
+          "n": 16,
+          "resource": 75.0
+        },
+        "fixed": {
+          "conditional": 43.634375,
+          "n": 16,
+          "resource": 60.625
+        },
+        "uniform_free": {
+          "conditional": 48.575,
+          "n": 16,
+          "resource": 78.75
+        }
+      },
+      "combat_score": 14.81015625,
+      "conditional_score60": 49.73203125,
+      "decision_max_ms": 116.017,
+      "decision_mean_ms": 2.9569200000000007,
+      "n": 64,
+      "neural_changed": 0.0,
+      "neural_inference_mean_ms": 0.0,
+      "raw_tasks": 2.875,
+      "reach_rate": 1.0,
+      "resource40": 60.625,
+      "resource80": 80.15625,
+      "resource_final": 82.96875,
+      "resource_score": 20.546875,
+      "score45": 35.35703125,
+      "vs_feedback": {
+        "actual_delta": 0.48515624999999996,
+        "bootstrap95": [
+          -0.09687500000000016,
+          1.4210937499999998
+        ],
+        "conditional_delta": 0.6414062499999998,
+        "paired_maps": 16,
+        "resource_delta": 1.09375
+      }
+    },
+    "feedback": {
+      "all_tasks_rate": 0.84375,
+      "by_spawn": {
+        "clustered": {
+          "conditional": 58.5,
+          "n": 16,
+          "resource": 116.875
+        },
+        "corner_shuffle": {
+          "conditional": 47.637499999999996,
+          "n": 16,
+          "resource": 76.875
+        },
+        "fixed": {
+          "conditional": 43.65625,
+          "n": 16,
+          "resource": 60.0
+        },
+        "uniform_free": {
+          "conditional": 46.56875,
+          "n": 16,
+          "resource": 73.75
+        }
+      },
+      "combat_score": 14.559375000000003,
+      "conditional_score60": 49.090625,
+      "decision_max_ms": 82.421,
+      "decision_mean_ms": 2.8877514374999995,
+      "n": 64,
+      "neural_changed": 0.0,
+      "neural_inference_mean_ms": 0.0,
+      "raw_tasks": 2.84375,
+      "reach_rate": 1.0,
+      "resource40": 59.84375,
+      "resource80": 79.0625,
+      "resource_final": 81.875,
+      "resource_score": 20.3125,
+      "score45": 34.871875
+    },
+    "neural": {
+      "all_tasks_rate": 0.84375,
+      "by_spawn": {
+        "clustered": {
+          "conditional": 58.09375,
+          "n": 16,
+          "resource": 115.625
+        },
+        "corner_shuffle": {
+          "conditional": 47.6375,
+          "n": 16,
+          "resource": 76.875
+        },
+        "fixed": {
+          "conditional": 43.775,
+          "n": 16,
+          "resource": 62.5
+        },
+        "uniform_free": {
+          "conditional": 46.68125,
+          "n": 16,
+          "resource": 73.75
+        }
+      },
+      "combat_score": 14.437500000000002,
+      "conditional_score60": 49.046875,
+      "decision_max_ms": 97.656,
+      "decision_mean_ms": 3.08556434375,
+      "n": 64,
+      "neural_changed": 4.109375,
+      "neural_inference_mean_ms": 0.03808984208091283,
+      "raw_tasks": 2.84375,
+      "reach_rate": 1.0,
+      "resource40": 59.6875,
+      "resource80": 79.21875,
+      "resource_final": 82.1875,
+      "resource_score": 20.390625,
+      "score45": 34.828125,
+      "vs_feedback": {
+        "actual_delta": -0.0437499999999999,
+        "bootstrap95": [
+          -0.584375,
+          0.6218749999999998
+        ],
+        "conditional_delta": -0.04375000000000007,
+        "paired_maps": 16,
+        "resource_delta": 0.3125
+      }
+    }
+  }
+}

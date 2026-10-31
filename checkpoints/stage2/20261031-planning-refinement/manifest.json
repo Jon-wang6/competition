@@ -1,0 +1,275 @@
+{
+  "version": "stage2-planning-refinement-20261031",
+  "completed_at_utc": "2026-10-31T07:03:57.419926+00:00",
+  "checkpoint_root": "/home/jon/robot/competition/checkpoints/stage2/20261031-planning-refinement",
+  "source_root": "/home/jon/robot/competition/contestant_ws/src/rmtc_connection",
+  "runtime_root": "/home/jon/robot/competition/runtime/stage2-planning-refinement-20261031",
+  "training_language": "C++",
+  "default_mode_replaced": false,
+  "referee_modified_this_round": false,
+  "new_mode": "stage2_planning",
+  "neural_enabled_by_default": false,
+  "tests_passed": 35,
+  "full_games": 960,
+  "paid_api_calls": 0,
+  "active_test_processes": [],
+  "launch_command": "ros2 launch rmtc_connection stage2_planning.launch.py",
+  "files": {
+    "COLCON_IGNORE": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "ablation-summary.json": {
+      "bytes": 19175,
+      "sha256": "674fbd05b1d81c9a9027908753505de77dc037a8f47d03cd56808c304a5cb75a"
+    },
+    "connection_node": {
+      "bytes": 2876056,
+      "sha256": "8eff55dbeefa48be0ad07fb5a73c21285a171f42018e809a6b91427442334d46"
+    },
+    "evaluation.json": {
+      "bytes": 12078,
+      "sha256": "aaf4a6f0da6763df515b2ad4bee47c3c3d8a8f85edecbcd98953b1cec9592473"
+    },
+    "experiment-summary.json": {
+      "bytes": 1532,
+      "sha256": "58cf3fb085ef80cb112b77b5332e02598ca91981c344a6d44c4fdd50605f4761"
+    },
+    "final-build.log": {
+      "bytes": 103,
+      "sha256": "87e9ee3ad9f0df85fad7e2081d8226036c2bd82d8e904a6f724890ad067e1627"
+    },
+    "final-launch-arguments.log": {
+      "bytes": 4577,
+      "sha256": "cf50f6c89d6b321a944744abc7d6a2721640e5212ca4d1a1445f1e4acb140104"
+    },
+    "final-tests.log": {
+      "bytes": 4151,
+      "sha256": "b66bb0678e820c55388721c29beef7e52cc0b414d94fe932f1de6faea6b584f1"
+    },
+    "frozen-selection.json": {
+      "bytes": 8084,
+      "sha256": "56fdce3d5fff46fdbffde5edec914dfb2eff2e2a888d5d232b0a964f92826b33"
+    },
+    "holdout-input.json": {
+      "bytes": 7416,
+      "sha256": "2a0a60a7e27841768afaf933de3c5ca61087b892ef9fe87e32ff8d6c318ee780"
+    },
+    "installation-verification.json": {
+      "bytes": 524,
+      "sha256": "30dc1a5149d23d4803e59867fb6061d97bec4266c8c692ba2bc3cfd5173f1732"
+    },
+    "installed-connection_node": {
+      "bytes": 2876056,
+      "sha256": "ac2c307277bc32f89d53ba2cb716b64e0a3e9e7cf37396a499f64c893943bd2b"
+    },
+    "models/planning-v2-combat-small.json": {
+      "bytes": 160059,
+      "sha256": "156cf2b40c8e8f9a7ac64d6a34085fa1e7b949098f9381fdad18ef0b110cb166"
+    },
+    "models/planning-v2-combat-small.json.epoch-10.json": {
+      "bytes": 170652,
+      "sha256": "12016322b9fed8eb4fac9fc85d46cd8eae8e4a4828c9c69a9e6ae551c599b878"
+    },
+    "models/planning-v2-combat-small.json.epoch-15.json": {
+      "bytes": 171086,
+      "sha256": "7665b85815cc2d7f65a2f87c1e97a937988e786b39c844312a0dff428a48b55a"
+    },
+    "models/planning-v2-combat-small.json.epoch-20.json": {
+      "bytes": 171244,
+      "sha256": "d854cd3cd2b4476632f8946657692f1ff93cbb24fb3aaeaf0c9b3ba8aebbab99"
+    },
+    "models/planning-v2-combat-small.json.epoch-5.json": {
+      "bytes": 170468,
+      "sha256": "0f80c5c8c7fae4d346e8c115b697eba19c74a381ddc2d54e3d425110295e3823"
+    },
+    "models/planning-v2-combat-small.json.optimizer.json": {
+      "bytes": 50216,
+      "sha256": "039b505bcb916bef70e4d7642a7ebf974c05fb80a173e89d568b3d11176b11a6"
+    },
+    "models/planning-v2-combat-small.json.policy.json": {
+      "bytes": 171244,
+      "sha256": "d854cd3cd2b4476632f8946657692f1ff93cbb24fb3aaeaf0c9b3ba8aebbab99"
+    },
+    "models/planning-v2-combat-small.json.policy.json.optimizer.json": {
+      "bytes": 283618,
+      "sha256": "c76ee5850a3eee505d7a4d63d3a8754d8e8e8450e101c46612f2ecff954e12a1"
+    },
+    "models/planning-v2-combat-small.json.training.json": {
+      "bytes": 32925,
+      "sha256": "764bd6a67ebf4f5f2618c16e7fcd88fe3a367566c021dfb86b28c6f8b3f353f8"
+    },
+    "models/planning-v2-combat.json": {
+      "bytes": 422651,
+      "sha256": "79cbbabe3c72f38c36f21278eff9ab8624dda3248f1a22e100708f5a0ab62330"
+    },
+    "models/planning-v2-combat.json.epoch-10.json": {
+      "bytes": 436882,
+      "sha256": "ffb83e1c83cdfe8507ffa92ebcc5462bc9afc1231fc0c62e7dd1226785a3ed70"
+    },
+    "models/planning-v2-combat.json.epoch-15.json": {
+      "bytes": 437709,
+      "sha256": "6fa368c6b883aa0e24a31ac8599eba05842908eefbb6be6b9ee2a831329cd8bc"
+    },
+    "models/planning-v2-combat.json.epoch-20.json": {
+      "bytes": 438120,
+      "sha256": "22d9491a82605f348a4fc1e3b5eb0f9dae8d94faa555f22c1de666a91e8cb853"
+    },
+    "models/planning-v2-combat.json.epoch-5.json": {
+      "bytes": 435973,
+      "sha256": "3f534d61a65d18dcbf2220d6b9227f3460cbcc245d4b0ab95a122249b847a060"
+    },
+    "models/planning-v2-combat.json.optimizer.json": {
+      "bytes": 133160,
+      "sha256": "e60c8e1f0b7653e430c1d795d7e898edbe8374cea277cfcc6258f432b5d65722"
+    },
+    "models/planning-v2-combat.json.policy.json": {
+      "bytes": 438070,
+      "sha256": "d7f1d0b9c16873536006b8d59f3010243c226d47e35436fc31cec7735c2eb7bc"
+    },
+    "models/planning-v2-combat.json.policy.json.optimizer.json": {
+      "bytes": 752443,
+      "sha256": "4262a431561c101ac441ed86801e6fc09b3940406634e8642f12f5480a7a27db"
+    },
+    "models/planning-v2-combat.json.training.json": {
+      "bytes": 32943,
+      "sha256": "6440a7ae412d194aef04df756d0d28fe44cfa4da7e1f8c68b6271f55cd854fff"
+    },
+    "neural-check-summary.json": {
+      "bytes": 23631,
+      "sha256": "17eb7602472a9f1b251026d8520821456cc6ea0433b836c97791d6a110a00530"
+    },
+    "neural-training-small.log": {
+      "bytes": 24776,
+      "sha256": "1d49cbdd3de54860e11bce2e5848def039528878676c26a6434ab0da3f323af2"
+    },
+    "neural-training.log": {
+      "bytes": 24795,
+      "sha256": "1203a4c839f548fdfd088d98f8344ea2acc7d20c48015f367647b15432ad522f"
+    },
+    "parameters.yaml": {
+      "bytes": 4149,
+      "sha256": "f9ce57854f199be512b4220c51c7b80f4c1d54fb3cbe589865bbe80136e7a54a"
+    },
+    "pre-change-source.tar.gz": {
+      "bytes": 585019,
+      "sha256": "de91327e20820d26eb61a0464faa7b2f47c2e0ed45456de7d5ddfe74f3ae5800"
+    },
+    "presence-calibration-verified.json": {
+      "bytes": 14516,
+      "sha256": "a54494858730fca6811ae372af12f821dc419c863707d615bccce70c57e2fa99"
+    },
+    "presence-calibration.json": {
+      "bytes": 14516,
+      "sha256": "d3b64da9bd1889ee696b979a401c588c74bbdfe7a1cea19f416aba2c0d1becac"
+    },
+    "previous-node": {
+      "bytes": 2854056,
+      "sha256": "4af7909a6c2d1b1c01b228dc2a7c312d5e72d44a38dc48c95df5d3ca2f0e0ce6"
+    },
+    "previous-parameters.yaml": {
+      "bytes": 3570,
+      "sha256": "c674fe2991df599a5bfa7ef1b5bcce81cbdbedf4baf7477145b5274d140a8af2"
+    },
+    "search-summary.json": {
+      "bytes": 39543,
+      "sha256": "03d5b88955f29458b9c6563fb5e798352e12bbd3f9b0b8ee8e0de07cdcd6fa7f"
+    },
+    "selected-development-profile.json": {
+      "bytes": 3995,
+      "sha256": "20f1d935546d272d289eb26ca5bfa78c12975565ef3c4549dd05312c26986fd0"
+    },
+    "source-changes.json": {
+      "bytes": 1253,
+      "sha256": "7fc5ec85dfea6176862ec2733e1931a9a14bd01ecd600382c4be365070e3c6c8"
+    },
+    "source.tar.gz": {
+      "bytes": 578888,
+      "sha256": "068680e5bbd721abab28235c68ea2f4c2ce0786b3161497a3d5b6764559dc892"
+    },
+    "startup.log": {
+      "bytes": 608,
+      "sha256": "f628d664c5431404a65a3db67b515c7e85a2c10ccce5710a8c619dfb2325b681"
+    },
+    "trainer-regression/data/100/result.json": {
+      "bytes": 2,
+      "sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+    },
+    "trainer-regression/data/100/teacher.jsonl": {
+      "bytes": 88300,
+      "sha256": "8cf5ba1e2959a855f6a43d3b7da7e7bc5340bfed0fd5b844fb7c0b98e168204f"
+    },
+    "trainer-regression/data/101/result.json": {
+      "bytes": 2,
+      "sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+    },
+    "trainer-regression/data/101/teacher.jsonl": {
+      "bytes": 88300,
+      "sha256": "cfce4c4ca3b6958517901283ae2d74b0c5f001e064bb261e25c5992b3cd4b2eb"
+    },
+    "trainer-regression/data/102/result.json": {
+      "bytes": 2,
+      "sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+    },
+    "trainer-regression/data/102/teacher.jsonl": {
+      "bytes": 88300,
+      "sha256": "066b50d42f5e6669ff1931b7227a1860fa6e2871207ed198449c63470c173fb7"
+    },
+    "trainer-regression/initial.json": {
+      "bytes": 354684,
+      "sha256": "87e6677b916c02f6b86ccc44f4e355904a4d97e894bc0c8386c25784b92ba5c5"
+    },
+    "trainer-regression/initialized.json": {
+      "bytes": 424431,
+      "sha256": "b82661c5908352907c901c42b94efada7e3d636b8b4652497009d6476afda809"
+    },
+    "trainer-regression/initialized.json.optimizer.json": {
+      "bytes": 743930,
+      "sha256": "9999bc477a334d9d0d5d0bbc3fc6dceda5bd72d043cfbb4d0c4773a2b446c139"
+    },
+    "trainer-regression/initialized.json.policy.json": {
+      "bytes": 422535,
+      "sha256": "85d1c8a59a6157da1097ed534632645402aae42374e81b6d0f15c0092dba5bf3"
+    },
+    "trainer-regression/initialized.json.policy.json.optimizer.json": {
+      "bytes": 133160,
+      "sha256": "e60c8e1f0b7653e430c1d795d7e898edbe8374cea277cfcc6258f432b5d65722"
+    },
+    "trainer-regression/initialized.json.training.json": {
+      "bytes": 1731,
+      "sha256": "cd33046b19b96513feae7e1e5822714228bff237f19c4a200b86c570efd975a8"
+    },
+    "trainer-regression/initialized.log": {
+      "bytes": 1312,
+      "sha256": "3805d22abd77fe6b1093d61a5171b0528b7d9d763de1c705b9914d70075c9cb5"
+    },
+    "trainer-regression/resumed.json": {
+      "bytes": 424431,
+      "sha256": "aefd77d2cba0bbaa32e834fcf484fa6bf7c6ed268149c6bd201ef51c77b7a69a"
+    },
+    "trainer-regression/resumed.json.optimizer.json": {
+      "bytes": 743930,
+      "sha256": "9999bc477a334d9d0d5d0bbc3fc6dceda5bd72d043cfbb4d0c4773a2b446c139"
+    },
+    "trainer-regression/resumed.json.policy.json": {
+      "bytes": 422428,
+      "sha256": "130c4aa4f034bcecdf44b411aa01db902e2a15efbe9b4d73efca36c444e6a1f8"
+    },
+    "trainer-regression/resumed.json.policy.json.optimizer.json": {
+      "bytes": 133160,
+      "sha256": "e60c8e1f0b7653e430c1d795d7e898edbe8374cea277cfcc6258f432b5d65722"
+    },
+    "trainer-regression/resumed.json.training.json": {
+      "bytes": 1731,
+      "sha256": "e7a8f1d61b5ebae931e4908dacbc378ff8a0866cb3448435fda40d32959ad404"
+    },
+    "trainer-regression/resumed.log": {
+      "bytes": 1312,
+      "sha256": "17aed7b94da442879b02f15b3d00b0c7dfb5f830f968bb9cf0fee86c61116f33"
+    },
+    "trainer-regression/verification.json": {
+      "bytes": 179,
+      "sha256": "0a0216550ade44728bb0c12f87a0ead49987dde0f2e428588d27f8ba21601a9d"
+    }
+  }
+}

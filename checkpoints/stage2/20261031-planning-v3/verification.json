@@ -1,0 +1,10 @@
+{
+  "build_equals_frozen": true,
+  "install_equals_rpath_normalized_build": true,
+  "installed_config_equals_source": true,
+  "original_stage2_sha256": "f6a1ace7740befaba2350be87191496f50b633c6677507221789587c9bc4c377",
+  "passed_tests": 35,
+  "launch_show_args_passed": true,
+  "isolated_installed_startup_passed": true,
+  "startup_timeout_exit_status": 124
+}

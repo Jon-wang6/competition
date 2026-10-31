@@ -1,0 +1,4 @@
+0945e6d260aa67b69f35dff18e1ce0001c1bad827f3cd78cc62a4d374ce09695  checkpoints/stage2/20261031-neural-features-v2/model.json
+a7dbd0b00efc94f541de3e4081594ac2e984015acc4580b6582ef8fc3d05da07  checkpoints/stage2/20261031-neural-features-v2/model.json.optimizer.json
+8565a8037b014efcc6d6a67513dc70a1f46df73bf2ff5d4b8f0d54eeb3391bd5  checkpoints/stage2/20261031-neural-features-v2/source.tar.gz
+5b34bfe2650e57bfbfa4c3ea992ca67aaccf7398486d0b1076815528ef26e842  checkpoints/stage2/20261031-neural-features-v2/connection_node

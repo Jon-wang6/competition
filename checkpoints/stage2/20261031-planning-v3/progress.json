@@ -1,0 +1,10 @@
+{
+  "phase": "complete",
+  "total_games": 968,
+  "final_holdout_games": 256,
+  "passed_tests": 35,
+  "paid_api_calls": 0,
+  "candidate_conditional_score60": 44.535546874999994,
+  "checkpoint": "/home/jon/robot/competition/checkpoints/stage2/20261031-planning-v3",
+  "completed_at": "2026-10-31T19:14:29.283659+08:00"
+}

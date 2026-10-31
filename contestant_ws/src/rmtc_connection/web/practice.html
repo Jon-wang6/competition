@@ -1,0 +1,170 @@
+<!doctype html>
+<!-- 文件：practice.html；本地练习网页扩展，官方网页源文件保持原样。地图生成与裁判控制逻辑由独立C++服务提供。 -->
+<html lang="zh-CN">
+  <meta charset="utf-8" /><meta
+    name="viewport"
+    content="width=device-width,initial-scale=1"
+  /><title>RMTC 选手练习裁判</title>
+  <style>
+    body {
+      margin: 24px auto;
+      max-width: 1200px;
+      padding: 0 18px;
+      font: 16px system-ui;
+      background: #101923;
+      color: #e4edf5;
+    }
+    h1 {
+      font-size: 26px;
+    }
+    button,
+    select,
+    input,
+    textarea {
+      font: inherit;
+      border: 1px solid #526579;
+      border-radius: 6px;
+      padding: 8px;
+      background: #203044;
+      color: inherit;
+    }
+    button {
+      cursor: pointer;
+      background: #285b65;
+      margin: 4px;
+    }
+    label {
+      display: inline-block;
+      margin: 8px;
+    }
+    textarea {
+      width: 96%;
+      height: 330px;
+      font: 13px monospace;
+    }
+    section {
+      background: #182635;
+      border: 1px solid #304659;
+      border-radius: 12px;
+      padding: 18px;
+      margin: 16px 0;
+    }
+    .columns {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 18px;
+    }
+    canvas {
+      width: 100%;
+      image-rendering: pixelated;
+    }
+    pre {
+      white-space: pre-wrap;
+      overflow-wrap: anywhere;
+      font-size: 13px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+    td,
+    th {
+      padding: 8px;
+      border-bottom: 1px solid #33485e;
+      text-align: left;
+    }
+    .hint {
+      color: #a7bdcc;
+    }
+    .bad {
+      color: #ffb49e;
+    }
+    #notice {
+      white-space: pre-wrap;
+    }
+    @media (max-width: 800px) {
+      .columns {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+  <h1>RMTC 选手练习裁判</h1>
+  <p class="hint">
+    独立练习地图与事件。公开 ROS
+    协议与赛场接入一致；本页原始分不构成正式比赛成绩。观赛真值及本地文件不得作为参赛程序输入。
+  </p>
+  <section>
+    <label
+      >阶段
+      <select id="stage">
+        <option value="1">第一阶段 · 采集</option>
+        <option value="2" selected>第二阶段 · 对抗与任务</option>
+      </select></label
+    ><label>Tick 毫秒 <input id="tick" type="number" value="500" min="50" max="5000" /></label
+    ><label>总 Tick <input id="max" type="number" value="500" min="1" max="5000" /></label
+    ><label
+      >地图种子
+      <input
+        id="seed"
+        type="text"
+        inputmode="numeric"
+        value="0"
+        style="width: 12ch"
+        aria-describedby="seed-help" /></label
+    ><button id="generate">生成地图</button>
+    <p id="seed-help" class="hint">
+      第一阶段20×20，第二阶段24×24。-1：随机；其余整数（含0）：固定地图。生成后点“部署新练习”应用；只部署不会换图。
+    </p>
+    <p id="map-seed" class="hint"></p>
+    <p id="pending" class="hint"></p>
+    <div>陪练（最多三台，请留出自己的席位）：<span id="bots"></span></div>
+    <p class="hint">不勾选即只接入真实选手；请勿让自己的程序与陪练使用同一个席位。</p>
+    <button id="deploy">部署新练习</button><button id="resume">开始 / 继续</button
+    ><button id="pause">暂停</button><button id="reset">按原配置重开</button>
+    <details>
+      <summary>地图、任务与事件配置（仅下一次部署生效）</summary>
+      <p>
+        这里始终显示当前或待部署配置，不会因部署按钮恢复成默认模板。切换阶段会按上方种子准备对应地图，仅下一次部署生效。可导入或修改完整
+        JSON；部署前由官方裁判校验。
+      </p>
+      <textarea id="config"></textarea><button id="save">导出配置</button
+      ><label>导入配置<input id="import" type="file" accept=".json" /></label>
+    </details>
+    <p id="notice" role="status"></p>
+  </section>
+  <div class="columns">
+    <section>
+      <h2>实时赛场</h2>
+      <p id="status"></p>
+      <canvas id="map" width="600" height="600"></canvas>
+      <pre id="scores"></pre>
+    </section>
+    <section>
+      <h2>接入诊断</h2>
+      <p id="connection" class="hint"></p>
+      <table>
+        <thead>
+          <tr>
+            <th>席位</th>
+            <th>感知 Tick</th>
+            <th>动作 Tick</th>
+            <th>执行 Tick</th>
+            <th>LLM / 模拟请求</th>
+          </tr>
+        </thead>
+        <tbody id="checks"></tbody>
+      </table>
+      <p class="hint">
+        “执行 Tick”来自裁判实际结算。空白表示尚未证明动作被接受；感知 Tick
+        仅证明测试端发布可见，选手还须确认自己的程序收到感知及
+        last_action。次数按本场、本席位累计；失败不增加成功次数。模拟请求单独标注，只验证请求链路。
+      </p>
+      <h3>动作回执 / 拒绝原因</h3>
+      <pre id="actions"></pre>
+      <h3>公开事件公告</h3>
+      <pre id="events"></pre>
+      <p id="logs" class="hint"></p>
+    </section>
+  </div>
+  <script src="/practice.js"></script>
+</html>

@@ -1,0 +1,12 @@
+{
+  "passed": true,
+  "sections": {
+    ".text": "bd477812f50d7d063ebde9981e93752e5ae3596e3e91be637cec61e795fe1c57",
+    ".rodata": "1652dbcc4f0d362204ae840830601afdba855dad966600def7033b5c472acc0b",
+    ".data.rel.ro": "3e9af39fc8d777dfb14d0495c5cbdfb7102a67eca87ea86422488c44a4551df0",
+    ".data": "d54a1050273e510d7d1348d2c38b0bb09a60668d6b064533a8449b94b328a107"
+  },
+  "installed_sha256": "8880d08861d204594abc1250085ee7da201793b5ebbd3112476f0424f7dfed8a",
+  "frozen_sha256": "5568c9c0888122f6c37eb40175e1cabd39e69ac3388d696809e47629e0e3e4f4",
+  "note": "CMake changes ELF RUNPATH during install; code/read-only/data sections are identical."
+}

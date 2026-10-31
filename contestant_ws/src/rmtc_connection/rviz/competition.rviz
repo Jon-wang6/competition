@@ -1,0 +1,74 @@
+# 文件：competition.rviz
+# 用途：本队公开地图的RViz预设；俯视、地图居中、左上角为比赛[0,0]。
+# 图例由C++节点绘制；A队话题和固定坐标系在launch中随team参数切换。
+# 地图与实体快照均使用Reliable/Transient Local，晚开窗口也能看到最新状态。
+Panels:
+  - Class: rviz_common/Displays
+    Name: Displays
+    Property Tree Widget:
+      Expanded:
+        - /Global Options1
+        - /Explored Map1
+      Splitter Ratio: 0.5
+  - Class: rviz_common/Views
+    Name: Views
+Visualization Manager:
+  Class: ""
+  Displays:
+    - Alpha: 1
+      Class: rviz_default_plugins/Map
+      Color Scheme: map
+      Draw Behind: true
+      Enabled: true
+      Name: Explored Map
+      Topic:
+        Depth: 1
+        Durability Policy: Transient Local
+        History Policy: Keep Last
+        Reliability Policy: Reliable
+        Value: /rmtc/team_A/map
+      Use Timestamp: false
+      Value: true
+    - Class: rviz_default_plugins/MarkerArray
+      Enabled: true
+      Name: Robots Resources Events Vision Trail
+      Namespaces: {}
+      Topic:
+        Depth: 1
+        Durability Policy: Transient Local
+        History Policy: Keep Last
+        Reliability Policy: Reliable
+        Value: /rmtc/team_A/markers
+      Value: true
+  Enabled: true
+  Global Options:
+    Background Color: 24; 31; 43
+    Fixed Frame: rmtc_A_map
+    Frame Rate: 30
+  Name: root
+  Tools:
+    - Class: rviz_default_plugins/MoveCamera
+    - Class: rviz_default_plugins/Select
+    - Class: rviz_default_plugins/Measure
+  Transformation:
+    Current:
+      Class: rviz_default_plugins/TF
+  Value: true
+  Views:
+    Current:
+      Class: rviz_default_plugins/TopDownOrtho
+      Angle: 0
+      Name: Current View
+      Near Clip Distance: 0.01
+      Scale: 32
+      Target Frame: <Fixed Frame>
+      X: 0
+      Y: 0
+    Saved: ~
+Window Geometry:
+  Height: 1300
+  Width: 1850
+  X: 100
+  Y: 70
+  Hide Left Dock: false
+  Hide Right Dock: true

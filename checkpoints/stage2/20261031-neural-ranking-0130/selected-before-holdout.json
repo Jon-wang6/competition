@@ -1,0 +1,75 @@
+{
+  "selected": "rankhalf",
+  "development": {
+    "key": "rankhalf",
+    "value": {
+      "all_tasks_rate": 0.78125,
+      "by_spawn": {
+        "clustered": {
+          "conditional": 49.94375,
+          "n": 8,
+          "resource": 83.75
+        },
+        "corner_shuffle": {
+          "conditional": 42.7,
+          "n": 8,
+          "resource": 57.5
+        },
+        "fixed": {
+          "conditional": 43.48125,
+          "n": 8,
+          "resource": 63.75
+        },
+        "uniform_free": {
+          "conditional": 42.262499999999996,
+          "n": 8,
+          "resource": 60
+        }
+      },
+      "combat_score": 14.3625,
+      "conditional_score60": 44.596875,
+      "decision_max_ms": 214.044,
+      "decision_mean_ms": 4.749642625,
+      "n": 32,
+      "neural_changed": 10.375,
+      "neural_inference_mean_ms": 0.06776147585365618,
+      "raw_tasks": 2.75,
+      "reach_rate": 1,
+      "resource40": 51.25,
+      "resource80": 64.6875,
+      "resource_final": 66.25,
+      "resource_score": 16.484375,
+      "score45": 30.846874999999997,
+      "vs_neural": {
+        "actual_bootstrap95": [
+          -0.4687500000000001,
+          1.3546874999999994
+        ],
+        "actual_delta": 0.46406249999999966,
+        "bootstrap95": [
+          -0.46875,
+          1.3546874999999998
+        ],
+        "conditional_delta": 0.4640624999999998,
+        "paired_maps": 8,
+        "resource_delta": -0.3125
+      }
+    }
+  },
+  "holdout_seed": 1148100,
+  "holdout_maps": 40,
+  "cases_per_profile": 160,
+  "selection_frozen_before_holdout": true,
+  "profile": {
+    "binary": "/home/jon/robot/competition/checkpoints/stage2/20261031-neural-features-v2/connection_node",
+    "checkpoint": "/home/jon/robot/competition/checkpoints/stage2/20261030-duel-stalemate/resume.json",
+    "overrides": {
+      "blocked_retry_ticks": 2,
+      "blocked_retry_min_failures": 2,
+      "neural_enabled": true,
+      "neural_weight": 0.5,
+      "neural_override_margin": 0.003,
+      "neural_model_file": "/home/jon/robot/competition/runtime/stage2-neural-20261031-0130/models/frozen-rankhalf.json"
+    }
+  }
+}
