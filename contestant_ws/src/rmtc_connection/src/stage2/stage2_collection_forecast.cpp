@@ -1,6 +1,10 @@
 /**
  * @file stage2_collection_forecast.cpp
  * @brief 公开记忆上的有界敌方采集路线与分区发现机会估计。
+ *
+ * @details 模块协作与维护约定
+ * 共同情景内每名对手只有一条采集路线，避免独立估计每个资源时把同一个对手当成能分身。
+ * 输入为公开记忆和可通行地形，输出估计到达期限与区域供给先验；历史敌人位置随时可能失真。
  */
 #include "rmtc_connection/stage2_collection_forecast.hpp"
 #include <array>
@@ -9,6 +13,10 @@
 #include <queue>
 
 namespace rmtc {
+/**
+ * @brief 导出敌人来源计数和每个共同情景中的资源到达期限。
+ * @return 可解释JSON，明确标注历史位置仅为假设，不暴露或推断成裁判真值。
+ */
 Json CollectionRaceForecast::describe() const {
   Json rows=Json::array();
   for(const auto& s:scenarios)rows.push_back({{"name",s.name},{"arrival_steps",s.arrival}});
@@ -16,6 +24,15 @@ Json CollectionRaceForecast::describe() const {
       {"historical_positions_are_hypotheses",true},{"scenarios",std::move(rows)}};
 }
 
+/**
+ * @brief 基于公开资源与敌人记忆推演有界采集路线，共同情景内保持每个敌人只有一个位置。
+ * @param f 当前公开感知。
+ * @param memory 本队已观察地图与实体记忆。
+ * @param previous 可空的上一公开帧，仅连续且同场时用于方向估计。
+ * @param memory_ticks 接纳历史敌人的最大目击年龄，单位Tick。
+ * @return 各情景下的资源预计到达时间；输入尺寸无效或无有效参与者时可为空。
+ * @note 最近、高价值、朝向、交火停顿都是行为假设，不等于识别出了对手源代码。
+ */
 CollectionRaceForecast forecast_collection_race(const PublicPerception& f,const MapMemory& memory,
     const PublicPerception* previous,int memory_ticks) {
   CollectionRaceForecast result;

@@ -4,6 +4,11 @@
  *
  * 只读取本队地图记忆。资源存在性与到达竞争分别估计，均不是校准后的真实概率。
  * 束搜索逐格展开，同一资源/未知格只计一次；首步仍交给原动作层检查攻击和事件风险。
+ *
+ * @details 模块协作与维护约定
+ * 同一帧比较WAIT/UP/DOWN/LEFT/RIGHT五个根动作，按共同完成的搜索深度提交结果。
+ * 资源计分与任务阈值在各采集结果分支中计算后再求期望，避免先平均再封顶造成高估。
+ * 时间预算使用毫秒，路线到达时间使用相对Tick；预算不足时返回有效的已完成结果供上层回退。
  */
 #pragma once
 #include "rmtc_connection/map_memory.hpp"
@@ -78,11 +83,23 @@ struct PlanningResult {
 
 /**
  * @brief 用相同前瞻长度计算五个根动作的后续采集价值，每Tick只执行一个动作。
+ * @param frame 当前本队公开帧，坐标为比赛x右/y下。
+ * @param memory 当前公开记忆；地图尺寸应与frame一致。
+ * @param weights 已校验的策略参数，本函数不改变它。
+ * @param remaining 本场剩余可行动Tick，非正时不运行搜索。
+ * @param normal_collected 已采集普通资源数量。
+ * @param high_collected 已采集高价值资源数量。
+ * @param resource_weight 采集积分偏好，不修改实际资源计分。
+ * @param mission_weight 任务机会偏好，不授予任务资格。
  * @param enemy_steps 本队已知地形上最快可见敌车的距离场，按裁判y向下逐行排列。
  * @param passable 查询第arrival步的通行性；未知地形必须返回false。
  * @param information 对累计唯一未知格估值，属于机会价值而非正式开图积分。
  * @param future_risk 第arrival步的软危险，首步不在此重复扣除。
  * @param exploration_target 原策略探索目标；用于窗口外估值，保留原规划提案。
+ * @param unknown_supply 每格未知供给估计，可为空；非空时须与地图格数一致。
+ * @param original_path 原有路线建议，供比较/保留，不代表已执行路线。
+ * @param competition 可空的共同敌方采集情景，避免独立资源预测相互矛盾。
+ * @return 搜索状态、共同完成深度和各根动作评分；调用方检查useful后才采用。
  * 不假设能知道未来观察；未知格只估值，不在本次预测里虚构资源或空地。
  */
 PlanningResult plan_collection_actions(

@@ -22,5 +22,7 @@
         "**/install/**": true,
         "**/log/**": true,
         "**/runtime/**": true
-    }
+    },
+    "explorer.decorations.colors": false,
+    "explorer.decorations.badges": false
 }

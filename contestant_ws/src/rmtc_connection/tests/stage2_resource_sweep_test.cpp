@@ -1,6 +1,11 @@
 /**
  * @file stage2_resource_sweep_test.cpp
  * @brief 联合采集束搜索的重复计分、资源封顶及公开地形执行边界检查。
+ *
+ * @details 模块协作与维护约定
+ * 验证对象：stage2_resource_sweep.hpp。
+ * 运行约定：由独立测试可执行文件/CTest执行，断言失败用于定位回归，不是正式选手的逐帧逻辑。
+ * 结果边界：通过表示这些构造场景满足约束，不证明所有随机地图均最优或稳定达到某个总分。
  */
 #include "rmtc_connection/stage2_resource_sweep.hpp"
 #include <iostream>

@@ -1,6 +1,10 @@
 /**
  * @file stage2_resource_race.cpp
  * @brief 已知资源的期限子集动态规划；等长首段偏好沿途开图，不增加实际步数。
+ *
+ * @details 模块协作与维护约定
+ * 按已知资源子集和对手预计到达期限组织路线；不能把预计期限当作裁判预约或保证。
+ * 资源只计一次，下一Tick资源被确认吃掉或路径失效时需按新快照重新决策。
  */
 #include "rmtc_connection/stage2_resource_race.hpp"
 #include "rmtc_connection/stage2_tactical_navigation.hpp"

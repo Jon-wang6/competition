@@ -1,3 +1,7 @@
+# 构建链：colcon发现本包，ament/CMake配置目标，编译器生成对象后链接各节点。
+# 静态策略库不单独启动进程；只有add_executable定义的程序由launch/run启动。
+# install目录是ros2按包名查找的运行产物，源码/构建/安装位置需保持对应。
+# 测试工具与真实API审计分开，不能在普通CTest中隐式花费模型额度。
 # 文件：CMakeLists.txt
 # 用途：配置本队C++ ROS 2包的依赖、编译选项、安装位置及独立测试。
 # src按core/planning/stage1/stage2/ai/referee/visualization分组；公共头文件在include中。

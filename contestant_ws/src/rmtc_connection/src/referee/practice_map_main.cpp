@@ -4,6 +4,10 @@
  *
  * 由referee.launch.py调用，不随选手程序启动。不会覆盖已有输出文件，
  * 官方模板只读；metadata单独保存，不加入公开感知或参赛程序参数。
+ *
+ * @details 模块协作与维护约定
+ * 仅用于本地练习部署，生成器可持有完整地图；该真值不得进入选手感知或特征。
+ * 复现实验需记录阶段、实际种子和生成配置；随机种子入口应保留解析后的实际值。
  */
 #include "rmtc_connection/map_generator.hpp"
 #include <charconv>

@@ -2,6 +2,10 @@
  * @file stage2_purpose.hpp
  * @brief 可调的采集/战斗目标门槛与多步截击预测；只使用本队公开观察。
  * 没看见资源不等于全场耗尽。资源重新出现后仍可返回采集；敌人预测始终保留转向和等待。
+ *
+ * @details 模块协作与维护约定
+ * 目标门槛帮助明确采集与战斗目的，多步截击使用的是可变的敌人运动假设。
+ * 预测落点用于导航和机会评估，当前攻击对象必须满足真实可见与攻击规则。
  */
 #pragma once
 #include "rmtc_connection/stage2_opponent_intent.hpp"

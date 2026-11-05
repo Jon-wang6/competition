@@ -6,6 +6,10 @@
  * 仅复用全局事件，不复制上一局个体Buff；
  * 原事件公告必须逐字出现在当前公开event_text中，源Tick不得晚于当前Tick。
  * 不安装到参赛入口、不解析自然语言、不读取裁判内部状态或密钥。
+ *
+ * @details 模块协作与维护约定
+ * 重放的结构仍需匹配公告、场次和时间；缓存不是新模型推理，也不提供真实调用资格。
+ * 只用于隔离实验，不能把其他对局的个体Buff或未来信息带进当前感知。
  */
 #include "rmtc_connection/ai_client.hpp"
 #include <rclcpp/rclcpp.hpp>

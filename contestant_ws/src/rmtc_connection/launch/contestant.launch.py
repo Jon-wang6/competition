@@ -10,8 +10,13 @@ resource_order:=joint把采集与观察点放进同一条路线，是当前默�
 各策略参数在resource_config.hpp中分组；k_edge/k_value只调整Weighted。
 修改C++参数后重新编译并重启选手端，不会实时改变已运行的程序。
 第二阶段默认另起ai_node进程；主控不等待HTTP，第一阶段不启动AI。
-第二阶段留空strategy_params_file时加载config/stage2.yaml中的已验证参数；
+strategy_params_file留空时，stage2加载config/stage2.yaml，stage2_planning加载config/stage2_planning.yaml；
 要切换历史组，显式指定对应检查点parameters.yaml。第一阶段仍沿用C++默认权重。
+
+维护说明：
+    选手基础入口；mode决定策略分支，strategy_params_file决定配置来源，Node参数与环境配置共同形成有效设置。
+    launch负责创建进程和传递参数，实际决策由C++节点完成。
+    修改源码后先构建并source对应install；运行中节点不会因源文件改动自动更新。
 """
 
 import math
@@ -64,7 +69,7 @@ def _start_contestant(context):
         log_file = str(log_path)
 
     strategy_file = LaunchConfiguration("strategy_params_file").perform(context).strip()
-    # 第二阶段默认加载已通过独立同图验证的整组参数；显式指定文件时完整使用指定版本。
+    # 第二阶段按mode选择配置；启用实验网络不代表已证实提分，显式文件用于复现实验。
     # C++权重结构保留通用默认值，历史参数文件不会被额外合并进新的实验开关。
     if not strategy_file and mode in ("stage2", "stage2_planning"):
         strategy_file = PathJoinSubstitution(

@@ -2,6 +2,10 @@
  * @file practice_scoring_main.cpp
  * @brief 本地修正版裁判计分节点：隔离域内读取结算、AI日志，按v1.2发布和持久化计分。
  * 原始模拟器负责战斗；本节点修正练习包缺失的AI资格门槛和九位小数排名。
+ *
+ * @details 模块协作与维护约定
+ * 本地裁判扩展计算分项、资格与排名；它与选手内部用于动作排序的权重是两套职责。
+ * 读取结算或审计信息的权限仅属于练习裁判，不能把本文件接入选手来获取隐藏状态。
  */
 #include "rmtc_connection/practice_rules.hpp"
 #include <rclcpp/rclcpp.hpp>

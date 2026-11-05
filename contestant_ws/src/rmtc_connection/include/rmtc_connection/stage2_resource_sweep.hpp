@@ -1,6 +1,10 @@
 /**
  * @file stage2_resource_sweep.hpp
  * @brief 第二阶段有限束搜索：联合估计沿路采集、新视野及争抢延误，不读取真实全图。
+ *
+ * @details 模块协作与维护约定
+ * 为近期采集比较连续访问机会，按公开可达路径估计路程并避免重复采集/观察计分。
+ * 只执行本帧合法首步，后续路径是下一帧可被新信息替换的预测。
  */
 #pragma once
 #include "rmtc_connection/stage2_collection.hpp"

@@ -4,6 +4,11 @@
  *
  * 场景执行器持有地图真值，仅向策略发送当前方形视野，禁止策略获取隐藏资源。
  * 不启动ROS节点、不干扰实际比赛；旧策略基线在没有资源目标时模拟WAIT。
+ *
+ * @details 模块协作与维护约定
+ * 验证对象：frontier_exploration.hpp、map_generator.hpp、resource_strategy.hpp。
+ * 运行约定：由独立测试可执行文件/CTest执行，断言失败用于定位回归，不是正式选手的逐帧逻辑。
+ * 结果边界：通过表示这些构造场景满足约束，不证明所有随机地图均最优或稳定达到某个总分。
  */
 #include "rmtc_connection/frontier_exploration.hpp"
 #include "rmtc_connection/map_generator.hpp"

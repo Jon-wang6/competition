@@ -4,6 +4,11 @@
 用途：接收本队公开感知及AI已校验解释，实时显示累计地图和八类事件。
 默认A队、公开ROS域27；team/domain_id必须与选手启动参数一致。
 use_rviz:=false时仅运行建图进程，便于无桌面环境检查地图话题。
+
+维护说明：
+    独立显示入口；team与domain_id应匹配感知来源，Fixed Frame与地图话题应对应同一队伍。
+    launch负责创建进程和传递参数，实际决策由C++节点完成。
+    修改源码后先构建并source对应install；运行中节点不会因源文件改动自动更新。
 """
 
 from pathlib import Path

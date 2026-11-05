@@ -3,6 +3,11 @@
 默认20×20种子0地图、100 Tick、100ms/Tick，选手使用现有第一阶段策略。
 update:=false可跳过编译，tick_ms:=1000可慢速观察；其他参数沿用all.launch.py。
 比赛需在裁判网页手动开始，退出时只关闭本次启动的进程。
+
+维护说明：
+    第一阶段本地联启；包含裁判与选手，正式现场外部已有裁判时应选不带裁判的入口。
+    launch负责创建进程和传递参数，实际决策由C++节点完成。
+    修改源码后先构建并source对应install；运行中节点不会因源文件改动自动更新。
 """
 
 from launch import LaunchDescription

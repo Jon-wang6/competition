@@ -5,6 +5,10 @@
  * 本文件只组装运行流程，不解析协议、不决定动作。
  * 创建ConnectionNode后进入spin，感知处理由节点回调驱动。
  * 可执行文件由ros2 run rmtc_connection connection_node启动。
+ *
+ * @details 模块协作与维护约定
+ * 执行链：初始化ROS → 构造ConnectionNode → spin处理回调 → 退出时汇总并关闭ROS。
+ * 本入口不计算路线；默认单线程执行器串行处理节点回调，不代表中间件没有后台线程。
  */
 #include "rmtc_connection/connection_node.hpp"
 

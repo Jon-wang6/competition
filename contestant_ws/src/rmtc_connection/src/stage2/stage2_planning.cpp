@@ -1,6 +1,11 @@
 /**
  * @file stage2_planning.cpp
  * @brief 固定节点预算的滚动采集规划；正式封顶积分、任务完成与探索机会分别记账。
+ *
+ * @details 模块协作与维护约定
+ * 同一帧比较WAIT/UP/DOWN/LEFT/RIGHT五个根动作，按共同完成的搜索深度提交结果。
+ * 资源计分与任务阈值在各采集结果分支中计算后再求期望，避免先平均再封顶造成高估。
+ * 时间预算使用毫秒，路线到达时间使用相对Tick；预算不足时返回有效的已完成结果供上层回退。
  */
 #include "rmtc_connection/stage2_planning.hpp"
 #include "rmtc_connection/stage2_config.hpp"
@@ -16,6 +21,11 @@
 #include <tuple>
 
 namespace rmtc {
+/**
+ * @brief 检查前瞻深度、宽度、节点/时间预算和概率尺度，防止非法配置进入搜索。
+ * @throws std::invalid_argument 非有限、负值或超出实现支持范围。
+ * @note 调用不修改参数，也不将非法值静默截断成另一个实验配置。
+ */
 void PlanningWeights::validate() const {
   for (double x : {budget_ms,discount,terminal_weight,memory_half_life,enemy_pressure,
                    exploration_floor,route_tie_margin,future_risk_weight,regional_strength,race_scenario_weight})
@@ -29,16 +39,36 @@ void PlanningWeights::validate() const {
     throw std::invalid_argument("invalid planning budget or probability scale");
 }
 
+/**
+ * @brief 先将扣除前后累计伤害分别映射到封顶积分，再求真正损失的积分差。
+ * @param damage 当前累计伤害，可能已超过计分上限。
+ * @param cap 伤害计分的正上限，调用方必须提供有效正数。
+ * @param points 该项满分。
+ * @param deduction 预计被扣除的原始伤害量，不能直接当成积分扣除。
+ * @return 在封顶规则下的积分减少量；超出上限的冗余伤害可能抵消一部分损失。
+ */
 double planning_damage_loss(double damage,double cap,double points,double deduction) {
   const auto score=[&](double d) {return points*std::clamp(d/cap,0.0,1.0);};
   return score(damage)-score(std::max(0.0,damage-deduction));
 }
 
+/**
+ * @brief 用最后目击年龄和敌方接近程度计算旧资源仍存在的软估计。
+ * @param age 距最后目击的Tick数；负值按0处理。
+ * @param enemy_steps 敌方距离；负值表示没有有效距离证据，不施加敌方压力。
+ * @param w 已验证的规划参数，memory_half_life必须大于0。
+ * @return 指数衰减估计，亲眼刚看到时为1；不声称是经过统计校准的真实概率。
+ */
 double planning_resource_presence(int age,int enemy_steps,const PlanningWeights& w) {
   const double pressure=enemy_steps<0?0.0:w.enemy_pressure/(1.0+enemy_steps);
   return std::exp2(-std::max(0,age)*(1.0+pressure)/w.memory_half_life);
 }
 
+/**
+ * @brief 将搜索结果导出为解释日志，记录有效根、完成深度、耗时和预算触限。
+ * @return JSON快照；路线是预测路径，不是机器人已执行的轨迹。
+ * @note confidence_is_calibrated_probability固定为false，避免误解启发式置信度。
+ */
 Json PlanningResult::describe() const {
   Json rows=Json::array();
   constexpr std::array<const char*,5> names{{"wait","up","down","left","right"}};
@@ -56,6 +86,13 @@ Json PlanningResult::describe() const {
       {"confidence_is_calibrated_probability",false}};
 }
 
+/**
+ * @brief 在已知地形上同时评估五种首步，保留采集结果分布与唯一观察覆盖。
+ * @details 参数契约见stage2_planning.hpp。先准备资源/距离/视野集合，再逐层扩展候选；
+ * 只提交可公平比较的完整层，末端机会估值不等于已兑现收益。
+ * @return 可包含ran=false或useful=false的结果，上层必须检查标志并保留回退决策。
+ * @note passable与future_risk接收相对到达步数，调用方负责换算为事件绝对Tick。
+ */
 PlanningResult plan_collection_actions(
     const PublicPerception& f,const MapMemory& memory,const Stage2Weights& w,
     int remaining,int normal_collected,int high_collected,double resource_weight,

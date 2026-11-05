@@ -1,6 +1,10 @@
 /**
  * @file ai_event_protocol.cpp
  * @brief 八类模型事件的严格结构校验；区域只来自LLM给出的坐标，不解析公告句式。
+ *
+ * @details 模块协作与维护约定
+ * 此层解析结构化回复而非执行自然语言；字段、坐标、枚举和时间范围都属于信任边界。
+ * 网络客户端和主控复用结构校验，模型输出不能绕过事件有效期或本场身份检查。
  */
 #include "rmtc_connection/ai_client.hpp"
 #include <algorithm>

@@ -1,6 +1,11 @@
 /**
  * @file stage2_collection_neural.cpp
  * @brief 采集路线评分器的固定具名输入；模型架构与训练标签均与战斗评分器分开。
+ *
+ * @details 模块协作与维护约定
+ * 输入是某个根动作的规划摘要及公开状态，输出64维固定顺序特征；不是整幅隐藏地图。
+ * 特征缩放、顺序和基础规划签名是模型契约，修改任一项应重新验证训练/部署兼容性。
+ * 返回的特征用于预测评分修正，模型不直接生成攻击指令或替代事件解释网关。
  */
 #include "rmtc_connection/stage2_collection_neural.hpp"
 #include "rmtc_connection/stage2_config.hpp"
@@ -10,6 +15,12 @@
 #include <queue>
 
 namespace rmtc {
+/**
+ * @brief 提取影响采集残差语义的基础规划参数，供模型与当前策略对照。
+ * @param w 实际用于采集评分的策略参数。
+ * @return 具名配置JSON，只包含明确选出的兼容性字段，不是全部配置的哈希。
+ * @note 改变基础评分后，旧网络修正可能不再成立，不能简单绕过签名检查。
+ */
 Json collection_baseline_signature(const Stage2Weights& w) {
   const auto& p=w.planning;
   return {{"horizon",p.horizon},{"beam_width",p.beam_width},{"max_nodes",p.max_nodes},
@@ -21,6 +32,10 @@ Json collection_baseline_signature(const Stage2Weights& w) {
       {"resource_weight",w.acquisition.resource_weight},{"visible_weight",w.visible_resource_weight}};
 }
 
+/**
+ * @brief 返回采集域64维特征的稳定顺序，与collection_route_features的下标逐一对应。
+ * @return 静态只读名称数组；训练导出与部署加载必须使用一致顺序。
+ */
 const std::array<const char*,kNeuralInputs>& collection_neural_feature_names() {
   static const std::array<const char*,kNeuralInputs> names{{
     "tick_fraction","own_hp","resource_fraction","damage_fraction","map_coverage",
@@ -40,6 +55,18 @@ const std::array<const char*,kNeuralInputs>& collection_neural_feature_names() {
   return names;
 }
 
+/**
+ * @brief 将一个根动作的公开预测路线转换为模型输入，所有输出限制在[-1,1]。
+ * @param f 当前公开帧，提供时间、血量、比分、任务和可见实体。
+ * @param memory 本队历史公开记忆，不包含未观察的裁判真值。
+ * @param plan 同窗口采集搜索结果，包含各根动作路线与评分分解。
+ * @param root WAIT/UP/DOWN/LEFT/RIGHT对应的0..4下标。
+ * @param normal 已记录的普通资源采集数量，用于任务缺口特征。
+ * @param high 已记录的高价值资源采集数量。
+ * @param enemy 敌方预计距离场，按比赛坐标y*width+x排列。
+ * @param supply 未知区域供给先验；这是估计信息，不是隐藏资源列表。
+ * @return 固定64维特征；root越界或该根无效时返回全零，调用方须另外筛选有效性。
+ */
 NeuralFeatures collection_route_features(const PublicPerception& f,const MapMemory& memory,
     const PlanningResult& plan,std::size_t root,int normal,int high,const std::vector<int>& enemy,
     const std::vector<double>& supply) {

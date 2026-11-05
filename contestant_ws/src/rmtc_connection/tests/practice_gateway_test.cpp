@@ -1,5 +1,10 @@
 /** @file practice_gateway_test.cpp
  * @brief 离线测试练习网关的零额度含义、持久化配额、令牌换场及兼容别名；不访问外网。
+ *
+ * @details 模块协作与维护约定
+ * 验证对象：practice_gateway.hpp。
+ * 运行约定：由独立测试可执行文件/CTest执行，断言失败用于定位回归，不是正式选手的逐帧逻辑。
+ * 结果边界：通过表示这些构造场景满足约束，不证明所有随机地图均最优或稳定达到某个总分。
  */
 #include "rmtc_connection/practice_gateway.hpp"
 #include <cstdlib>

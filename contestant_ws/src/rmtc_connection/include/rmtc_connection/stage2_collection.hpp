@@ -1,6 +1,10 @@
 /**
  * @file stage2_collection.hpp
  * @brief 第二阶段独立的时间插值与资源争抢估计；不改变规则分数和第一阶段配置。
+ *
+ * @details 模块协作与维护约定
+ * 辅助函数将时间与到达差转为软采集偏好；结果不改变物品真实价值和结算先后。
+ * 未知敌方距离与明确不可达需要按接口语义处理，不能把缺失值当作敌人就在资源上。
  */
 #pragma once
 #include "rmtc_connection/stage2_config.hpp"

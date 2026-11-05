@@ -1,6 +1,10 @@
 /**
  * @file stage2_events.cpp
  * @brief 用公开帧推进事件状态，分离基础地图和临时墙，按绝对Tick恢复/到期。
+ *
+ * @details 模块协作与维护约定
+ * 事件解释先经结构校验，再由这里维护Tick有效期、区域和临时状态，不能直接执行模型原文。
+ * 临时墙与基础地形分开，事件到期需尊重最新观察；原来未知的格子不能凭恢复操作变成已知空地。
  */
 #include "rmtc_connection/stage2_events.hpp"
 #include <algorithm>

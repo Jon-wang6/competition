@@ -5,6 +5,11 @@
  * BFS一次计算已知可通行格的真实步数，A*生成最终路线。资源、任务、探索、
  * 有利交战共用一个收益尺度；射程内攻击无视障碍，但移动仍遵守地形与占位。
  * 所有对手下一步行为都是估计：日志分别给出预计收益和可能受到的伤害上界。
+ *
+ * @details 模块协作与维护约定
+ * 主线：更新公开记忆与事件 → 生成目标 → 计算路线/前瞻 → 比较攻防移动 → 返回当前动作。
+ * 目标层选资源不代表动作层必然移动；危险、事件、脱困和攻防判断可能覆盖路线建议。
+ * 所有历史状态属于当前策略实例；换场必须重置，候选分数和预测位置不是裁判事实。
  */
 #include "rmtc_connection/stage2_strategy.hpp"
 #include "rmtc_connection/stage2_event_escape.hpp"
@@ -2249,6 +2254,8 @@ Action Stage2Strategy::decide(const PublicPerception& frame, std::int64_t remain
           }
         }
       }
+      // 模型修正先限幅再乘权重，尺度与教师标签一致；输出不直接代表动作概率。
+      // 同时要求修正差与合成总分超过门槛，避免很小的残差反复切换根动作。
       if(original>=0&&cfg.enabled) {
         std::array<double,5> deltas{};
         for(std::size_t i=0;i<5;++i)if(collection_values.roots[i].valid)

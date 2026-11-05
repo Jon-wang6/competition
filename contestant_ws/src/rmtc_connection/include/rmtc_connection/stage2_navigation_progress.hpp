@@ -1,6 +1,10 @@
 /**
  * @file stage2_navigation_progress.hpp
  * @brief 识别没有资源、伤害、任务、新视野进展的局部往返，避免把必要折返一概禁止。
+ *
+ * @details 模块协作与维护约定
+ * 根据位置历史和资源、伤害、任务、新视野是否增长判断无进展循环，不禁止正常折返。
+ * 软惩罚有有效期，持续出口目标用于减少脱困抖动；上层仍应记录最终动作是否覆盖脱困建议。
  */
 #pragma once
 #include "rmtc_connection/stage2_config.hpp"

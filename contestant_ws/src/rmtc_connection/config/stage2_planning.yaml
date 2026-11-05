@@ -1,9 +1,15 @@
+# 文件职责：ROS参数快照；数值是策略偏好与计算预算，不是对裁判规则的修改。
+# 加载约定：以实际strategy_params_file和launch覆盖为准；修改源文件后需安装并重启节点。
+# 单位约定：*_ticks是比赛轮次，*_ms是毫秒；评分权重不等于正式比赛得分。
+# 开关区分：collection_neural_enabled控制本地采集网络，neural_enabled控制战斗网络，ai_enabled控制HTTP客户端。
 # 第二阶段独立预测规划模式；由stage2_planning.launch.py或mode:=stage2_planning加载。
 # 继承duel11参数，下面独立开关启用同窗口采集预测；没有替换原stage2.yaml。
 # 本轮开发集筛选后冻结：保留脱困目标，按敌方完整采集路线比较资源竞争。
-# 独立闭环验证尚未证实神经网络的稳定增益，默认关闭；模型已单独保存。
+# 按用户要求启用已训练的采集残差网络；原版参数保存在stage2_planning_baseline.yaml。
+# 网络修正采集根动作评分，仍保留搜索与动作安全检查；不代表已证实稳定得分提升。
 /**:
   ros__parameters:
+    # 采集/探索曲线开关。采集和探索独立计算，不因进入后期就抹去新发现资源。
     acquisition_curve_enabled: true
     acquisition_resource_weight: 6.0  # 正式资源分的采集偏好；不改变裁判计分。
     acquisition_explore_peak: 4.94843
@@ -49,6 +55,7 @@
     event_fortress_withdraw_priority: 1.5
     event_unrivaled_risk_multiplier: 4.0
     reach_collision_retry_ticks: 2
+    # 战斗时间曲线。只改变本帧偏好，不修改真实伤害、攻击顺序或生存边界。
     battle_curve_enabled: true
     battle_curve_protect_resources: true
     battle_curve_start_tick: 142
@@ -79,13 +86,19 @@
     duel_stalemate_start_tick: 80
     duel_stalemate_maximum_hp: 60.0
     duel_stalemate_death_risk_factor: 0.15
+    # 同窗口采集前瞻开关。每个根动作比较相同长度的未来，不能将预测收益当已获得积分。
     planning_enabled: true
+    # 前瞻深度，单位Tick；更深会增加成本和模型误差，须结合beam_width与节点/时间预算验证。
     planning_horizon: 12
+    # 每层保留的候选宽度；不是神经元数量，也不代表必然达到全局最优。
     planning_beam_width: 16
+    # 扩展节点数上限；与毫秒预算共同限制搜索，任一触限都可能提前结束。
     planning_max_nodes: 12000
+    # 规划时间预算（毫秒），不包含通信全过程；日志中的最大耗时仍需单独监测。
     planning_budget_ms: 30.0
     planning_discount: 0.94
     planning_terminal_weight: 0.55
+    # 旧资源存在性估计的半衰尺度；没有重新看到不等于确认被吃掉。
     planning_memory_half_life: 35.0  # 资源没有重新观察到时的基础半衰期；非实测存活概率。
     planning_enemy_pressure: 2.0
     planning_exploration_floor: 0.15
@@ -96,6 +109,7 @@
     navigation_cycle_start_tick: 40
     navigation_cycle_cooldown: 12
     navigation_cycle_cost: 0.2
+    # 战斗残差网络开关；与后面的采集网络是独立配置域。
     neural_enabled: false
     planning_tactical_bridge: true
     planning_independent_opponents: false
@@ -117,6 +131,16 @@
     planning_regional_exploration: false
     planning_regional_strength: 0.5
     planning_terminal_stops: 1
-    # 采集网络与战斗网络相互独立；本轮非零模型未通过收益验证。
-    collection_neural_enabled: false
+    # 使用非零训练模型；不是epoch0的零修正policy快照。
+    # 本地采集残差网络开关；基础规划仍在，网络只修正根动作评分。
+    collection_neural_enabled: true
+    # 是否额外运行教师并写训练样本；普通推理不需要开启，以免增加计算与磁盘开销。
     collection_neural_collect: false
+    # 模型路径应指向实际安装文件；架构、特征顺序和基础规划签名必须匹配。
+    collection_neural_model_file: /home/jon/robot/competition/install/rmtc_connection/share/rmtc_connection/config/models/collection_small64.json
+    # 修正强度，作用于归一化内部评分；不是裁判加分，也不是模型学习率。
+    collection_neural_weight: 0.25
+    # 先对模型输出作对称限幅，再乘修正强度；限制网络对基础规划的影响。
+    collection_neural_max_correction: 1.0
+    # 改变原根动作所需的额外门槛；很小的模型输出不保证实际动作发生变化。
+    collection_neural_override_margin: 0.0005

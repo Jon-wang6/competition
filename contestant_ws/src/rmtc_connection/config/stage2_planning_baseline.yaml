@@ -1,0 +1,137 @@
+# 文件职责：ROS参数快照；数值是策略偏好与计算预算，不是对裁判规则的修改。
+# 加载约定：以实际strategy_params_file和launch覆盖为准；修改源文件后需安装并重启节点。
+# 单位约定：*_ticks是比赛轮次，*_ms是毫秒；评分权重不等于正式比赛得分。
+# 版本定位：切换采集网络前的基线快照，用于对照；其中“默认关闭”描述该快照自身。
+# 第二阶段独立预测规划模式；由stage2_planning.launch.py或mode:=stage2_planning加载。
+# 继承duel11参数，下面独立开关启用同窗口采集预测；没有替换原stage2.yaml。
+# 本轮开发集筛选后冻结：保留脱困目标，按敌方完整采集路线比较资源竞争。
+# 独立闭环验证尚未证实神经网络的稳定增益，默认关闭；模型已单独保存。
+/**:
+  ros__parameters:
+    # 采集/探索曲线开关。采集和探索独立计算，不因进入后期就抹去新发现资源。
+    acquisition_curve_enabled: true
+    acquisition_resource_weight: 6.0  # 正式资源分的采集偏好；不改变裁判计分。
+    acquisition_explore_peak: 4.94843
+    acquisition_explore_floor: 0.0
+    acquisition_explore_half_ticks: 57.23053
+    acquisition_explore_shape: 1.50886
+    acquisition_silence_half_ticks: 26.80416
+    acquisition_silence_grace_ticks: 2
+    contested_resource_factor: 0.23107
+    competition_softness: 0.91659
+    route_information_weight: 0.0
+    information_softness: 0.0
+    resource_lookahead_weight: 0.0
+    temporal_policy_enabled: true
+    resource_age_ticks: 37.90788
+    temporal_resource_age_end: 8.98741
+    visible_resource_weight: 1.2
+    competition_weight: 1.0
+    temporal_competition_end: 1.0
+    temporal_route_information_end: 0.0
+    temporal_lookahead_end: 0.0
+    temporal_transition_ticks: 94
+    temporal_shape: 1.03189
+    opening_reach_weight: 0.65443
+    reach_ramp_ticks: 123
+    opening_combat_weight: 0.54519
+    combat_weight_end: 1.14219
+    combat_ramp_ticks: 223
+    frontier_resource_half_life: 48.33912
+    information_cap: 1.8093
+    joint_future_weight: 0.0
+    temporal_third_party_attack_end: 0.27091
+    temporal_third_party_risk_end: 0.10998
+    reach_finish_ticks: 200
+    reach_attack_pause_ticks: 3
+    reach_move_priority: 0.3
+    reach_stalemate_ticks: 12
+    event_fortress_value: 4.0
+    event_fortress_contest_enabled: true
+    event_fortress_race_margin: 1
+    event_fortress_min_enemy_stay: 3
+    event_fortress_preempt_ticks: 3
+    event_fortress_withdraw_priority: 1.5
+    event_unrivaled_risk_multiplier: 4.0
+    reach_collision_retry_ticks: 2
+    # 战斗时间曲线。只改变本帧偏好，不修改真实伤害、攻击顺序或生存边界。
+    battle_curve_enabled: true
+    battle_curve_protect_resources: true
+    battle_curve_start_tick: 142
+    battle_curve_ramp_ticks: 87
+    battle_curve_shape: 1.39985
+    battle_curve_damage_need_power: 0.65948
+    battle_curve_combat_end: 1.98778
+    battle_curve_search_end: 1.49225
+    battle_curve_hp_risk_end: 0.98093
+    battle_curve_future_risk_end: 0.68252
+    battle_curve_route_risk_end: 0.49755
+    purpose_enabled: true
+    purpose_start_tick: 146
+    purpose_protect_resources: true
+    purpose_resource_floor: 1.0
+    purpose_battle_floor: 0.56244
+    purpose_intercept_weight: 0.79781
+    purpose_intercept_horizon: 2
+    purpose_heading_weight: 2.34223
+    purpose_escape_weight: 1.18581
+    purpose_patrol_visible_scale: 0.6664
+    purpose_chase_progress_ticks: 28
+    opening_collection_ticks: 60  # 前60Tick优先保留可采资源的移动机会。
+    chase_cooldown_ticks: 13
+    battle_curve_third_party_end: 1.01427
+    duel_stalemate_enabled: true
+    duel_stalemate_ticks: 16
+    duel_stalemate_start_tick: 80
+    duel_stalemate_maximum_hp: 60.0
+    duel_stalemate_death_risk_factor: 0.15
+    # 同窗口采集前瞻开关。每个根动作比较相同长度的未来，不能将预测收益当已获得积分。
+    planning_enabled: true
+    # 前瞻深度，单位Tick；更深会增加成本和模型误差，须结合beam_width与节点/时间预算验证。
+    planning_horizon: 12
+    # 每层保留的候选宽度；不是神经元数量，也不代表必然达到全局最优。
+    planning_beam_width: 16
+    # 扩展节点数上限；与毫秒预算共同限制搜索，任一触限都可能提前结束。
+    planning_max_nodes: 12000
+    # 规划时间预算（毫秒），不包含通信全过程；日志中的最大耗时仍需单独监测。
+    planning_budget_ms: 30.0
+    planning_discount: 0.94
+    planning_terminal_weight: 0.55
+    # 旧资源存在性估计的半衰尺度；没有重新看到不等于确认被吃掉。
+    planning_memory_half_life: 35.0  # 资源没有重新观察到时的基础半衰期；非实测存活概率。
+    planning_enemy_pressure: 2.0
+    planning_exploration_floor: 0.15
+    planning_route_tie_margin: 0.005
+    planning_future_risk_weight: 0.15
+    separate_goal_switch_bonus: true
+    navigation_cycle_window: 16
+    navigation_cycle_start_tick: 40
+    navigation_cycle_cooldown: 12
+    navigation_cycle_cost: 0.2
+    # 战斗残差网络开关；与后面的采集网络是独立配置域。
+    neural_enabled: false
+    planning_tactical_bridge: true
+    planning_independent_opponents: false
+    planning_exact_death_loss: true
+    planning_distribution_state: true
+    planning_safe_terminal: true
+    planning_continue_baseline: true
+    planning_reach_recovery: true
+    planning_recovery_ticks: 16
+    planning_memory_model: 1
+    # 连续脱困到离开原循环区域；避免每Tick重新选择相邻两格。
+    planning_persistent_escape: true
+    planning_escape_ticks: 20
+    # 同一敌人每种情景只有一条采集路线；与原竞争估计各占一半。
+    planning_race_scenarios: true
+    planning_race_memory_ticks: 20
+    planning_race_scenario_weight: 0.5
+    # 已实现但开发集没有稳定收益，保留开关供后续独立验证。
+    planning_regional_exploration: false
+    planning_regional_strength: 0.5
+    planning_terminal_stops: 1
+    # 采集网络与战斗网络相互独立；本轮非零模型未通过收益验证。
+    # 本地采集残差网络开关；基础规划仍在，网络只修正根动作评分。
+    collection_neural_enabled: false
+    # 是否额外运行教师并写训练样本；普通推理不需要开启，以免增加计算与磁盘开销。
+    collection_neural_collect: false

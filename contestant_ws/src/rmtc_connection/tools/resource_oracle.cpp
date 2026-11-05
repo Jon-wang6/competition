@@ -5,6 +5,10 @@
  * 使用经过独立全排列验证的A*距离表与精确开放终点TSP动态规划。
  * 这比实际选手拥有更多信息，结果只能作为100Tick全收集的理论上限检查；
  * 地图真值、最优顺序及路径不会发送给选手节点，也不会写入策略配置。
+ *
+ * @details 模块协作与维护约定
+ * 完整信息最短访问结果只给审计上限；未知地图选手无法据此保证在同样步数内完成。
+ * 不得把oracle路线、真值资源或整图通过测试接口传给在线策略。
  */
 #include "rmtc_connection/map_generator.hpp"
 #include "rmtc_connection/resource_route.hpp"

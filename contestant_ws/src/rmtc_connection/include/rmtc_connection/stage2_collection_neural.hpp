@@ -1,6 +1,11 @@
 /**
  * @file stage2_collection_neural.hpp
  * @brief 独立采集网络的公开路线特征；与战斗网络严格分域。
+ *
+ * @details 模块协作与维护约定
+ * 输入是某个根动作的规划摘要及公开状态，输出64维固定顺序特征；不是整幅隐藏地图。
+ * 特征缩放、顺序和基础规划签名是模型契约，修改任一项应重新验证训练/部署兼容性。
+ * 返回的特征用于预测评分修正，模型不直接生成攻击指令或替代事件解释网关。
  */
 #pragma once
 #include "rmtc_connection/stage2_planning.hpp"

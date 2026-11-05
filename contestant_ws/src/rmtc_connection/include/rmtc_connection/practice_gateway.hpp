@@ -1,5 +1,9 @@
 /** @file practice_gateway.hpp
  * @brief 裁判专用AI网关：每令牌成功配额、真实/模拟审计及上游错误映射。
+ *
+ * @details 模块协作与维护约定
+ * 练习代理维护令牌/额度与转发结果；配额记录与正式赛事网关的状态不是同一份数据。
+ * HTTP转发成功并不保证回复符合选手事件结构；密钥和令牌不应写入调试输出。
  */
 #pragma once
 #include <nlohmann/json.hpp>

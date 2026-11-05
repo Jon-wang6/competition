@@ -5,6 +5,11 @@
  * RViz只是观察窗口，比赛仍由原裁判结算。本文件不控制车辆，不连接网页，
  * 不读取裁判配置/全图。地形累计记忆，敌车/资源区分当前观察与历史位置。
  * 比赛[x,y]的y向下，ROS的y向上；所有对象统一转换，避免地图上下颠倒。
+ *
+ * @details 模块协作与维护约定
+ * 可视化有自己的记忆与发布周期，控制节点不依赖RViz运行来维持地图或做决策。
+ * 比赛坐标到OccupancyGrid/Marker的转换集中处理，固定坐标系和队伍话题必须一致。
+ * 显示陈旧数据应标注年龄；文字更新还需清除过期Marker，避免不同Tick状态叠在一起。
  */
 #include "rmtc_connection/mapping_node.hpp"
 #include "rmtc_connection/ai_client.hpp"

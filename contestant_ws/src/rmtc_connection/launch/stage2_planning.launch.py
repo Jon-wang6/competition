@@ -3,6 +3,11 @@
 默认500 Tick、500ms/Tick、A席位及B/C/D陪练；比赛在网页手动开始。
 参数集中于config/stage2_planning.yaml，旧stage2.launch.py仍使用原策略。
 默认mock AI只验证通信，不解释广播、不取得正式任务计分资格。
+
+维护说明：
+    预测规划本地联启；配置中的采集网络开关独立于HTTP AI开关，二者解决不同问题。
+    launch负责创建进程和传递参数，实际决策由C++节点完成。
+    修改源码后先构建并source对应install；运行中节点不会因源文件改动自动更新。
 """
 from launch import LaunchDescription
 from launch.actions import DeclareLaunchArgument, IncludeLaunchDescription

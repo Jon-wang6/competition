@@ -6,6 +6,8 @@
   具体源文件、编译及安装规则由同目录的CMakeLists.txt定义。
   XML声明必须位于文件最前，因此文件说明放在声明之后。
 -->
+<!-- 包清单：声明构建/运行依赖及ament类型；库的链接关系见CMakeLists.txt。
+     包名用于ros2查找已安装节点，修改包名需同步启动入口与安装路径。 -->
 <package format="3">
   <name>rmtc_connection</name>
   <version>0.1.0</version>

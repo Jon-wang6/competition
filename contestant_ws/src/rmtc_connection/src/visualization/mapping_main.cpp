@@ -1,6 +1,11 @@
 /**
  * @file mapping_main.cpp
  * @brief 独立建图程序入口；只启动MappingNode，不启动控制节点或裁判。
+ *
+ * @details 模块协作与维护约定
+ * 可视化有自己的记忆与发布周期，控制节点不依赖RViz运行来维持地图或做决策。
+ * 比赛坐标到OccupancyGrid/Marker的转换集中处理，固定坐标系和队伍话题必须一致。
+ * 显示陈旧数据应标注年龄；文字更新还需清除过期Marker，避免不同Tick状态叠在一起。
  */
 #include "rmtc_connection/mapping_node.hpp"
 

@@ -1,5 +1,9 @@
 /** @file stage2_collection_search.cpp
  * @brief 用已知地形距离、唯一覆盖集合与到达时间，搜索有限多段采集路线。
+ *
+ * @details 模块协作与维护约定
+ * 状态同时记录资源访问、观察覆盖和累计到达时间；只对新增收益计分。
+ * 搜索深度/候选宽度限制计算量，结果是局部滚动建议，不保证竞争环境中的全局最优。
  */
 #include "rmtc_connection/stage2_collection_search.hpp"
 #include "rmtc_connection/stage2_collection.hpp"

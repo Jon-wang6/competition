@@ -2,6 +2,11 @@
  * @file mapping_events_test.cpp
  * @brief 隔离ROS域验证八类事件显示、全长分裂墙、到期还原及AI来源校验。
  * 不调用模型、不连接裁判；构造的AI结构通过与真实回复相同的接收与校验路径。
+ *
+ * @details 模块协作与维护约定
+ * 验证对象：mapping_node.hpp。
+ * 运行约定：由独立测试可执行文件/CTest执行，断言失败用于定位回归，不是正式选手的逐帧逻辑。
+ * 结果边界：通过表示这些构造场景满足约束，不证明所有随机地图均最优或稳定达到某个总分。
  */
 #include "rmtc_connection/mapping_node.hpp"
 

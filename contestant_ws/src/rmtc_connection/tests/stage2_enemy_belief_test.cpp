@@ -1,6 +1,11 @@
 /**
  * @file stage2_enemy_belief_test.cpp
  * @brief 检查空视野证据不能遗忘、完全失去线索不复活、死亡与换局隔离。
+ *
+ * @details 模块协作与维护约定
+ * 验证对象：stage2_enemy_belief.hpp、stage2_enemy_sightings.hpp。
+ * 运行约定：由独立测试可执行文件/CTest执行，断言失败用于定位回归，不是正式选手的逐帧逻辑。
+ * 结果边界：通过表示这些构造场景满足约束，不证明所有随机地图均最优或稳定达到某个总分。
  */
 #include "rmtc_connection/stage2_enemy_belief.hpp"
 #include "rmtc_connection/stage2_enemy_sightings.hpp"

@@ -6,6 +6,10 @@
  * 地图配置管理，不接入选手策略、不向公开ROS感知注入全图信息。-1随机，
  * 其余整数（含0）可复现；C++代理补全v1.2 AI鉴权、额度与审计。
  * /api/training/event-json仅在显式开启的隔离训练域使用，返回标准JSON但不授予AI资格。
+ *
+ * @details 模块协作与维护约定
+ * 本地扩展服务连接网页、地图生成与官方裁判接口；与参赛策略进程分离。
+ * 部署参数、地图生成和比赛开始是不同操作，定位地图变化时应核对请求与所保存配置。
  */
 #include "rmtc_connection/map_generator.hpp"
 #include "rmtc_connection/practice_gateway.hpp"

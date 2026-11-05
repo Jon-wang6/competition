@@ -1,6 +1,10 @@
 /**
  * @file resource_peek.cpp
  * @brief 资源路线的一步观察改进：比较额外绕路与额外信息，保持采集目标及预算约束。
+ *
+ * @details 模块协作与维护约定
+ * 输入已有资源目标/路径，在保持采集目标的前提下评估下一步能多看多少未知区域。
+ * 绕路预算与原路线可见集合共同限制探查，不将同一批新格子在每一步重复计入收益。
  */
 #include "rmtc_connection/resource_peek.hpp"
 #include <algorithm>

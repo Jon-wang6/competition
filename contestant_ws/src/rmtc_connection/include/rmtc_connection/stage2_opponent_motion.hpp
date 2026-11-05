@@ -1,6 +1,10 @@
 /**
  * @file stage2_opponent_motion.hpp
  * @brief 根据连续公开帧估计敌车运动，预测仅服务下一步风险与追击，不改变当前攻击判定。
+ *
+ * @details 模块协作与维护约定
+ * 连续公开帧提供方向/交火线索，断帧、复活或实例变化时不能机械延续原速度。
+ * 预测只服务风险与追击；别人上一轮在打第三方，不代表下一轮一定不会攻击本车。
  */
 #pragma once
 #include "rmtc_connection/map_memory.hpp"

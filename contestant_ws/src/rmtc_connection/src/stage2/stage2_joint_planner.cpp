@@ -1,6 +1,10 @@
 /**
  * @file stage2_joint_planner.cpp
  * @brief 将第一阶段联合覆盖路线适配为第二阶段有限前视的采集建议。
+ *
+ * @details 模块协作与维护约定
+ * 第一阶段路线负责提出访问顺序，第二阶段再按剩余时间、风险和收益解释该提案。
+ * 复用规划器不等于把第一阶段目标直接照搬；敌人抢夺与任务等仍由第二阶段评价。
  */
 #include "rmtc_connection/stage2_joint_planner.hpp"
 #include <algorithm>

@@ -6,6 +6,10 @@
  * 输入是ROS String消息里的JSON文本，输出是Perception、Position和Action。
  * ConnectionNode调用这里的解析/序列化函数，ProbeStrategy复用坐标转换。
  * 依赖nlohmann::json；头文件中的自由函数使用inline，避免多处包含时重复定义。
+ *
+ * @details 模块协作与维护约定
+ * 坐标约定：比赛x向右、y向下；9×9局部实体图需以中心为原点换算后加本车位置。
+ * 协议层只负责合法数据与动作的表示，不在这里作资源排序或事件战术判断。
  */
 #pragma once
 

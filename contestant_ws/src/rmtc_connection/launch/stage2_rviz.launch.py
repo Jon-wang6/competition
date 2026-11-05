@@ -3,6 +3,11 @@
 默认启用独立正式网关客户端，须设置RMTC_AI_URL及本场RMTC_AI_TOKEN。
 请求使用POST、Bearer令牌、deepseek-flash、JSON输出及关闭思考。
 离线只看策略和地图时可显式传ai_enabled:=false；AI不会阻塞主控动作回调。
+
+维护说明：
+    外部裁判接入入口；ai_enabled只控制独立网关客户端，不关闭配置中启用的本地采集网络。
+    launch负责创建进程和传递参数，实际决策由C++节点完成。
+    修改源码后先构建并source对应install；运行中节点不会因源文件改动自动更新。
 """
 import os
 

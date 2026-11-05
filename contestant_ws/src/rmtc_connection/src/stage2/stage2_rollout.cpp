@@ -1,6 +1,10 @@
 /**
  * @file stage2_rollout.cpp
  * @brief 多情景、共同动作序列的局部束搜索；按真实结算顺序推演并按预算逐层完成。
+ *
+ * @details 模块协作与维护约定
+ * 推演输入是当前公开局面和受校验事件，按结算顺序构造多个可能未来，而非读取真实未来。
+ * 根动作必须在可比较的预算/深度下评估；扩大搜索前先检查预测误差与决策耗时尾部。
  */
 #include "rmtc_connection/stage2_rollout.hpp"
 #include <algorithm>

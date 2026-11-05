@@ -2,6 +2,10 @@
  * @file practice_gateway.cpp
  * @brief C++练习AI代理，成功HTTP响应消耗配额；模型内容是否能用由选手自行判断。
  * 密钥只从父进程环境读取，不写入请求审计、配额文件或诊断日志。
+ *
+ * @details 模块协作与维护约定
+ * 练习代理维护令牌/额度与转发结果；配额记录与正式赛事网关的状态不是同一份数据。
+ * HTTP转发成功并不保证回复符合选手事件结构；密钥和令牌不应写入调试输出。
  */
 #include "rmtc_connection/practice_gateway.hpp"
 #include <curl/curl.h>

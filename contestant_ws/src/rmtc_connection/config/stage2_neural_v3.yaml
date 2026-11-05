@@ -1,9 +1,13 @@
+# 文件职责：ROS参数快照；数值是策略偏好与计算预算，不是对裁判规则的修改。
+# 加载约定：以实际strategy_params_file和launch覆盖为准；修改源文件后需安装并重启节点。
+# 单位约定：*_ticks是比赛轮次，*_ms是毫秒；评分权重不等于正式比赛得分。
 # 第二阶段动作排序神经网络续训实验策略；原stage2.yaml默认策略保留。
 # 64→64→32→1残差MLP，继承旧模型后用C++组内softmax排序续训；资源评分和生存/事件约束继续由原算法处理。
 # 使用现有stage2.launch.py，显式strategy_params_file指定本文件；真实AI资格另由实际网关调用确认。
 # 本模型独立保存；默认策略与前两版模型均保留。
 /**:
   ros__parameters:
+    # 采集/探索曲线开关。采集和探索独立计算，不因进入后期就抹去新发现资源。
     acquisition_curve_enabled: true
     acquisition_resource_weight: 4.01284
     acquisition_explore_peak: 4.94843
@@ -49,6 +53,7 @@
     event_fortress_withdraw_priority: 1.5
     event_unrivaled_risk_multiplier: 4.0
     reach_collision_retry_ticks: 2
+    # 战斗时间曲线。只改变本帧偏好，不修改真实伤害、攻击顺序或生存边界。
     battle_curve_enabled: true
     battle_curve_protect_resources: true
     battle_curve_start_tick: 142
@@ -81,6 +86,7 @@
     duel_stalemate_death_risk_factor: 0.15
     blocked_retry_ticks: 2
     blocked_retry_min_failures: 2
+    # 战斗残差网络开关；与后面的采集网络是独立配置域。
     neural_enabled: true
     neural_collect: false
     neural_weight: 0.5

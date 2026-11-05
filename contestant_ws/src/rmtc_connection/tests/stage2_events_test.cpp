@@ -1,6 +1,11 @@
 /**
  * @file stage2_events_test.cpp
  * @brief 八类事件的结算边界、地图恢复、方向转换与战术回归；不调用API、不连接ROS。
+ *
+ * @details 模块协作与维护约定
+ * 验证对象：ai_client.hpp、stage2_event_route.hpp、stage2_event_escape.hpp、stage2_fortress_policy.hpp。
+ * 运行约定：由独立测试可执行文件/CTest执行，断言失败用于定位回归，不是正式选手的逐帧逻辑。
+ * 结果边界：通过表示这些构造场景满足约束，不证明所有随机地图均最优或稳定达到某个总分。
  */
 #include "rmtc_connection/ai_client.hpp"
 #include "rmtc_connection/stage2_event_route.hpp"

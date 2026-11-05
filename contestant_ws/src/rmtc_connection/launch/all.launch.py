@@ -6,6 +6,11 @@ update默认true；update:=false跳过编译。源码入口也能直接ros2 laun
 无需先安装这个新launch。每个子进程重新加载根目录install/local_setup.bash，避免
 旧终端或ament索引缓存选中contestant_ws/install中的旧程序。只负责启动编排，
 不修改官方裁判、不修改策略参数、不自动开始比赛、不自动终止其他已运行程序。
+
+维护说明：
+    本地全套编排入口；更新流程与子launch参数在此汇合，切勿与单独启动的同席位主控重复运行。
+    launch负责创建进程和传递参数，实际决策由C++节点完成。
+    修改源码后先构建并source对应install；运行中节点不会因源文件改动自动更新。
 """
 
 import os

@@ -2,6 +2,10 @@
  * @file neural_training.hpp
  * @brief 训练专用C++/Eigen前向、反向传播与Adam；正式选手不链接本文件。
  * 参数顺序与TinyNeuralNetwork一致，梯度由独立有限差分测试校验。
+ *
+ * @details 模块协作与维护约定
+ * 训练时保存前向中间量、反向梯度及Adam状态，部署推理只需要兼容的模型参数。
+ * 矩阵/数组顺序必须与TinyNeuralNetwork一致；梯度正确性依靠独立有限差分而非训练损失自证。
  */
 #pragma once
 #include "rmtc_connection/stage2_neural.hpp"
